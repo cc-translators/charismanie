@@ -1,0 +1,81 @@
+%
+% Requirements:
+%  - pdflatex
+%  - koma-sript
+%
+
+% Adjust book size
+% as per http://www.lulu.com/fr/publish/books/?cid=nav_bks
+% Crown Quarto => 189mm:246mm = 7.44x9.68
+%  this is 7.44X9.69 on createspace
+%\documentclass[paper=7.44in:9.68in,pagesize=pdftex,11pt,DIV=11]{scrbook}
+% See about setting margins with DIV and putting code as \footnotesize
+%\documentclass[paper=189mm:246mm,pagesize=pdftex,12pt,DIV=10]{scrbook}
+% Royal        => 156mm:234mm
+%\documentclass[paper=156mm:234mm,pagesize=pdftex,12pt]{scrbook}
+% Roman        => 152mm:229mm
+%\documentclass[paper=152mm:229mm,pagesize=pdftex,12pt]{scrbook}
+\documentclass{scrbook}
+\usepackage[french]{babel} %language selection
+\selectlanguage{french}
+\shorthandoff{:}
+
+
+\usepackage[utf8x]{inputenc}
+%\usepackage{fancyvrb}
+%\usepackage{graphicx}
+\usepackage[breaklinks=true,unicode=true]{hyperref}
+\hypersetup{colorlinks, 
+           citecolor=black,
+           filecolor=black,
+           linkcolor=black,
+           urlcolor=black,
+           bookmarksopen=true,
+           pdftex}
+\usepackage{url}
+\usepackage[activate={true,nocompatibility}]{microtype}
+
+% lettrines
+\usepackage{type1cm} % scalable fonts
+\usepackage{lettrine}
+
+% bibleref
+\usepackage{bibleref-french}
+\AtBeginDocument{\shorthandoff{:}}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setcounter{secnumdepth}{0}
+
+% prerender for chapter titles
+\PrerenderUnicode{À}
+
+% Make indexes
+\usepackage{makeidx}
+\makeindex
+
+% NdT macro
+\newcommand{\NdT}[1]{\footnote{NdT: #1}}
+
+
+\title{Charismatique ou ``charismaniaque''?}
+\author{Chuck Smith}
+
+\pagenumbering{roman}
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\pagenumbering{arabic}
+
+
+\include{chapters/01_a_la_recherche}
+\include{chapters/02_le_saint_esprit_est_dieu}
+
+
+\printindex
+
+\end{document}
+

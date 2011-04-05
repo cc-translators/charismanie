@@ -1,0 +1,294 @@
+%%
+%% This is file `sample.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% bibleref.dtx  (with options: `sample.tex,package')
+%% 
+%%  bibleref.dtx
+%%  Copyright 2011 Nicola Talbot
+%% 
+%%  This work may be distributed and/or modified under the
+%%  conditions of the LaTeX Project Public License, either version 1.3
+%%  of this license of (at your option) any later version.
+%%  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%%  and version 1.3 or later is part of all distributions of LaTeX
+%%  version 2005/12/01 or later.
+%% 
+%%  This work has the LPPL maintenance status `maintained'.
+%% 
+%%  The Current Maintainer of this work is Nicola Talbot.
+%% 
+%%  This work consists of the files bibleref.dtx and bibleref.ins and the derived files bibleref-xidx.sty, bibleref.sty, sample-categories.tex, sample-multind.tex, sample-xidx.tex, sample.tex, sample.ist, bibleref.perl.
+%% 
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+\documentclass{article}
+
+\usepackage{bibleref}
+\usepackage{makeidx}
+\makeindex
+
+\renewcommand{\bvidxpgformat}{textit}
+
+\begin{document}
+
+\title{Sample Document}
+\author{Nicola Talbot}
+\maketitle
+
+Long citation in text:
+\biblerefstyle{text}%
+\bibleverse{IICor}(12:15,18,21-33) and
+\bibleverse{Jeremiah}.
+Short citation in footnote\footnote{%
+\biblerefstyle{chicago}\bibleverse{IICor}(12:15,18,21-33) and
+\bibleverse{Jeremiah}}.
+
+\section{Default Style}
+
+\biblerefstyle{default}
+\noindent
+\begin{tabular}{ll}
+\verb|\bibleverse{Ex}| & \bibleverse{Ex}\\
+\verb|\bibleverse{Exodus}(20:)| & \bibleverse{Exodus}(20:)\\
+\verb|\bibleverse{Exod}(20:17)| & \bibleverse{Exod}(20:17)\\
+\verb|\bibleverse{IICo}(12:21)| & \bibleverse{IICo}(12:21)\\
+\verb|\bibleverse{IICor}(12:21-32)| & \bibleverse{IICor}(12:21-32)\\
+\verb|\bibleverse{Ex}(20:17)(21:3)| & \bibleverse{Ex}(20:17)(21:3)\\
+\verb|\bibleverse{Ex}(15:)(17:)(20:)| & \bibleverse{Ex}(15:)(17:)(20:)\\
+\verb|\bibleverse{Rev}(1:2,5,7-9,11)| & \bibleverse{Rev}(1:2,5,7-9,11)\\
+\verb|\bibleverse{IChronicles}(1:3)-(2:7)| &
+\bibleverse{IChronicles}(1:3)-(2:7)
+\end{tabular}
+
+\section{Jerusalem Style}
+This is the style used in the Jerusalem bible.
+\biblerefstyle{jerusalem}
+
+\noindent
+\begin{tabular}{ll}
+\verb|\bibleverse{Ex}| & \bibleverse{Ex}\\
+\verb|\bibleverse{Exodus}(20:)| & \bibleverse{Exodus}(20:)\\
+\verb|\bibleverse{Exod}(20:17)| & \bibleverse{Exod}(20:17)\\
+\verb|\bibleverse{IICo}(12:21)| & \bibleverse{IICo}(12:21)\\
+\verb|\bibleverse{IICor}(12:21-32)| & \bibleverse{IICor}(12:21-32)\\
+\verb|\bibleverse{Ex}(20:17)(21:3)| & \bibleverse{Ex}(20:17)(21:3)\\
+\verb|\bibleverse{Ex}(15:)(17:)(20:)| & \bibleverse{Ex}(15:)(17:)(20:)\\
+\verb|\bibleverse{Rev}(1:2,5,7-9,11)| & \bibleverse{Rev}(1:2,5,7-9,11)\\
+\verb|\bibleverse{IChronicles}(1:3)-(2:7)| &
+\bibleverse{IChronicles}(1:3)-(2:7)
+\end{tabular}
+
+\section{Anglo-Saxon Style}
+
+\biblerefstyle{anglosaxon}
+\noindent
+\begin{tabular}{ll}
+\verb|\bibleverse{Ex}| & \bibleverse{Ex}\\
+\verb|\bibleverse{Exodus}(20:)| & \bibleverse{Exodus}(20:)\\
+\verb|\bibleverse{Exod}(20:17)| & \bibleverse{Exod}(20:17)\\
+\verb|\bibleverse{IICo}(12:21)| & \bibleverse{IICo}(12:21)\\
+\verb|\bibleverse{IICor}(12:21-32)| & \bibleverse{IICor}(12:21-32)\\
+\verb|\bibleverse{Ex}(20:17)(21:3)| & \bibleverse{Ex}(20:17)(21:3)\\
+\verb|\bibleverse{Ex}(15:)(17:)(20:)| & \bibleverse{Ex}(15:)(17:)(20:)\\
+\verb|\bibleverse{Rev}(1:2,5,7-9,11)| & \bibleverse{Rev}(1:2,5,7-9,11)\\
+\verb|\bibleverse{IChronicles}(1:3)-(2:7)| &
+\bibleverse{IChronicles}(1:3)-(2:7)
+\end{tabular}
+
+\section{Journal of Ecclesiastical History}
+
+\biblerefstyle{JEH}
+\noindent
+\begin{tabular}{ll}
+\verb|\bibleverse{Ex}| & \bibleverse{Ex}\\
+\verb|\bibleverse{Exodus}(20:)| & \bibleverse{Exodus}(20:)\\
+\verb|\bibleverse{Exod}(20:17)| & \bibleverse{Exod}(20:17)\\
+\verb|\bibleverse{IICo}(12:21)| & \bibleverse{IICo}(12:21)\\
+\verb|\bibleverse{IICor}(12:21-32)| & \bibleverse{IICor}(12:21-32)\\
+\verb|\bibleverse{Ex}(20:17)(21:3)| & \bibleverse{Ex}(20:17)(21:3)\\
+\verb|\bibleverse{Ex}(15:)(17:)(20:)| & \bibleverse{Ex}(15:)(17:)(20:)\\
+\verb|\bibleverse{Rev}(1:2,5,7-9,11)| & \bibleverse{Rev}(1:2,5,7-9,11)\\
+\verb|\bibleverse{IChronicles}(1:3)-(2:7)| &
+\bibleverse{IChronicles}(1:3)-(2:7)
+\end{tabular}
+
+\section{Modern Humanities Research Association}
+
+\biblerefstyle{MHRA}
+\noindent
+\begin{tabular}{ll}
+\verb|\bibleverse{Ex}| & \bibleverse{Ex}\\
+\verb|\bibleverse{Exodus}(20:)| & \bibleverse{Exodus}(20:)\\
+\verb|\bibleverse{Exod}(20:17)| & \bibleverse{Exod}(20:17)\\
+\verb|\bibleverse{IICo}(12:21)| & \bibleverse{IICo}(12:21)\\
+\verb|\bibleverse{IICor}(12:21-32)| & \bibleverse{IICor}(12:21-32)\\
+\verb|\bibleverse{Ex}(20:17)(21:3)| & \bibleverse{Ex}(20:17)(21:3)\\
+\verb|\bibleverse{Ex}(15:)(17:)(20:)| & \bibleverse{Ex}(15:)(17:)(20:)\\
+\verb|\bibleverse{Rev}(1:2,5,7-9,11)| & \bibleverse{Rev}(1:2,5,7-9,11)\\
+\verb|\bibleverse{IChronicles}(1:3)-(2:7)| &
+\bibleverse{IChronicles}(1:3)-(2:7)
+\end{tabular}
+
+\section{Novum Testamentum Graece (Nestle-Aland)}
+
+\biblerefstyle{NTG}
+\noindent
+\begin{tabular}{ll}
+\verb|\bibleverse{Ex}| & \bibleverse{Ex}\\
+\verb|\bibleverse{Exodus}(20:)| & \bibleverse{Exodus}(20:)\\
+\verb|\bibleverse{Exod}(20:17)| & \bibleverse{Exod}(20:17)\\
+\verb|\bibleverse{IICo}(12:21)| & \bibleverse{IICo}(12:21)\\
+\verb|\bibleverse{IICor}(12:21-32)| & \bibleverse{IICor}(12:21-32)\\
+\verb|\bibleverse{Ex}(20:17)(21:3)| & \bibleverse{Ex}(20:17)(21:3)\\
+\verb|\bibleverse{Ex}(15:)(17:)(20:)| & \bibleverse{Ex}(15:)(17:)(20:)\\
+\verb|\bibleverse{Rev}(1:2,5,7-9,11)| & \bibleverse{Rev}(1:2,5,7-9,11)\\
+\verb|\bibleverse{IChronicles}(1:3)-(2:7)| &
+\bibleverse{IChronicles}(1:3)-(2:7)
+\end{tabular}
+
+\section{MLA Style}
+
+\biblerefstyle{MLA}
+\noindent
+\begin{tabular}{ll}
+\verb|\bibleverse{Ex}| & \bibleverse{Ex}\\
+\verb|\bibleverse{Exodus}(20:)| & \bibleverse{Exodus}(20:)\\
+\verb|\bibleverse{Exod}(20:17)| & \bibleverse{Exod}(20:17)\\
+\verb|\bibleverse{IICo}(12:21)| & \bibleverse{IICo}(12:21)\\
+\verb|\bibleverse{IICor}(12:21-32)| & \bibleverse{IICor}(12:21-32)\\
+\verb|\bibleverse{Ex}(20:17)(21:3)| & \bibleverse{Ex}(20:17)(21:3)\\
+\verb|\bibleverse{Ex}(15:)(17:)(20:)| & \bibleverse{Ex}(15:)(17:)(20:)\\
+\verb|\bibleverse{Rev}(1:2,5,7-9,11)| & \bibleverse{Rev}(1:2,5,7-9,11)\\
+\verb|\bibleverse{IChronicles}(1:3)-(2:7)| &
+\bibleverse{IChronicles}(1:3)-(2:7)
+\end{tabular}
+
+\section{Chicago Style}
+
+\biblerefstyle{chicago}
+\noindent
+\begin{tabular}{ll}
+\verb|\bibleverse{Ex}| & \bibleverse{Ex}\\
+\verb|\bibleverse{Exodus}(20:)| & \bibleverse{Exodus}(20:)\\
+\verb|\bibleverse{Exod}(20:17)| & \bibleverse{Exod}(20:17)\\
+\verb|\bibleverse{IICo}(12:21)| & \bibleverse{IICo}(12:21)\\
+\verb|\bibleverse{IICor}(12:21-32)| & \bibleverse{IICor}(12:21-32)\\
+\verb|\bibleverse{Ex}(20:17)(21:3)| & \bibleverse{Ex}(20:17)(21:3)\\
+\verb|\bibleverse{Ex}(15:)(17:)(20:)| & \bibleverse{Ex}(15:)(17:)(20:)\\
+\verb|\bibleverse{Rev}(1:2,5,7-9,11)| & \bibleverse{Rev}(1:2,5,7-9,11)\\
+\verb|\bibleverse{IChronicles}(1:3)-(2:7)| &
+\bibleverse{IChronicles}(1:3)-(2:7)
+\end{tabular}
+
+\section{Text Style}
+This style prints the citation out in full. It's based
+on `default', and uses the fmtcount package to convert
+the numbers into words.
+
+\biblerefstyle{text}
+\raggedright
+
+\begin{itemize}
+\item \verb|\bibleverse{Ex}| \bibleverse{Ex}
+\item \verb|\bibleverse{Exodus}(20:)| \bibleverse{Exodus}(20:)
+\item \verb|\bibleverse{Exod}(20:17)| \bibleverse{Exod}(20:17)
+\item \verb|\bibleverse{IICo}(12:21)| \bibleverse{IICo}(12:21)
+\item \verb|\bibleverse{IICor}(12:21-32)| \bibleverse{IICor}(12:21-32)
+\item \verb|\bibleverse{Ex}(20:17)(21:3)| \bibleverse{Ex}(20:17)(21:3)
+\item \verb|\bibleverse{Ex}(15:)(17:)(20:)| \bibleverse{Ex}(15:)(17:)(20:)
+\item \verb|\bibleverse{Rev}(1:2,5,7-9,11)| \bibleverse{Rev}(1:2,5,7-9,11)
+\item \verb|\bibleverse{IChronicles}(1:3)-(2:7)|
+\bibleverse{IChronicles}(1:3)-(2:7)
+\end{itemize}
+
+\section{MHRA Style---Indexed}
+
+\biblerefstyle{MHRA}
+\noindent
+\begin{tabular}{ll}
+\verb|\ibibleverse{Ex}| & \ibibleverse{Ex}\\
+\verb|\ibibleverse{Exodus}(9:)| & \ibibleverse{Exodus}(9:)\\
+\verb|\ibibleverse{Exod}(20:17)| & \ibibleverse{Exod}(20:17)\\
+\verb|\ibibleverse{Exod}(20:)| & \ibibleverse{Exod}(20:)\\
+\verb|\ibibleverse{IICo}(12:21)| & \ibibleverse{IICo}(12:21)\\
+\verb|\ibibleverse{IICor}(12:21-32)| & \ibibleverse{IICor}(12:21-32)\\
+\verb|\ibibleverse{Ex}(20:17)(21:3)| & \ibibleverse{Ex}(20:17)(21:3)\\
+\verb|\ibibleverse{Ex}(15:)(17:)(20:)| & \ibibleverse{Ex}(15:)(17:)(20:)\\
+\verb|\ibibleverse{Rev}(1:2,5,7-9,11)| & \ibibleverse{Rev}(1:2,5,7-9,11)\\
+\verb|\ibibleverse{IChronicles}(1:3)-(2:7)| &
+\ibibleverse{IChronicles}(1:3)-(2:7)\\
+\verb|\ibibleverse{IIPeter}(3:8-15a)| &
+\ibibleverse{IIPeter}(3:8-15a)
+\end{tabular}
+
+\section{New Style}
+
+This new style is based on the `default' style, but
+has verses in lower case Roman numerals, and redefines
+``Revelation'' as ``Apocalypse''.
+
+\begin{verbatim}
+\newbiblerefstyle{sample}{%
+\biblerefstyle{default}%
+\renewcommand{\BRversestyle}[1]{\romannumeral##1}%
+\setbooktitle{Revelation}{Apocalyse}%
+}
+\end{verbatim}
+\newbiblerefstyle{sample}{%
+\biblerefstyle{default}%
+\renewcommand{\BRversestyle}[1]{\romannumeral##1}%
+\setbooktitle{Revelation}{Apocalyse}%
+}
+
+\biblerefstyle{sample}
+\noindent
+\begin{tabular}{ll}
+\verb|\bibleverse{Ex}| & \bibleverse{Ex}\\
+\verb|\bibleverse{Exodus}(20:)| & \bibleverse{Exodus}(20:)\\
+\verb|\bibleverse{Exod}(20:17)| & \bibleverse{Exod}(20:17)\\
+\verb|\bibleverse{IICo}(12:21)| & \bibleverse{IICo}(12:21)\\
+\verb|\bibleverse{IICor}(12:21-32)| & \bibleverse{IICor}(12:21-32)\\
+\verb|\bibleverse{Ex}(20:17)(21:3)| & \bibleverse{Ex}(20:17)(21:3)\\
+\verb|\bibleverse{Ex}(15:)(17:)(20:)| & \bibleverse{Ex}(15:)(17:)(20:)\\
+\verb|\bibleverse{Rev}(1:2,5,7-9,11)| & \bibleverse{Rev}(1:2,5,7-9,11)\\
+\verb|\bibleverse{IChronicles}(1:3)-(2:7)| &
+\bibleverse{IChronicles}(1:3)-(2:7)
+\end{tabular}
+
+\section{Partial References}
+
+Only display verse numbers, but index under book and chapter:
+\ibiblevs{Gen}(19:3-4).
+
+Display only chapter and verses, but index under book:
+\ibiblechvs{Gen}(4:1-5).
+
+Complete indexed reference: \ibibleverse{Gen}(20:1-4).
+
+Display chapter range with no verses: \ibibleverse{Gen}(1,4-6,8-9,11:).
+
+Display chapter range with no verses (no index): \bibleverse{John}(1,3,4-6,8:).
+
+\printindex
+
+\end{document}
+\endinput
+%%
+%% End of file `sample.tex'.
