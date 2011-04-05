@@ -11,16 +11,17 @@
 %\documentclass[paper=7.44in:9.68in,pagesize=pdftex,11pt,DIV=11]{scrbook}
 % See about setting margins with DIV and putting code as \footnotesize
 %\documentclass[paper=189mm:246mm,pagesize=pdftex,12pt,DIV=10]{scrbook}
-% Royal        => 156mm:234mm
-%\documentclass[paper=156mm:234mm,pagesize=pdftex,12pt]{scrbook}
+% Royal        => 156mm:234mm = 6.13x9.21
+%  this is 6.14x9.21 on createspace
+\documentclass[paper=156mm:234mm,pagesize=pdftex,12pt,DIV=calc]{scrbook}
 % Roman        => 152mm:229mm
 %\documentclass[paper=152mm:229mm,pagesize=pdftex,12pt]{scrbook}
-\documentclass{scrbook}
+%\documentclass{scrbook}
 \usepackage[french]{babel} %language selection
 \selectlanguage{french}
-\shorthandoff{:}
 
-
+\usepackage{amsmath}
+\usepackage[mathletters]{ucs}
 \usepackage[utf8x]{inputenc}
 %\usepackage{fancyvrb}
 %\usepackage{graphicx}
@@ -39,9 +40,16 @@
 \usepackage{type1cm} % scalable fonts
 \usepackage{lettrine}
 
+% Make nice chapter numbers
+\usepackage{lmodern}
+\renewcommand*{\chapterformat}{%
+  \fontsize{80}{88}\selectfont\thechapter\autodot\enskip}
+
 % bibleref
 \usepackage{bibleref-french}
 \AtBeginDocument{\shorthandoff{:}}
+
+\hfuzz = .6pt % avoid black boxes
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
