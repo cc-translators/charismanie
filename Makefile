@@ -38,9 +38,9 @@ booklet: $(BOOKLET_PS)
 
 clean:
 	rm -f *.pdf *.ps *.aux *.log *.out *.lol
-	rm -f ../*.aux
 	rm -f *.idx *.ind *.ilg *.toc *.dvi
 	rm -f chapters/*.aux
+	rm -f settings/*.aux
 
 help:
 	@echo "To build the book type:"
