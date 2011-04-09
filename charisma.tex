@@ -43,6 +43,15 @@
 \usepackage{type1cm} % scalable fonts
 \usepackage{lettrine}
 
+% tune TOC
+\usepackage{tocloft}
+\renewcommand\cftchapfont{\scshape }
+\renewcommand\cftchappresnum{ Chapter\ }
+\renewcommand\cftchapaftersnumb{\newline\normalfont}
+\renewcommand\cftchapleader{\cftdotfill{1}}
+\renewcommand\cftchappagefont{\normalfont}
+
+
 % Make nice chapter numbers
 \usepackage{lmodern}
 \renewcommand*{\chapterformat}{%
@@ -133,7 +142,6 @@ Traduction~: Raphaël Pinson
 \vfill
 \mbox{}
 \newpage
-
 
 
 \tableofcontents
