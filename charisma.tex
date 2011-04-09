@@ -39,135 +39,44 @@
 \usepackage{url}
 \usepackage[activate={true,nocompatibility}]{microtype}
 
-% lettrines
-\usepackage{type1cm} % scalable fonts
-\usepackage{lettrine}
 
-% tune TOC
-\usepackage{tocloft}
-\renewcommand\cftchapfont{\scshape }
-\renewcommand\cftchappresnum{ Chapitre\ }
-\renewcommand\cftchapaftersnumb{\newline\normalfont}
-\renewcommand\cftchapleader{\cftdotfill{1}}
-\renewcommand\cftchappagefont{\normalfont}
+% Include settings
+\include{settings/lettrines}
+\include{settings/toc}
+\include{settings/sections}
+\include{settings/bibleref}
+\include{settings/index}
+\include{settings/paragraphs}
 
-
-% Make nice chapter headings
-%\usepackage{lmodern}
-%\renewcommand*{\chapterformat}{%
-%  \fontsize{80}{88}\selectfont\thechapter\autodot\enskip}
-%\usepackage{lmodern}
-%\renewcommand*{\chapterformat}{%
-%  \fontsize{20}{22}\selectfont{}Chapitre~\thechapter\autodot\enskip}
-\usepackage{titlesec}
-\titleformat{\chapter}[display]
-  {\normalfont\Large\itshape\raggedleft}
-  {\chaptertitlename\ \thechapter}{10pt}
-  {\normalfont\Huge}
-\titlespacing*{\chapter}
-  {0pt}{10pt}{20pt}
-\titleformat*{\section}{\itshape}
-
-
-% bibleref
-\usepackage{bibleref-french}
-\AtBeginDocument{\shorthandoff{:}}
-% Redefine chapter/verse separator
-\renewcommand*{\BRchvsep}{.}%
-% We say "Esaïe" in the Colombe version
-\setbooktitle{Is}{Esaïe}%
-
-\hfuzz = .6pt % avoid black boxes
-
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-\setcounter{secnumdepth}{0}
+% Include macros
+\include{macros}
 
 % prerender for chapter titles
 \PrerenderUnicode{À}
-
-% Make indexes
-\usepackage{makeidx}
-\makeindex
-
-% NdT macro
-\newcommand{\NdT}[1]{\footnote{NdT~: #1}}
-
-% Seigneur macro
-\newcommand{\Seigneur}{\textsc{Seigneur}}
-
 
 \title{Charismatique ou \og charismaniaque \fg{}?}
 \author{Chuck Smith}
 
 \begin{document}
-% Rule for titles
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
-\pagestyle{empty}
-\pagenumbering{gobble}
-
-%\maketitle
-\begin{titlepage}
-\begin{center}
-\mbox{}
-\vfill
-\HRule \\[0.4cm]
-{ \LARGE \bfseries Charismatique\\ ou\\ \og charismaniaque \fg{}?}\\[0.4cm]
-
-\HRule \\[1.5cm]
-\textsc{\Large Chuck Smith}\\[1.5cm]
-\vfill
-\mbox{}
-\end{center}
-\end{titlepage}
-
-
-% Copyright page
-\newpage
-\mbox{}
-\vfill
-Titre en anglais~: \emph{Charisma vs. Charismania}
-
-Copyright \copyright{} 1992, 2000 by The Word For Today Publishers, P.O. Box 8000, \\
-Costa Mesa, CA 92628. (Previously published by Harvest House Publishers, 1983.) \\
-Site Internet: \url{http://www.thewordfortoday.org}
-
-Toutes les citations bibliques sont tirées de la version Louis Segond de 1978
- dite \og La Colombe \fg{}.
-
-Traduction~: Raphaël Pinson
-
-
-% Dedication page
-\newpage
-\mbox{}
-\vfill
-\begin{center}
-\HRule \\[0.4cm]
-\emph{À tous ces chers saints de Dieu qui m'ont aimé et encouragé comme leur
- pasteur durant les dix-sept premières années de mon ministère, alors que je
- luttais pour faire les œuvres de Dieu au moyen de ma chair -- ils ont été
- si patients avec moi dans ma transition de la charismanie au charisme.}
-\HRule \\[1.5cm]
-\end{center}
-\vfill
-\mbox{}
-\newpage
-
+\include{title}
+\include{copyright}
+\include{dedication}
 
 \tableofcontents
 
+% Begin numbering from here
 \cleardoublepage
 \pagestyle{headings}
 \pagenumbering{arabic}
 
-
+% All chapters
 \include{chapters/01_a_la_recherche}
 \include{chapters/02_le_saint_esprit_est_dieu}
 \include{chapters/03_la_personne_de_l_esprit_saint}
 
 
+% Index
 \printindex
 
 \end{document}
