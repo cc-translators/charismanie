@@ -75,6 +75,28 @@
     \renewcommand\chaphead{#2}%
     \oldchapter[#1]{#2}}
 
+% Set headers and footers
+%\automark[chapter]{section}
+%\setheadsepline{.4pt}
+\cfoot{\rule{6mm}{1.0pt}\\\pagemark}
+\ofoot{}
+\cehead{\textls{\textsc{Charismatique ou \og charismaniaque \fg{}?}}}
+\lehead{}
+\cohead{\textls{\textsc{\chaphead}}}
+\ohead{}
+\renewcommand*{\chapterpagestyle}{scrheadings}
+
+%\newpagestyle{charismanie}{% header
+%   {\hfill\textls{\textsc{\chaphead}}\hfill}
+%   {\hfill\textls{\textsc{Charismatique ou \og charismaniaque \fg{}~?}}\hfill}
+%}{ % footer
+%   {\hfill\pagemark\hfill}
+%   {\hfill\pagemark\hfill}
+%   {\hfill\rule{6mm}{1.0pt}\\\pagemark\hfill}
+%}
+%\renewcommand*{\chapterpagestyle}{charismanie}
+
+
 %%%%%%%%%%%%%%%%%
 % Useful macros
 %%%%%%%%%%%%%%%%%
