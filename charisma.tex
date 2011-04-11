@@ -40,6 +40,10 @@
 \usepackage[activate={true,nocompatibility}]{microtype}
 
 
+% header and footer
+\usepackage[automark]{scrpage2}
+
+
 % Include settings
 \include{settings/lettrines}
 \include{settings/toc}
@@ -57,6 +61,16 @@
 \title{Charismatique ou \og charismaniaque \fg{}?}
 \author{Chuck Smith}
 
+% Define \chaphead to be used in section headings
+\let\oldchapter\chapter
+\newcommand\temphead{}
+\newcommand\chaphead{}
+\renewcommand\chapter[2][\temphead]{%
+    \renewcommand\temphead{#2}%
+    \renewcommand\chaphead{#2}%
+    \oldchapter[#1]{#2}}
+
+
 \begin{document}
 
 \setlength{\parindent}{5mm}
@@ -69,8 +83,18 @@
 
 % Begin numbering from here
 \cleardoublepage
-\pagestyle{headings}
+\pagestyle{scrheadings}
+\automark[chapter]{section}
+%\setheadsepline{.4pt}
+\cfoot{\rule{6mm}{1.0pt}\\\pagemark}
+\ofoot{}
+\cehead{\textsc{Charismatique ou \og charismaniaque \fg{}?}}
+\lehead{}
+\cohead{\textsc{\chaphead}}
+\ohead{}
+
 \pagenumbering{arabic}
+
 
 % All chapters
 \include{chapters/01_a_la_recherche}
