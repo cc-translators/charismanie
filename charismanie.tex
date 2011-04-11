@@ -19,33 +19,7 @@
 % Digest => 5.5x8.5
 %\documentclass[paper=5.5in:8.5in,pagesize=pdftex,12pt,DIV=calc]{scrbook}
 %\documentclass{scrbook}
-\usepackage[french]{babel} %language selection
-\selectlanguage{french}
 
-\usepackage{amsmath}
-\usepackage[mathletters]{ucs}
-\usepackage[utf8x]{inputenc}
-%\usepackage{fancyvrb}
-%\usepackage{graphicx}
-\usepackage[breaklinks=true,unicode=true]{hyperref}
-\hypersetup{colorlinks, 
-           citecolor=black,
-           filecolor=black,
-           linkcolor=black,
-           urlcolor=black,
-           bookmarksopen=true,
-           pdfpagelayout=TwoPageRight,
-           pdftex}
-\usepackage{url}
-\usepackage[activate={true,nocompatibility}]{microtype}
-
-
-% header and footer
-\usepackage[automark]{scrpage2}
-
-
-% Include settings
-\usepackage{bibleref-french-colombe}
 \usepackage{charismanie}
 
 
@@ -54,15 +28,6 @@
 
 \title{Charismatique ou \og charismaniaque \fg{}?}
 \author{Chuck Smith}
-
-% Define \chaphead to be used in section headings
-\let\oldchapter\chapter
-\newcommand\temphead{}
-\newcommand\chaphead{}
-\renewcommand\chapter[2][\temphead]{%
-    \renewcommand\temphead{#2}%
-    \renewcommand\chaphead{#2}%
-    \oldchapter[#1]{#2}}
 
 
 \begin{document}

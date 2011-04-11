@@ -1,5 +1,32 @@
 \ProvidesPackage{charismanie}
 
+\usepackage[french]{babel} %language selection
+\selectlanguage{french}
+
+\usepackage{amsmath}
+\usepackage[mathletters]{ucs}
+\usepackage[utf8x]{inputenc}
+%\usepackage{fancyvrb}
+%\usepackage{graphicx}
+\usepackage[breaklinks=true,unicode=true]{hyperref}
+\hypersetup{colorlinks, 
+           citecolor=black,
+           filecolor=black,
+           linkcolor=black,
+           urlcolor=black,
+           bookmarksopen=true,
+           pdfpagelayout=TwoPageRight,
+           pdftex}
+\usepackage{url}
+\usepackage[activate={true,nocompatibility}]{microtype}
+
+% bible references
+\usepackage{bibleref-french-colombe}
+
+% header and footer
+\usepackage[automark]{scrpage2}
+
+
 % Make indexes
 \usepackage{makeidx}
 \makeindex
@@ -37,7 +64,19 @@
 \renewcommand\cftchapaftersnumb{\newline\normalfont}
 \renewcommand\cftchapleader{\cftdotfill{1}}
 \renewcommand\cftchappagefont{\normalfont}
+
+% Define \chaphead to be used in section headings
+\let\oldchapter\chapter
+\newcommand\temphead{}
+\newcommand\chaphead{}
+\renewcommand\chapter[2][\temphead]{%
+    \renewcommand\temphead{#2}%
+    \renewcommand\chaphead{#2}%
+    \oldchapter[#1]{#2}}
+
+%%%%%%%%%%%%%%%%%
 % Useful macros
+%%%%%%%%%%%%%%%%%
 
 % NdT macro
 \newcommand{\NdT}[1]{\footnote{NdT~: #1}}

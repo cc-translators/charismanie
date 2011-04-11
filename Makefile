@@ -1,4 +1,4 @@
-BOOK_NAME=charisma
+BOOK_NAME=charismanie
 BOOK_TEX=$(BOOK_NAME).tex
 BOOK_PDF=$(BOOK_NAME).pdf
 BOOK_IDX=$(BOOK_NAME).idx
