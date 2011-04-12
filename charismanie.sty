@@ -78,13 +78,14 @@
 % Set headers and footers
 %\automark[chapter]{section}
 %\setheadsepline{.4pt}
-\cfoot{\rule{6mm}{0.8pt}\\\pagemark}
-\ofoot{}
-\cehead{\textls{\textsc{Charismatique ou \og charismaniaque \fg{}~?}}}
-\lehead{}
-\cohead{\textls{\textsc{\chaphead}}}
-\ohead{}
-\renewcommand*{\chapterpagestyle}{scrheadings}
+\cfoot[\rule{6mm}{0.8pt}\\\pagemark]{\rule{6mm}{0.8pt}\\\pagemark}
+\ofoot[]{}
+\cehead[]{\textls{\textsc{Charismatique ou \og charismaniaque \fg{}~?}}}
+\lehead[]{}
+\cohead[]{\textls{\textsc{\chaphead}}}
+\ohead[]{}
+
+\renewcommand*{\chapterpagestyle}{scrplain}
 
 %\newpagestyle{charismanie}{% header
 %   {\hfill\textls{\textsc{\chaphead}}\hfill}
