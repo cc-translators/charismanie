@@ -58,6 +58,11 @@
   {0pt}{10pt}{20pt}
 \titleformat*{\section}{\Large\itshape}
 
+% Get title
+\makeatletter
+\let\titlehead\@title
+\makeatother
+
 % setting table of contents
 \usepackage{tocloft}
 \renewcommand\cftchapfont{\scshape }
@@ -80,7 +85,7 @@
 %\setheadsepline{.4pt}
 \cfoot[\rule{6mm}{0.8pt}\\\pagemark]{\rule{6mm}{0.8pt}\\\pagemark}
 \ofoot[]{}
-\cehead[]{\textls{\textsc{Charismatique ou \og charismaniaque \fg{}~?}}}
+\cehead[]{\textls{\textsc{\titlehead}}}
 \lehead[]{}
 \cohead[]{\textls{\textsc{\chaphead}}}
 \ohead[]{}
@@ -110,4 +115,6 @@
 
 % Rule for titles
 \newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
+
+
 
