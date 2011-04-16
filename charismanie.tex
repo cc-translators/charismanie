@@ -13,12 +13,32 @@
 %\documentclass[paper=189mm:246mm,pagesize=pdftex,12pt,DIV=10]{scrbook}
 % Royal        => 156mm:234mm = 6.13x9.21
 %  this is 6.14x9.21 on createspace
-\documentclass[paper=6.13in:9.21in,pagesize=pdftex,12pt,DIV=calc]{scrbook}
+%\documentclass[paper=6.13in:9.21in,pagesize=pdftex,12pt,DIV=calc]{scrbook}
 % Roman        => 152mm:229mm
 %\documentclass[paper=152mm:229mm,pagesize=pdftex,12pt]{scrbook}
 % Digest => 5.5x8.5
 %\documentclass[paper=5.5in:8.5in,pagesize=pdftex,12pt,DIV=calc]{scrbook}
 %\documentclass{scrbook}
+
+% WITHOUT BLEED
+% US Trade => 6x9
+\documentclass[paper=6in:9in,pagesize=pdftex,
+               headinclude=on,footinclude=on,11pt]{scrbook}
+%
+% Paper width
+% W = 6in
+% Paper height
+% H = 9in
+% Paper gutter
+% BCOR = 0.5in
+% Margin (0.5in imposed on lulu, recommended on createspace)
+% m = 0.5in
+% Text height
+% h = H - 2m = 8in
+% Text width
+% w = W - 2m - BCOR = 4.5in
+\areaset[0.50in]{4.5in}{8in}
+
 
 % Make sure to define title before calling charismanie package
 \title{Charismatique ou \og charismaniaque \fg{}~?}
@@ -52,6 +72,7 @@
 \input{chapters/01_a_la_recherche}
 \input{chapters/02_le_saint_esprit_est_dieu}
 \input{chapters/03_la_personne_de_l_esprit_saint}
+\input{chapters/04_l_oeuvre_de_l_esprit-saint_dans_la_vie_du_croyant}
 
 \vspace{2cm}
 \filcenter\aldine
