@@ -21,6 +21,7 @@
 \usepackage[activate={true,nocompatibility}]{microtype}
 
 % nice serif font
+\usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
 % Use fourier ornaments
@@ -40,6 +41,7 @@
 % setting lettrines
 \usepackage{type1cm} % scalable fonts
 \usepackage{lettrine}
+\usepackage{xcolor}
 % set paragraphs
 
 \hfuzz = .6pt % avoid black boxes
@@ -116,5 +118,9 @@
 % Rule for titles
 \newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
 
-
+% lettrines
+\renewcommand{\LettrineFontHook}{\color[gray]{0.5}}
+\newcommand{\chlettrine}[3][]{
+  \lettrine[lines=3,lhang=0.33,loversize=0.25,#1]{#2}{#3}
+}
 
