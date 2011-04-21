@@ -58,7 +58,12 @@
   {\normalfont\Huge}
 \titlespacing*{\chapter}
   {0pt}{10pt}{20pt}
-\titleformat*{\section}{\Large\itshape}
+\titleformat{\section}%
+  {\Large\itshape} % format
+  {} % label
+  {10pt} % sep
+  {} % before
+  [\vspace{-4mm}] % after
 
 % Get title
 \makeatletter
