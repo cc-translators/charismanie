@@ -12,6 +12,9 @@ all: $(BOOK_NAME).pdf $(BOOK_NAME)_numbered.pdf
 	TEXINPUTS=$(TEXINPUTS) pdflatex -interaction=batchmode $<
 	TEXINPUTS=$(TEXINPUTS) pdflatex -interaction=batchmode $<
 
+upload:
+	ncftpput -f ~/.ncftp/cc.cfg calvary/ *.pdf
+
 clean:
 	rm -f *.pdf *.ps *.aux *.log *.out *.lol
 	rm -f *.idx *.ind *.ilg *.toc *.dvi
