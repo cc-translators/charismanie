@@ -30,7 +30,7 @@ for c in $CHAPDIR/fr/*.tex; do
    #echo "\input{$SPLITDIR/fr/${chnum}_00}" >> $sfile
    enchap=$(sed -e 's@\\chapter{\(.*\)}@\1@' $SPLITDIR/en/${chnum}_00.tex)
    frchap=$(sed -e 's@\\chapter{\(.*\)}@\1@' $SPLITDIR/fr/${chnum}_00.tex)
-   echo "\\chapter{$enchap\\\\$frchap}" > $sfile
+   echo "\\chapter{$enchap \\\\$frchap}" > $sfile
 
 
    echo '\normalfont' >> $sfile
