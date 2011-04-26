@@ -30,6 +30,6 @@ clean:
 	rm -f chapters/fr/*.aux
 	rm -f chapters/en/*.aux
 	rm -f make-split-stamp split-stamp
-	rm -rf splits
+	rm -rf splits split
 
 
