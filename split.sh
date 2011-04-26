@@ -35,7 +35,7 @@ for c in $CHAPDIR/fr/*.tex; do
 
    echo '\normalfont' >> $sfile
 
-   echo '\begin{Parallel}{2in}{2in}' >> $sfile
+   echo '\begin{Parallel}{8.5cm}{8.5cm}' >> $sfile
    for pfr in $SPLITDIR/fr/${chnum}_*.tex; do
         secname=$(basename $pfr .tex)
         secnum=${secname##*_}
