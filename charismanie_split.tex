@@ -1,0 +1,95 @@
+%
+% Requirements:
+%  - pdflatex
+%  - koma-sript
+%
+
+% Adjust book size
+% as per http://www.lulu.com/fr/publish/books/?cid=nav_bks
+% Crown Quarto => 189mm:246mm = 7.44x9.68
+%  this is 7.44X9.69 on createspace
+%\documentclass[paper=7.44in:9.68in,pagesize=pdftex,11pt,DIV=11]{scrbook}
+% See about setting margins with DIV and putting code as \footnotesize
+%\documentclass[paper=189mm:246mm,pagesize=pdftex,12pt,DIV=10]{scrbook}
+% Royal        => 156mm:234mm = 6.13x9.21
+%  this is 6.14x9.21 on createspace
+%\documentclass[paper=6.13in:9.21in,pagesize=pdftex,12pt,DIV=calc]{scrbook}
+% Roman        => 152mm:229mm
+%\documentclass[paper=152mm:229mm,pagesize=pdftex,12pt]{scrbook}
+% Digest => 5.5x8.5
+%\documentclass[paper=5.5in:8.5in,pagesize=pdftex,12pt,DIV=calc]{scrbook}
+%\documentclass{scrbook}
+
+% WITHOUT BLEED
+% US Trade => 6x9
+\documentclass[paper=6in:9in,pagesize=pdftex,
+               headinclude=on,footinclude=on,11pt]{scrbook}
+%
+% Paper width
+% W = 6in
+% Paper height
+% H = 9in
+% Paper gutter
+% BCOR = 0.5in
+% Margin (0.5in imposed on lulu, recommended on createspace)
+% m = 0.5in
+% Text height
+% h = H - 2m = 8in
+% Text width
+% w = W - 2m - BCOR = 4.5in
+\areaset[0.50in]{4.5in}{8in}
+
+
+% Make sure to define title before calling charismanie package
+\title{Charismatique ou \og charismaniaque \fg{}~?}
+\author{Chuck Smith}
+
+
+% Nicer centering + ragged
+\usepackage[newcommands]{ragged2e}
+
+
+% Number lines
+\usepackage{lineno}
+
+
+\usepackage{charismanie}
+
+
+% prerender for chapter titles
+\PrerenderUnicode{À}
+
+% parallel view
+\usepackage{parallel}
+
+
+\begin{document}
+
+\setlength{\parindent}{5mm}
+
+\include{title}
+\include{copyright}
+\include{dedication}
+
+\cleardoublepage
+\tableofcontents
+
+% Begin numbering from here
+\cleardoublepage
+\pagestyle{scrheadings}
+\pagenumbering{arabic}
+
+
+% All chapters
+%\pagewiselinenumbers
+\input{splits/01}
+
+\vspace{2cm}
+\filcenter\aldine
+\vfill
+
+% Index
+\printindex
+
+\end{document}
+

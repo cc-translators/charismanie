@@ -1,6 +1,6 @@
 \ProvidesPackage{charismanie}
 
-\usepackage[french]{babel} %language selection
+\usepackage[french,english]{babel} %language selection
 \selectlanguage{french}
 
 \usepackage{amsmath}
@@ -52,14 +52,18 @@
 
 % Make nice chapter headings
 \usepackage{titlesec}
+\newcommand{\chapstyle}{\normalfont\Large\itshape\raggedleft}
+\newcommand{\chapheadstyle}{\normalfont\Huge}
 \titleformat{\chapter}[display]
-  {\normalfont\Large\itshape\raggedleft}
+  {\chapstyle}
   {\chaptertitlename\ \thechapter}{10pt}
-  {\normalfont\Huge}
+  {\chapheadstyle}
 \titlespacing*{\chapter}
   {0pt}{10pt}{20pt}
+
+\newcommand{\secstyle}{\Large\itshape}
 \titleformat{\section}%
-  {\Large\itshape} % format
+  {\secstyle} % format
   {} % label
   {10pt} % sep
   {} % before
