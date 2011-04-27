@@ -3,17 +3,26 @@
 \pagenumbering{gobble}
 
 %\maketitle
+\makeatletter
 \begin{titlepage}
 \begin{center}
 \mbox{}
 \vfill
 \HRule \\[0.4cm]
-\textsc{ \Huge Charismatique\\ ou\\[0.4cm] \og charismaniaque \fg{}~?}\\[0.4cm]
+\textsc{ \Huge %
+  \ifthenelse{\@config@split=1}%
+    {Charisma\\ vs.\\[0.4cm] Charismania\\[0.4cm]\HRule\\[0.4cm]}{}
+Charismatique\\ ou\\[0.4cm] \og charismaniaque \fg{}~?}\\[0.4cm]
 
 \HRule \\[1.5cm]
+
+\ifthenelse{\@config@split=1}%
+   {\Large Version de revision du \today}{}
+
 \textsc{\Large Chuck Smith}\\[1.5cm]
 \vfill
 \mbox{}
 \end{center}
 \end{titlepage}
+\makeatother
 

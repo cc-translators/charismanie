@@ -43,9 +43,9 @@
 
 
 % Make sure to define title before calling charismanie package
-\title{Charismatique ou \og charismaniaque \fg{}~?}
+\title{Charisma vs. Charismania\\
+Charismatique ou \og charismaniaque \fg{}~?}
 \author{Chuck Smith}
-
 
 % Nicer centering + ragged
 \usepackage[newcommands]{ragged2e}
@@ -56,6 +56,11 @@
 
 
 \usepackage{charismanie}
+
+% set split mode
+\makeatletter
+\renewcommand{\@config@split}{1}
+\makeatother
 
 
 % prerender for chapter titles
@@ -69,6 +74,8 @@
 
 \setlength{\parindent}{5mm}
 
+% Make title to get date
+%\maketitle
 \include{title}
 \include{copyright}
 \include{dedication}
