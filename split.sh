@@ -57,6 +57,7 @@ for c in $CHAPDIR/fr/*.tex; do
         echo '\ParallelPar' >> $sfile
         echo "\ParallelLText{\selectlanguage{english}\input{$pen}}" >> $sfile
         echo "\ParallelRText{\selectlanguage{french}\input{$pfr}}" >> $sfile
+        grep -q '\section' $pen && echo '\nobreak' >> $sfile
    done
    echo '\end{Parallel}' >> $sfile
 done

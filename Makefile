@@ -14,7 +14,7 @@ all: $(BOOK_NAME).pdf $(BOOK_NAME)_numbered.pdf split split_numbered
 
 make-split: make-split-stamp
 make-split-stamp:
-	-./split.sh
+	./split.sh
 	touch make-split-stamp
 
 split: make-split $(BOOK_NAME)_split.pdf
