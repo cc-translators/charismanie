@@ -7,3 +7,9 @@ To build, type:
 
    make clean && make
 
+PDF/X-1a compliance:
+
+   - Get a preflight checker... PDF Studio Pro has one: http://www.qoppa.com/pdfstudio/demo/download.html
+   - See http://support.river-valley.com/wiki/index.php?title=Generating_PDF/A_compliant_PDFs_from_pdftex
+     for notes on how to fix some problems ;
+
