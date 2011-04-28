@@ -2,3 +2,8 @@ Requires:
   - pdf(la)tex
   - fourier-GUT, from http://www.ctan.org/tex-archive/fonts/fourier-GUT
   - texlive-fonts-extra for fourier-orns
+
+To build, type:
+
+   make clean && make
+
