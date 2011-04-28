@@ -1,8 +1,9 @@
 BOOK_NAME=charismanie
+PDFX_NAME=$(BOOK_NAME)_pdfx_1a
 LINENO_PATT=\\pagewiselinenumbers
 TEXINPUTS=bibleref:
 
-all: $(BOOK_NAME).pdf $(BOOK_NAME)_numbered.pdf split split_numbered
+all: $(BOOK_NAME).pdf $(BOOK_NAME)_numbered.pdf split split_numbered $(PDFX_NAME).pdf
 
 
 %_numbered.tex: %.tex
@@ -31,5 +32,6 @@ clean:
 	rm -f chapters/en/*.aux
 	rm -f make-split-stamp split-stamp
 	rm -rf splits split
+	rm -f *.xmpi
 
 
