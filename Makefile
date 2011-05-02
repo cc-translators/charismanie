@@ -14,6 +14,16 @@ all: $(BOOK_NAME).pdf $(BOOK_NAME)_numbered.pdf split split_numbered $(PDFX_NAME
 	TEXINPUTS=$(TEXINPUTS) pdflatex -interaction=batchmode $<
 	TEXINPUTS=$(TEXINPUTS) pdflatex -interaction=batchmode $<
 
+%.dvi: %.tex
+	TEXINPUTS=$(TEXINPUTS) latex -interaction=batchmode $<
+	TEXINPUTS=$(TEXINPUTS) latex -interaction=batchmode $<
+
+%.html: %.dvi
+	# Generate PDF from DVI to make use of ifpdf
+	dvipdf $<
+	pdftohtml -noframes -enc UTF-8 -s -c $%.pdf
+	
+
 make-split: make-split-stamp
 make-split-stamp:
 	./split.sh
@@ -40,5 +50,8 @@ clean:
 	rm -f make-split-stamp split-stamp
 	rm -rf splits split
 	rm -f *.xmpi
+	rm -f *.html *.png
+	rm -f *.epub *.mobi
+	rm -f *.idv *.lg
 
 

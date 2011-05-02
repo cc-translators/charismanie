@@ -88,9 +88,14 @@
 %\setheadsepline{.4pt}
 \cfoot[\rule{6mm}{0.8pt}\\\pagemark]{\rule{6mm}{0.8pt}\\\pagemark}
 \ofoot[]{}
-\cehead[]{\textls[80]{\textsc{\titlehead}}}
 \lehead[]{}
-\cohead[]{\textls[80]{\textsc{\chaphead}}}
+\ifpdf
+  \cehead[]{\textls[80]{\textsc{\titlehead}}}
+  \cohead[]{\textls[80]{\textsc{\chaphead}}}
+\else
+  \cehead[]{}
+  \cohead[]{}
+\fi
 \ohead[]{}
 
 \renewcommand*{\chapterpagestyle}{scrplain}
@@ -122,7 +127,11 @@
 % lettrines
 \renewcommand{\LettrineFontHook}{\color[gray]{0.5}}
 \newcommand{\chlettrine}[3][]{
-  \lettrine[lines=3,lhang=0.33,loversize=0.25,#1]{#2}{#3}
+  \ifpdf
+    \lettrine[lines=3,lhang=0.33,loversize=0.25,#1]{#2}{#3}
+  \else
+    #2#3
+  \fi
 }
 
 % cadratin
