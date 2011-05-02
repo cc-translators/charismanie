@@ -21,13 +21,13 @@ all: $(BOOK_NAME).pdf $(BOOK_NAME)_numbered.pdf split split_numbered $(PDFX_NAME
 %.html: %.dvi
 	# Generate PDF from DVI to make use of ifpdf
 	dvipdf $<
-	pdftohtml -noframes -enc UTF-8 -s -c $(BOOK_NAME).pdf
+	pdftohtml -noframes -enc UTF-8 -s -c $*.pdf
 
 %.epub: %.html
-	ebook-convert $< $*
+	ebook-convert $< $@
 
 %.mobi: %.html
-	ebook-convert $< $*
+	ebook-convert $< $@
 	
 
 make-split: make-split-stamp
