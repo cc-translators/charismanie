@@ -42,6 +42,13 @@ split_numbered: make-split $(BOOK_NAME)_split_numbered.pdf
 upload:
 	ncftpput -f ~/.ncftp/cc.cfg calvary/ *.pdf
 
+%_$(TODAY).pdf: %.pdf
+	cp $< $@
+
+%.json: %_$(TODAY).pdf
+	./crocupload.sh $< "$* $(TODAY)" > $@
+	
+
 crocupload: $(BOOK_NAME).pdf split
 	cp $(BOOK_NAME).pdf $(BOOK_NAME)_$(TODAY).pdf
 	./crocupload.sh "$(BOOK_NAME)_$(TODAY).pdf" "$(BOOK_NAME) $(TODAY)"
