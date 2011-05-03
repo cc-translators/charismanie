@@ -53,8 +53,8 @@ upload:
 
 %.json: %.pdf
 	./crocupload.sh $< "$* $(TODAY)" > $@
-	grep -q "error\|went wrong" $@ && \
-	   echo "Upload failed. See $@ for more info." && exit 1
+	#grep -q "error\|went wrong" $@ && \
+	#   echo "Upload failed. See $@ for more info." && exit 1
 
 crocupload: $(BOOK_NAME).json split $(BOOK_NAME)_split.json
 
