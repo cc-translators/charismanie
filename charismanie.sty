@@ -81,6 +81,7 @@
 \newcommand\temphead{}
 \newcommand\chaphead{}
 \renewcommand\chapter[2][\temphead]{%
+    \cleardoublepage
     \renewcommand\temphead{#2}%
     \renewcommand\chaphead{#2}%
     \oldchapter[#1]{#2}}
