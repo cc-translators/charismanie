@@ -5,6 +5,7 @@ TEXINPUTS=bibleref:
 TODAY=$(shell date --iso)
 TARGETS=$(BOOK_NAME) $(BOOK_NAME)_numbered 
 FTP_TOPDIR=calvary
+FTP_PDFDIR=$(FTP_TOPDIR)/pdf
 FTP_JSONDIR=$(FTP_TOPDIR)/json
 
 all: pdf
@@ -47,7 +48,7 @@ split: make-split $(BOOK_NAME)_split.pdf
 split_numbered: make-split $(BOOK_NAME)_split_numbered.pdf
 
 upload:
-	ncftpput -f ~/.ncftp/cc.cfg $(FTP_TOPDIR)/ *.pdf
+	ncftpput -f ~/.ncftp/cc.cfg $(FTP_PDFDIR)/ *.pdf
 	ncftpput -f ~/.ncftp/cc.cfg $(FTP_JSONDIR)/ *.json
 
 %.json: %.pdf
