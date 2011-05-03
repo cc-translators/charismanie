@@ -18,7 +18,7 @@ fi
 
 [[ -z $TITLE ]] && TITLE="$FILE"
 
-curl -F "file=@${FILE}" -F "token=${CROCOKEY}" -F "title=${TITLE}" \
+curl -F "file=@${FILE}" -F "token=${TOKEN}" -F "title=${TITLE}" \
    https://crocodoc.com/api/v1/document/upload
 
 
