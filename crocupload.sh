@@ -1,12 +1,13 @@
 #!/bin/bash
 
-. crocupload.conf
+CONFFILE="$HOME/.crocodoc.conf"
+. $CONFFILE
 
 FILE="$1"
 TITLE="$2"
 
-if [ -z $CROCOKEY ]; then
-   echo "E: CROCOKEY must be provided in crocupload.conf"
+if [ -z $TOKEN ]; then
+   echo "E: TOKEN must be provided in $CONFFILE"
    exit 1
 fi
 
