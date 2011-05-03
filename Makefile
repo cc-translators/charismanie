@@ -42,18 +42,12 @@ split_numbered: make-split $(BOOK_NAME)_split_numbered.pdf
 upload:
 	ncftpput -f ~/.ncftp/cc.cfg calvary/ *.pdf
 
-%_$(TODAY).pdf: %.pdf
-	cp $< $@
-
-%.json: %_$(TODAY).pdf
+%.json: %.pdf
 	./crocupload.sh $< "$* $(TODAY)" > $@
-	
+	grep -q "error\|went wrong" $@ && \
+	   echo "Upload failed. See $@ for more info." && exit 1
 
-crocupload: $(BOOK_NAME).pdf split
-	cp $(BOOK_NAME).pdf $(BOOK_NAME)_$(TODAY).pdf
-	./crocupload.sh "$(BOOK_NAME)_$(TODAY).pdf" "$(BOOK_NAME) $(TODAY)"
-	cp $(BOOK_NAME)_split.pdf $(BOOK_NAME)_split_$(TODAY).pdf
-	./crocupload.sh "$(BOOK_NAME)_split_$(TODAY).pdf" "$(BOOK_NAME) split $(TODAY)"
+crocupload: $(BOOK_NAME).json split $(BOOK_NAME)_split.json
 
 clean:
 	rm -f *.pdf *.ps *.aux *.log *.out *.lol
@@ -61,10 +55,11 @@ clean:
 	rm -f chapters/fr/*.aux
 	rm -f chapters/en/*.aux
 	rm -f make-split-stamp split-stamp
-	rm -rf splits split
+	rm -rf splits split crocupload
 	rm -f *.xmpi
 	rm -f *.html *.png
 	rm -f *.epub *.mobi
 	rm -f *.idv *.lg
+	rm -f *.json
 
 
