@@ -3,8 +3,15 @@ PDFX_NAME=$(BOOK_NAME)_pdfx_1a
 LINENO_PATT=\\pagewiselinenumbers
 TEXINPUTS=bibleref:
 TODAY=$(shell date --iso)
+TARGETS=$(BOOK_NAME) $(BOOK_NAME)_numbered 
+FTP_TOPDIR=calvary
+FTP_JSONDIR=$(FTP_TOPDIR)/json
 
-all: $(BOOK_NAME).pdf $(BOOK_NAME)_numbered.pdf split split_numbered $(PDFX_NAME).pdf
+all: all_json
+
+all_pdf: split split_numbered $(addsuffix .pdf,$(TARGETS))
+
+all_json: all_pdf $(addsuffix .json,$(TARGETS))
 
 
 %_numbered.tex: %.tex
@@ -40,7 +47,8 @@ split: make-split $(BOOK_NAME)_split.pdf
 split_numbered: make-split $(BOOK_NAME)_split_numbered.pdf
 
 upload:
-	ncftpput -f ~/.ncftp/cc.cfg calvary/ *.pdf
+	ncftpput -f ~/.ncftp/cc.cfg $(FTP_TOPDIR)/ *.pdf
+	ncftpput -f ~/.ncftp/cc.cfg $(FTP_JSONDIR)/ *.json
 
 %.json: %.pdf
 	./crocupload.sh $< "$* $(TODAY)" > $@
