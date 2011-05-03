@@ -7,11 +7,11 @@ TARGETS=$(BOOK_NAME) $(BOOK_NAME)_numbered
 FTP_TOPDIR=calvary
 FTP_JSONDIR=$(FTP_TOPDIR)/json
 
-all: all_json
+all: pdf
 
-all_pdf: split split_numbered $(addsuffix .pdf,$(TARGETS))
+pdf: split split_numbered $(addsuffix .pdf,$(TARGETS))
 
-all_json: all_pdf $(addsuffix .json,$(TARGETS))
+json: pdf $(addsuffix .json,$(TARGETS))
 
 
 %_numbered.tex: %.tex
