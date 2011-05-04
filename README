@@ -1,4 +1,6 @@
-Requires:
+Requirements
+============
+
   - pdf(la)tex
   - fourier-GUT, from http://www.ctan.org/tex-archive/fonts/fourier-GUT
   - texlive-fonts-extra for fourier-orns
@@ -7,7 +9,22 @@ To build, type:
 
    make clean && make
 
-PDF/X-1a compliance:
+
+Building and uploading
+=======================
+
+Type the following:
+
+   make && make crocupload && make upload
+
+You need two configuration files:
+
+   - ~/.crocodoc.conf with a TOKEN variable with your crocodoc token
+   - ~/.ncftp/cc.cfg with the FTP settings
+
+
+PDF/X-1a compliance
+===================
 
    - Get a preflight checker... PDF Studio Pro has one: http://www.qoppa.com/pdfstudio/demo/download.html
    - See http://support.river-valley.com/wiki/index.php?title=Generating_PDF/A_compliant_PDFs_from_pdftex
