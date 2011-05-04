@@ -5,7 +5,7 @@
 
 \usepackage{amsmath}
 \usepackage[mathletters]{ucs}
-\usepackage[utf8x]{inputenc}
+%\usepackage[utf8x]{inputenc}
 
 % nice serif font
 \usepackage[T1]{fontenc}
@@ -44,10 +44,19 @@
 \newcommand{\@config@split}{0}
 \makeatother
 
+% Set fonts
+\usepackage{fontspec}
+\setmainfont[Mapping=tex-text,Ligatures={Common}]{Linux Libertine O}
+
+\newfontface\normalfont[Ligatures={Common}]{Linux Libertine O}
+\newfontface\chapfont[Ligatures={Common, Historical},Contextuals=Swash]{Linux Libertine O Italic}
+\newfontface\chapheadfont[Ligatures={Common, Historical},Contextuals=Swash]{Linux Libertine O}
+\newfontface\secfont[Ligatures={Common, Historical},Contextuals=Swash]{Linux Libertine O Italic}
+
 % Make nice chapter headings
 \usepackage{titlesec}
-\newcommand{\chapstyle}{\normalfont\Large\itshape\raggedleft}
-\newcommand{\chapheadstyle}{\normalfont\Huge}
+\newcommand{\chapstyle}{\chapfont\Large\raggedleft}
+\newcommand{\chapheadstyle}{\chapheadfont\Huge}
 \titleformat{\chapter}[display]
   {\chapstyle}
   {\chaptertitlename\ \thechapter}{10pt}
@@ -55,13 +64,13 @@
 \titlespacing*{\chapter}
   {0pt}{10pt}{20pt}
 
-\newcommand{\secstyle}{\Large\itshape}
+\newcommand{\secstyle}{\secfont\Large}
 \titleformat{\section}%
   {\secstyle} % format
   {} % label
   {10pt} % sep
   {} % before
-  [\vspace{-4mm}] % after
+  [\vspace{-4mm}\normalfont] % after
 
 % Get title
 \makeatletter
