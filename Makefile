@@ -8,12 +8,14 @@ FTP_TOPDIR=calvary
 FTP_PDFDIR=$(FTP_TOPDIR)/pdf
 FTP_JSONDIR=$(FTP_TOPDIR)/json
 
+# Include crocodoc conf
+include ~/.crocodoc.conf
+
 all: pdf
 
 pdf: split split_numbered $(addsuffix .pdf,$(TARGETS))
 
 json: pdf $(addsuffix .json,$(TARGETS))
-
 
 %_numbered.tex: %.tex
 	sed -e 's@%$(LINENO_PATT)@$(LINENO_PATT)@' $< > $@
@@ -52,9 +54,11 @@ upload:
 	ncftpput -f ~/.ncftp/cc.cfg $(FTP_JSONDIR)/ *.json
 
 %.json: %.pdf
-	./crocupload.sh $< "$* $(TODAY)" > $@
-	grep -q "error\|went wrong" $@ && \
-	   echo "Upload failed. See $@ for more info." && exit 1
+ifeq ($(strip $(TOKEN)),)
+	$(error No crocodoc token found in ~/.crocodoc.conf)
+endif
+	curl -F "file=@$<" -F "token=$(TOKEN)" -F "title=$* $(TODAY)" \
+	   https://crocodoc.com/api/v1/document/upload > $@
 
 crocupload: $(BOOK_NAME).json split $(BOOK_NAME)_split.json
 
