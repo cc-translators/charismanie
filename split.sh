@@ -28,9 +28,17 @@ for c in $CHAPDIR/fr/*.tex; do
    #echo "\input{$SPLITDIR/en/${chnum}_00}" > $sfile
    #sed -i 's@\\chapter@\\chapstyle\\chapheadstyle@' $SPLITDIR/fr/${chnum}_00.tex
    #echo "\input{$SPLITDIR/fr/${chnum}_00}" >> $sfile
-   enchap=$(sed -e 's@\\chapter{\(.*\)}@\1@' $SPLITDIR/en/${chnum}_00.tex)
-   frchap=$(sed -e 's@\\chapter{\(.*\)}@\1@' $SPLITDIR/fr/${chnum}_00.tex)
-   echo "\\chapter{$enchap \\\\$frchap}" > $sfile
+   enchap=$(sed -e 's@\\chapter.*{\(.*\)}@\1@' $SPLITDIR/en/${chnum}_00.tex)
+   entempchap=$(sed -n 's@\\chapter\[\(.*\)\].*@\1@p' $SPLITDIR/en/${chnum}_00.tex)
+   frchap=$(sed -e 's@\\chapter.*{\(.*\)}@\1@' $SPLITDIR/fr/${chnum}_00.tex)
+   frtempchap=$(sed -n 's@\\chapter\[\(.*\)\].*@\1@p' $SPLITDIR/fr/${chnum}_00.tex)
+   if [[ -z $entempchap ]] && [[ -z $frtempchap ]]; then
+      echo "\\chapter{$enchap \\\\$frchap}" > $sfile
+   else
+      [[ -z $entempchap ]] && entempchap="$enchap"
+      [[ -z $frtempchap ]] && frtempchap="$frchap"
+      echo "\\chapter[$entempchap \\\\$frtempchap]{$enchap \\\\$frchap}" > $sfile
+   fi
 
 
    echo '\normalfont' >> $sfile
