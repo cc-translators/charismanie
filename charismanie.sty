@@ -84,7 +84,11 @@
 \renewcommand\chapter[2][\temphead]{%
     \cleardoublepage
     \renewcommand\temphead{#2}%
-    \renewcommand\chaphead{#2}%
+    \ifx #1 \@empty
+       \renewcommand\chaphead{#2}%
+    \else
+       \renewcommand\chaphead{#1}%
+    \fi
     \oldchapter[#1]{#2}}
 
 
