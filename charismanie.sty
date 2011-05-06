@@ -9,7 +9,8 @@
 
 % nice serif font
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
+%\usepackage{lmodern}
+\usepackage{libertine}
 
 % Use fourier ornaments
 \usepackage{fourier-orns}
@@ -94,8 +95,8 @@
 \ofoot[]{}
 \lehead[]{}
 \ifpdf
-  \cehead[]{\textls[80]{\textsc{\titlehead}}}
-  \cohead[]{\textls[80]{\textsc{\chaphead}}}
+  \cehead[]{\textls[100]{\textsc{\titlehead}}}
+  \cohead[]{\textls[100]{\textsc{\chaphead}}}
 \else
   \cehead[]{}
   \cohead[]{}
@@ -129,7 +130,7 @@
 \newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
 
 % lettrines
-\renewcommand{\LettrineFontHook}{\color[gray]{0.5}}
+\renewcommand{\LettrineFontHook}{\color[gray]{0.7}}
 \newcommand{\chlettrine}[3][]{
   \ifpdf
     \lettrine[lines=3,lhang=0.33,loversize=0.25,#1]{#2}{#3}
