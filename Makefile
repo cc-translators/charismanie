@@ -11,9 +11,13 @@ FTP_JSONDIR=$(FTP_TOPDIR)/json
 # Include crocodoc conf
 include ~/.crocodoc.conf
 
-all: pdf
+all: pdf mobi epub
 
 pdf: split split_numbered $(addsuffix .pdf,$(TARGETS))
+
+mobi: $(BOOK_NAME).mobi
+
+epub: $(BOOK_NAME).epub
 
 json: pdf $(addsuffix .json,$(TARGETS))
 
