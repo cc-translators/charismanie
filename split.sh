@@ -25,13 +25,10 @@ for c in $CHAPDIR/fr/*.tex; do
    sfile="$SPLITDIR/${chnum}.tex"
 
    # Make chapter title
-   #echo "\input{$SPLITDIR/en/${chnum}_00}" > $sfile
-   #sed -i 's@\\chapter@\\chapstyle\\chapheadstyle@' $SPLITDIR/fr/${chnum}_00.tex
-   #echo "\input{$SPLITDIR/fr/${chnum}_00}" >> $sfile
-   enchap=$(sed -e 's@\\chapter.*{\(.*\)}@\1@' $SPLITDIR/en/${chnum}_00.tex)
-   entempchap=$(sed -n 's@\\chapter\[\(.*\)\].*@\1@p' $SPLITDIR/en/${chnum}_00.tex)
-   frchap=$(sed -e 's@\\chapter.*{\(.*\)}@\1@' $SPLITDIR/fr/${chnum}_00.tex)
-   frtempchap=$(sed -n 's@\\chapter\[\(.*\)\].*@\1@p' $SPLITDIR/fr/${chnum}_00.tex)
+   enchap=$(sed -e 's@\\chapter.*{\(.*\)}@\1@' $SPLITDIR/en/${chnum}_000.tex)
+   entempchap=$(sed -n 's@\\chapter\[\(.*\)\].*@\1@p' $SPLITDIR/en/${chnum}_000.tex)
+   frchap=$(sed -e 's@\\chapter.*{\(.*\)}@\1@' $SPLITDIR/fr/${chnum}_000.tex)
+   frtempchap=$(sed -n 's@\\chapter\[\(.*\)\].*@\1@p' $SPLITDIR/fr/${chnum}_000.tex)
    if [[ -z $entempchap ]] && [[ -z $frtempchap ]]; then
       echo "\\chapter{$enchap \\\\$frchap}" > $sfile
    else
@@ -47,7 +44,7 @@ for c in $CHAPDIR/fr/*.tex; do
    for pfr in $SPLITDIR/fr/${chnum}_*.tex; do
         secname=$(basename $pfr .tex)
         secnum=${secname##*_}
-        [[ "x$secnum" = "x00" ]] && continue
+        [[ "x$secnum" = "x000" ]] && continue
 
         pen=${pfr/fr/en}
 
