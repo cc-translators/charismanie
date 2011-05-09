@@ -30,3 +30,16 @@ PDF/X-1a compliance
    - See http://support.river-valley.com/wiki/index.php?title=Generating_PDF/A_compliant_PDFs_from_pdftex
      for notes on how to fix some problems ;
 
+
+Ebook generation
+=================
+
+After converting using htlatex, I had to do some changes in the HTML/CSS:
+
+   - Replace all long __________ lines with <hr />
+   - Make sure italic text is italic : .fxlri-t-1x-x-120{font-style:italic;}
+   - Make sure title page is centered : .titlepage{text-align:center;}
+   - Force page breaks with style="page-break-before: always" and h2 {page-break-before: always}
+   - Remove ugly stuff placed instead of ToC (for some weird reason).
+
+

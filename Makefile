@@ -34,8 +34,8 @@ json: pdf $(addsuffix .json,$(TARGETS))
 #	pdftohtml -noframes -enc UTF-8 -s -c $*.pdf
 
 %.html: %.tex
-	TEXINPUTS=$(TEXINPUTS) htlatex  $<
-	TEXINPUTS=$(TEXINPUTS) htlatex  $<
+	TEXINPUTS=$(TEXINPUTS) mk4ht htlatex $<
+	TEXINPUTS=$(TEXINPUTS) mk4ht htlatex $<
 
 %.epub: %.html
 	ebook-convert $< $@
