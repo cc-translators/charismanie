@@ -7,6 +7,7 @@ TARGETS=$(BOOK_NAME) $(BOOK_NAME)_numbered
 FTP_TOPDIR=calvary
 FTP_PDFDIR=$(FTP_TOPDIR)/pdf
 FTP_JSONDIR=$(FTP_TOPDIR)/json
+FTP_EBOOKDIR=$(FTP_TOPDIR)/ebooks
 
 # Include crocodoc conf
 include ~/.crocodoc.conf
@@ -59,8 +60,9 @@ split: make-split $(BOOK_NAME)_split.pdf
 split_numbered: make-split $(BOOK_NAME)_split_numbered.pdf
 
 upload:
-	ncftpput -f ~/.ncftp/cc.cfg $(FTP_PDFDIR)/ *.pdf
-	ncftpput -f ~/.ncftp/cc.cfg $(FTP_JSONDIR)/ *.json
+	-ncftpput -f ~/.ncftp/cc.cfg $(FTP_PDFDIR)/ *.pdf
+	-ncftpput -f ~/.ncftp/cc.cfg $(FTP_JSONDIR)/ *.json
+	-ncftpput -f ~/.ncftp/cc.cfg $(FTP_EBOOKDIR)/ *.mobi *.epub
 
 %.json: %.pdf
 ifeq ($(strip $(TOKEN)),)
