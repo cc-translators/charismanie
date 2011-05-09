@@ -13,6 +13,7 @@ for l in fr en; do
       csplit --quiet --prefix $SPLITDIR/$l/${num}_\
                      --suffix-format=%02d.tex \
                      --elide-empty-files \
+                     --digits=3 \
              $c /^$/+1 {*}
    done
 done
