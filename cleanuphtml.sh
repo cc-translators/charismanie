@@ -23,6 +23,10 @@ sed -i 's@\(<!--l. 2--><p class="indent\)" >$@\1 pagebreak" >@' $HTML
 ## Before ToC
 #sed -i 's@\(<!--l. 17--><p class="indent\)" >$@\1 pagebreak" >@' $HTML
 
+# Lettrines
+echo ".lettrine:first-letter{font-size:300%;float:left}" >> $CSS
+sed -i '/<h2/,/<\/html/ { s@\(<p class="noindent\)" >@\1 lettrine" >@  }' $HTML
+
 
 # TODO: try to fix the ToC
 
