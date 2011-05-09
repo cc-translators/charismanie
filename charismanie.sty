@@ -70,12 +70,14 @@
 \makeatother
 
 % setting table of contents
+\ifpdf
 \usepackage{tocloft}
 \renewcommand\cftchapfont{\scshape }
 \renewcommand\cftchappresnum{\chaptertitlename\ }
 \renewcommand\cftchapaftersnumb{\newline\normalfont}
 \renewcommand\cftchapleader{\cftdotfill{1}}
 \renewcommand\cftchappagefont{\normalfont}
+\fi
 
 % Define \chaphead to be used in section headings
 \let\oldchapter\chapter
