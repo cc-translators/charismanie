@@ -43,5 +43,7 @@ After converting using htlatex, I had to do some changes in the HTML/CSS:
    - Remove ugly stuff placed instead of ToC (for some weird reason).
 
 These changes are currently applied with cleanuphtml.sh, but it would be better to fix them upstream.
+After these changes are applied, it is best to achieve the conversion using the calibre software.
+Resulting ebooks can be fine-tuned with the sigil software.
 
 
