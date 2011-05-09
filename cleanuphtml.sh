@@ -18,7 +18,10 @@ echo "h2 {page-break-before: always}" >> $CSS
 
 # Force page breaks in intro
 echo ".pagebreak {page-break-before: always}" >> $CSS
-sed -i 's@\(<!--l. 2--><p class="indent\)@\1 pagebreak"@' $HTML
+## Before thanks
+sed -i 's@\(<!--l. 2--><p class="indent\)" >$@\1 pagebreak" >@' $HTML
+## Before ToC
+sed -i 's@\(<!--l. 17--><p class="indent\)" >$@\1 pagebreak" >@' $HTML
 
 
 # TODO: try to fix the ToC
