@@ -24,8 +24,10 @@ sed -i 's@\(<!--l. 2--><p class="indent\)" >$@\1 pagebreak" >@' $HTML
 #sed -i 's@\(<!--l. 17--><p class="indent\)" >$@\1 pagebreak" >@' $HTML
 
 # Lettrines
-echo ".lettrine:first-letter{font-size:300%;float:left}" >> $CSS
-sed -i '/<h2/,/<\/html/ { s@\(<p class="noindent\)" >@\1 lettrine" >@  }' $HTML
+echo ".lettrine:first-letter{font-size:400%;float:left;color:gray}" >> $CSS
+sed -i '/<h2/,/<h3/ { s@\(<p class="noindent\)" >@\1 lettrine" >@  }' $HTML
+## And restore indentation in the beginning of sections
+sed -i '/<h2/,/<\/html/ { s@"noindent"@"indent"@ }' $HTML
 
 
 # TODO: try to fix the ToC
