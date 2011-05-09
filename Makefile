@@ -28,10 +28,14 @@ json: pdf $(addsuffix .json,$(TARGETS))
 	-TEXINPUTS=$(TEXINPUTS) latex -interaction=batchmode $<
 	-TEXINPUTS=$(TEXINPUTS) latex -interaction=batchmode $<
 
-%.html: %.dvi
-	# Generate PDF from DVI to make use of ifpdf
-	dvipdf $<
-	pdftohtml -noframes -enc UTF-8 -s -c $*.pdf
+#%.html: %.dvi
+#	# Generate PDF from DVI to make use of ifpdf
+#	dvipdf $<
+#	pdftohtml -noframes -enc UTF-8 -s -c $*.pdf
+
+%.html: %.tex
+	TEXINPUTS=$(TEXINPUTS) htlatex -interaction=batchmode $<
+	TEXINPUTS=$(TEXINPUTS) htlatex -interaction=batchmode $<
 
 %.epub: %.html
 	ebook-convert $< $@
@@ -70,7 +74,7 @@ clean:
 	rm -f make-split-stamp split-stamp
 	rm -rf splits split crocupload
 	rm -f *.xmpi
-	rm -f *.html *.png
+	rm -f *.html *.png *.css *.4tc *.tmp *.xref *.4ct
 	rm -f *.epub *.mobi
 	rm -f *.idv *.lg
 	rm -f *.json
