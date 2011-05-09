@@ -42,4 +42,6 @@ After converting using htlatex, I had to do some changes in the HTML/CSS:
    - Force page breaks with style="page-break-before: always" and h2 {page-break-before: always}
    - Remove ugly stuff placed instead of ToC (for some weird reason).
 
+These changes are currently applied with cleanuphtml.sh, but it would be better to fix them upstream.
+
 

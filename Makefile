@@ -35,7 +35,7 @@ json: pdf $(addsuffix .json,$(TARGETS))
 
 %.html: %.tex
 	TEXINPUTS=$(TEXINPUTS) mk4ht htlatex $<
-	TEXINPUTS=$(TEXINPUTS) mk4ht htlatex $<
+	./cleanuphtml.sh $@
 
 %.epub: %.html
 	ebook-convert $< $@
