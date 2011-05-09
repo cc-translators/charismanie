@@ -11,9 +11,8 @@ for l in fr en; do
       f=$(basename $c)
       num=${f%%_*}
       csplit --quiet --prefix $SPLITDIR/$l/${num}_\
-                     --suffix-format=%02d.tex \
+                     --suffix-format=%03d.tex \
                      --elide-empty-files \
-                     --digits=3 \
              $c /^$/+1 {*}
    done
 done
