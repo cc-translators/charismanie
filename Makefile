@@ -12,9 +12,11 @@ FTP_EBOOKDIR=$(FTP_TOPDIR)/ebooks
 # Include crocodoc conf
 include ~/.crocodoc.conf
 
-all: pdf mobi epub
+all: pdf
 
 pdf: split split_numbered $(addsuffix .pdf,$(TARGETS))
+
+ebooks: mobi epub
 
 mobi: $(BOOK_NAME).mobi
 
