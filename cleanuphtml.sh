@@ -6,6 +6,9 @@ CSS="$(basename $HTML .html).css"
 # Replace long lines with <hr />
 sed -i 's@___\+@<hr />@' $HTML
 
+# Wrap text in pure HTML
+echo "body { padding: 0 300px 0 300px }" >> $CSS
+
 # Center title page
 echo ".titlepage {text-align:center;}" >> $CSS
 
@@ -24,7 +27,7 @@ sed -i 's@\(<!--l. 2--><p class="indent\)" >$@\1 pagebreak" >@' $HTML
 #sed -i 's@\(<!--l. 17--><p class="indent\)" >$@\1 pagebreak" >@' $HTML
 
 # Lettrines
-echo ".lettrine:first-letter{font-size:6em;margin-right:3px;display:inline;line-height:0.5em;color:gray}" >> $CSS
+echo ".lettrine:first-letter{font-size:6em;margin-right:3px;display:inline;line-height:0.5em;color:gray;float:left;}" >> $CSS
 sed -i '/<h2/,/<h3/ { s@\(<p class="noindent\)" >@\1 lettrine" >@  }' $HTML
 ## And restore indentation in the beginning of sections
 sed -i '/<h2/,/<\/html/ { s@"noindent"@"indent"@ }' $HTML
