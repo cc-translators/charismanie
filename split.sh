@@ -45,6 +45,8 @@ for c in $CHAPDIR/fr/*.tex; do
         secname=$(basename $pfr .tex)
         secnum=${secname##*_}
         [[ "x$secnum" = "x000" ]] && continue
+        # Ignore empty files
+        grep -q '[a-z]' $pfr || continue
 
         pen=${pfr/fr/en}
 
