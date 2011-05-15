@@ -76,7 +76,7 @@ endif
 crocupload: $(BOOK_NAME).json split $(BOOK_NAME)_split.json
 
 clean:
-	rm -f *.pdf *.ps *.aux *.log *.out *.lol
+	rm -f *.ps *.aux *.log *.out *.lol
 	rm -f *.idx *.ind *.ilg *.toc *.dvi
 	rm -f chapters/fr/*.aux
 	rm -f chapters/en/*.aux
