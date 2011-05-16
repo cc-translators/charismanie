@@ -87,5 +87,7 @@ clean:
 	rm -f *.epub *.mobi
 	rm -f *.idv *.lg
 	rm -f *.json
+	# Remove only target pdf
+	rm -f $(addsuffix *.pdf,$(TARGETS))
 
 
