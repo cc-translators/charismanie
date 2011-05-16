@@ -15,7 +15,7 @@
    inkscape:version="0.48.1 r9760"
    width="540"
    height="810"
-   sodipodi:docname="cover_orig.svg">
+   sodipodi:docname="cover_fr.svg">
   <metadata
      id="metadata3234">
     <rdf:RDF>
@@ -1182,33 +1182,29 @@
      x="33.60498"
      y="84.656288"
      ry="16.927271" />
-  <g
-     id="g4234"
-     transform="translate(-0.48,-7.4827185)">
-    <path
-       transform="matrix(2.531802,0,0,2.0856377,397.46711,-480.96817)"
-       d="m 44.554478,374.27359 c 0,57.57078 -39.5811751,104.24113 -88.407029,104.24113 -48.825853,0 -88.407029,-46.67035 -88.407029,-104.24113 0,-57.57078 39.581176,-104.24113 88.407029,-104.24113 48.8258539,0 88.407029,46.67035 88.407029,104.24113 z"
-       sodipodi:ry="104.24113"
-       sodipodi:rx="88.407028"
-       sodipodi:cy="374.27359"
-       sodipodi:cx="-43.852551"
-       id="path4200"
-       style="fill:url(#radialGradient4577);fill-opacity:1;stroke:#3c1362;stroke-width:4;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none"
-       sodipodi:type="arc" />
-    <path
-       transform="matrix(0.80371162,0,0,0.73400847,335.93485,19.43213)"
-       sodipodi:open="true"
-       sodipodi:end="7.2218645"
-       sodipodi:start="1.0432513"
-       d="m -45.610325,413.17899 c -15.138247,10.11695 -34.560168,4.24168 -43.380074,-13.12278 -8.819906,-17.36446 -3.697878,-39.64254 11.440369,-49.75949 15.138248,-10.11695 34.560168,-4.24169 43.380074,13.12277 8.174572,16.09394 4.434209,36.67024 -8.666484,47.67565"
-       sodipodi:ry="36.388287"
-       sodipodi:rx="31.723122"
-       sodipodi:cy="381.73785"
-       sodipodi:cx="-61.580177"
-       id="path4216"
-       style="fill:#ffc631;fill-opacity:1;stroke:#3c1362;stroke-width:4;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none;filter:url(#filter4230)"
-       sodipodi:type="arc" />
-  </g>
+  <path
+     sodipodi:type="arc"
+     style="fill:url(#radialGradient4577);fill-opacity:1;stroke:#3c1362;stroke-width:4;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none"
+     id="path4200"
+     sodipodi:cx="-43.852551"
+     sodipodi:cy="374.27359"
+     sodipodi:rx="88.407028"
+     sodipodi:ry="104.24113"
+     d="m 44.554478,374.27359 a 88.407028,104.24113 0 1 1 -176.814058,0 88.407028,104.24113 0 1 1 176.814058,0 z"
+     transform="matrix(2.531802,0,0,2.0856377,396.98711,-488.45089)" />
+  <path
+     sodipodi:type="arc"
+     style="fill:#ffc631;fill-opacity:1;stroke:#3c1362;stroke-width:4;stroke-miterlimit:4;stroke-opacity:0;stroke-dasharray:none;filter:url(#filter4230)"
+     id="path4216"
+     sodipodi:cx="-61.580177"
+     sodipodi:cy="381.73785"
+     sodipodi:rx="31.723122"
+     sodipodi:ry="36.388287"
+     d="m -45.610325,413.17899 a 31.723122,36.388287 0 1 1 2.773885,-2.08385"
+     sodipodi:start="1.0432513"
+     sodipodi:end="7.2218645"
+     sodipodi:open="true"
+     transform="matrix(0.80371162,0,0,0.73400847,335.45485,11.949412)" />
   <text
      xml:space="preserve"
      style="font-size:48px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:10px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Italic'"
@@ -1410,13 +1406,13 @@
   <text
      xml:space="preserve"
      style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f9e9a7;fill-opacity:1;stroke:none;filter:url(#filter3830-2-82-0-4);font-family:Serif;-inkscape-font-specification:Serif"
-     x="494.87106"
+     x="472.87106"
      y="473.87207"
      id="text3826-8-9-7-70"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3828-3-33-3-2"
-       x="494.87106"
+       x="472.87106"
        y="473.87207"
        style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#f9e9a7;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">?</tspan></text>
   <text
@@ -1444,26 +1440,26 @@
        id="flowPara4768">«   »</flowPara></flowRoot>  <text
      xml:space="preserve"
      style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f9e9a7;fill-opacity:1;stroke:none;filter:url(#filter3830-2-82-0-4-6);font-family:Serif;-inkscape-font-specification:Serif"
-     x="36.111824"
-     y="455.28143"
+     x="-286.11041"
+     y="477.50366"
      id="text3826-8-9-7-70-0"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3828-3-33-3-2-2"
-       x="36.111824"
-       y="455.28143"
+       x="-286.11041"
+       y="477.50366"
        style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#f9e9a7;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">«</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f9e9a7;fill-opacity:1;stroke:none;filter:url(#filter3830-2-82-0-4-6-6);font-family:Serif;-inkscape-font-specification:Serif"
-     x="467.73303"
-     y="471.93146"
+     x="-180.41512"
+     y="479.33887"
      id="text3826-8-9-7-70-0-8"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3828-3-33-3-2-2-6"
-       x="467.73303"
-       y="471.93146"
+       x="-180.41512"
+       y="479.33887"
        style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#f9e9a7;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">»</tspan></text>
   <path
      style="fill:url(#linearGradient4889);fill-opacity:1;stroke:none"
@@ -1486,18 +1482,19 @@
   <flowRoot
      xml:space="preserve"
      id="flowRoot5292"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-2px;word-spacing:0px;fill:#ffd810;fill-opacity:1;stroke:none;font-family:Engravers MT;-inkscape-font-specification:Engravers MT Bold"
-     transform="translate(-30,-16)"><flowRegion
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-2px;word-spacing:0px;fill:#ffd810;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold"
+     transform="translate(-10,-6)"><flowRegion
        id="flowRegion5294"><rect
          id="rect5296"
          width="300"
          height="146"
          x="190"
          y="552"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:-2px;fill:#ffd810;fill-opacity:1;font-family:Engravers MT;-inkscape-font-specification:Engravers MT Bold" /></flowRegion><flowPara
-       id="flowPara5298"><flowSpan
-   style="font-size:72px"
-   id="flowSpan4079">C</flowSpan>huck</flowPara></flowRoot>  <text
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:-2px;fill:#ffd810;fill-opacity:1;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold" /></flowRegion><flowPara
+       id="flowPara5298"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold">C<flowSpan
+   style="font-size:48px"
+   id="flowSpan3609">HUCK</flowSpan></flowPara></flowRoot>  <text
      xml:space="preserve"
      style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f9e9a7;fill-opacity:1;stroke:none;filter:url(#filter4036);font-family:Latino Elongated LET;-inkscape-font-specification:Latino Elongated LET Bold"
      x="46"
@@ -1521,19 +1518,18 @@
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cssscscscsssc" />
   <flowRoot
-     transform="translate(12.05136,46.833)"
+     transform="translate(28.05136,60.833)"
      xml:space="preserve"
      id="flowRoot5292-1"
-     style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-2px;word-spacing:0px;fill:#ffd810;fill-opacity:1;stroke:none;font-family:Engravers MT;-inkscape-font-specification:Engravers MT Bold"><flowRegion
+     style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-2px;word-spacing:0px;fill:#ffd810;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold"><flowRegion
        id="flowRegion5294-5"><rect
          id="rect5296-8"
          width="300"
          height="146"
          x="190"
          y="552"
-         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:-2px;fill:#ffd810;fill-opacity:1;font-family:Engravers MT;-inkscape-font-specification:Engravers MT Bold" /></flowRegion><flowPara
-       id="flowPara5298-8"><flowSpan
-         style="font-size:72px"
-         id="flowSpan4077">S</flowSpan><flowSpan
-         style="font-size:40px"
-         id="flowSpan4087">mith</flowSpan></flowPara></flowRoot></svg>
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:-2px;fill:#ffd810;fill-opacity:1;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold" /></flowRegion><flowPara
+       id="flowPara5298-8"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold">S<flowSpan
+   style="font-size:48px"
+   id="flowSpan3612">MITH</flowSpan></flowPara></flowRoot></svg>
