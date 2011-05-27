@@ -73,6 +73,9 @@ endif
 	curl -F "file=@$<" -F "token=$(TOKEN)" -F "title=$* $(TODAY)" \
 	   https://crocodoc.com/api/v1/document/upload > $@
 
+spellcheck:
+	find chapters/fr -name "*.tex" -exec aspell -l fr -c {} \;
+
 crocupload: $(BOOK_NAME).json split $(BOOK_NAME)_split.json
 
 clean:
