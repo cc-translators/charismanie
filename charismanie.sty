@@ -27,7 +27,9 @@
 % Make indexes
 \newcommand{\indextitle}{Index des références bibliques}
 \usepackage{imakeidx}
-\makeindex[title=\indextitle,intoc,options=-s bibleref.ist]
+\makeindex[title=\indextitle,intoc,options=-s bibleref.ist,columns=3,columnsep=15pt]
+% Only reference Bible chapters in index
+%\usepackage[verses]{bibleref-xidx}
 
 % setting lettrines
 \usepackage{type1cm} % scalable fonts
