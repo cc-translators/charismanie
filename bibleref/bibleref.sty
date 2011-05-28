@@ -800,7 +800,7 @@ defined}{}}}
     \PackageError{bibleref}{Unknown book '#1'}{}%
   }%
   {%
-    \@bv@idxsort{\csname br@#1\endcsname}%
+    \@bv@idxsort{#1}%
     \def\@bv@chidxsort{}%
     \BRbooktitlestyle{\csname br@#1\endcsname}%
     \let\@bv@org@bookof\BRbookof
