@@ -60,6 +60,7 @@
            linkcolor=black,
            urlcolor=black,
            bookmarksopen=true,
+           hyperindex=true,
            pdfpagelayout=TwoPageRight,
            pdfauthor={Chuck Smith},
            pdftitle={Charismatique ou Charismaniaque ?},
@@ -83,16 +84,18 @@
 \setlength{\parindent}{5mm}
 %\selectlanguage{french}
 
+\frontmatter
 \include{title}
 \include{copyright}
 \include{dedication}
 
 \ifpdf
-\cleardoublepage
-\tableofcontents
+  \cleardoublepage
+  \tableofcontents
 \fi
 
 % Begin numbering from here
+\mainmatter
 \cleardoublepage
 \pagestyle{scrheadings}
 \pagenumbering{arabic}
@@ -106,12 +109,14 @@
 \input{chapters/fr/05_l_amour_agape_de_dieu}
 \input{chapters/fr/06_la_parole_de_dieu_devient_reelle}
 
-\ifpdf
-  \vspace{2cm}
-  \filcenter\aldine
-  \vfill
-\fi
+% The aldine ruins the index...
+%\ifpdf
+%  \vspace{2cm}
+%  \filcenter\aldine
+%  \vfill
+%\fi
 
+\backmatter
 \chindex
 
 \end{document}

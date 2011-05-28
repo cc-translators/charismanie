@@ -25,8 +25,9 @@
 \usepackage{ifpdf}
 
 % Make indexes
-\usepackage{makeidx}
-\makeindex
+\newcommand{\indextitle}{Index des références bibliques}
+\usepackage{imakeidx}
+\makeindex[title=\indextitle,intoc]
 
 % setting lettrines
 \usepackage{type1cm} % scalable fonts
@@ -116,24 +117,12 @@
   % Restore normal chapters
   \let\chapter\oldchapter
   % Appendix
-  \appendix
-  \addcontentsline{toc}{chapter}{Index des références bibliques}
   \ifpdf
-    \cohead[]{\textls[100]{\textsc{Index des références bibliques}}}
+    \cohead[]{\textls[100]{\textsc{\indextitle}}}
   \fi
   \renewcommand{\chapstyle}{\LARGE\centering}
   \printindex
 }
-
-%\newpagestyle{charismanie}{% header
-%   {\hfill\textls{\textsc{\chaphead}}\hfill}
-%   {\hfill\textls{\textsc{Charismatique ou \og charismaniaque \fg{}~?}}\hfill}
-%}{ % footer
-%   {\hfill\pagemark\hfill}
-%   {\hfill\pagemark\hfill}
-%   {\hfill\rule{6mm}{1.0pt}\\\pagemark\hfill}
-%}
-%\renewcommand*{\chapterpagestyle}{charismanie}
 
 
 %%%%%%%%%%%%%%%%%

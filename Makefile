@@ -35,8 +35,9 @@ json: pdf $(addsuffix .json,$(TARGETS))
 	makeindex $<
 
 # Use indexes
-%.pdf: %.ind
-	TEXINPUTS=$(TEXINPUTS) pdflatex -interaction=batchmode $*
+%.pdf: %.tex
+	TEXINPUTS=$(TEXINPUTS) pdflatex -shell-escape -interaction=batchmode $*
+	TEXINPUTS=$(TEXINPUTS) pdflatex -shell-escape -interaction=batchmode $*
 
 %.dvi: %.tex
 	-TEXINPUTS=$(TEXINPUTS) latex -interaction=batchmode $<
