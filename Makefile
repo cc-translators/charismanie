@@ -27,9 +27,16 @@ json: pdf $(addsuffix .json,$(TARGETS))
 %_numbered.tex: %.tex
 	sed -e 's@%$(LINENO_PATT)@$(LINENO_PATT)@' $< > $@
 
-%.pdf: %.tex
-	TEXINPUTS=$(TEXINPUTS) pdflatex -interaction=batchmode $<
-	TEXINPUTS=$(TEXINPUTS) pdflatex -interaction=batchmode $<
+%.idx: %.tex
+	TEXINPUTS=$(TEXINPUTS) pdflatex -interaction=batchmode $*
+	TEXINPUTS=$(TEXINPUTS) pdflatex -interaction=batchmode $*
+
+%.ind: %.idx
+	makeindex $<
+
+# Use indexes
+%.pdf: %.ind
+	TEXINPUTS=$(TEXINPUTS) pdflatex -interaction=batchmode $*
 
 %.dvi: %.tex
 	-TEXINPUTS=$(TEXINPUTS) latex -interaction=batchmode $<

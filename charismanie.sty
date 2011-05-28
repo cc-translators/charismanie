@@ -111,6 +111,20 @@
 
 \renewcommand*{\chapterpagestyle}{scrplain}
 
+% Set index
+\newcommand{\chindex}{%
+  % Restore normal chapters
+  \let\chapter\oldchapter
+  % Appendix
+  \appendix
+  \addcontentsline{toc}{chapter}{Index des références bibliques}
+  \ifpdf
+    \cohead[]{\textls[100]{\textsc{Index des références bibliques}}}
+  \fi
+  \renewcommand{\chapstyle}{\LARGE\centering}
+  \printindex
+}
+
 %\newpagestyle{charismanie}{% header
 %   {\hfill\textls{\textsc{\chaphead}}\hfill}
 %   {\hfill\textls{\textsc{Charismatique ou \og charismaniaque \fg{}~?}}\hfill}
