@@ -13,6 +13,28 @@
 \setbooktitle{Ps}{Psaume}%
 \setindexbooktitle{Ps}{Psaumes}%
 
+\newcommand*{\ibiblephantom}[1][\bvidxpgformat]{%
+  \let\@bv@current@titlestyle\BRbooktitlestyle
+  \let\@bv@current@chapterstyle\BRchapterstyle
+  \let\@bv@current@versestyle\BRversestyle
+  \let\@bv@current@bkchsep\BRbkchsep
+  \let\@bv@current@chvsep\BRchvsep
+  \def\@bv@restore{%
+    \let\BRbooktitlestyle\@bv@current@titlestyle
+    \let\BRchapterstyle\@bv@current@chapterstyle
+    \let\BRversestyle\@bv@current@versestyle
+    \let\BRbkchsep\@bv@current@bkchsep
+    \let\BRchvsep\@bv@current@chvsep
+  }%
+  \def\BRbooktitlestyle##1{}%
+  \def\BRchapterstyle##1{}%
+  \def\BRversestyle##1{}%
+  \def\BRbkchsep{}%
+  \def\BRchvsep{}%
+  \def\@bv@idxpgformat{#1}%
+  \@bv@idxtrue\def\@bv@idxentry{}\@bible@verse
+}
+
 \newcommand{\bridxOT}{}
 \newcommand{\bridxNT}{}
 % Use Old/New Testament parts in Index
