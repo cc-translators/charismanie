@@ -25,7 +25,7 @@
 \usepackage{ifpdf}
 
 % Make indexes
-\newcommand{\indextitle}{Index des références bibliques}
+\newcommand{\indextitle}{Index des r\'ef\'erences bibliques}
 \usepackage{imakeidx}
 \makeindex[title=\indextitle,intoc,options=-s bibleref.ist,columns=2]
 % Only reference Bible chapters in index
@@ -52,10 +52,10 @@
 \usepackage{fontspec}
 \setmainfont[Mapping=tex-text,Ligatures={Common}]{Linux Libertine O}
 
-\newfontface\normalfont[Ligatures={Common}]{Linux Libertine O}
-\newfontface\chapfont[Ligatures={Common, Historical},Contextuals=Swash]{Linux Libertine O Italic}
-\newfontface\chapheadfont[Ligatures={Common, Historical},Contextuals=Swash]{Linux Libertine O}
-\newfontface\secfont[Ligatures={Common, Historical},Contextuals=Swash]{Linux Libertine O Italic}
+\newfontfamily\normalfont[Ligatures={Common}]{Linux Libertine O}
+\newfontfamily\chapfont[Ligatures={Common}]{Latino Elongated LET}
+\newfontfamily\chapheadfont[Ligatures={Common}]{Latino Elongated LET}
+\newfontfamily\secfont[Ligatures={Common},Contextuals={Swash}]{Linux Libertine O Italic}
 
 % Make nice chapter headings
 \usepackage{titlesec}
@@ -82,14 +82,14 @@
 \makeatother
 
 % setting table of contents
-\ifpdf
+%\ifpdf
 \usepackage{tocloft}
-\renewcommand\cftchapfont{\scshape }
+\renewcommand\cftchapfont{\chapfont\large\scshape }
 \renewcommand\cftchappresnum{\chaptertitlename\ }
 \renewcommand\cftchapaftersnumb{\newline\normalfont}
 \renewcommand\cftchapleader{\cftdotfill{1}}
 \renewcommand\cftchappagefont{\normalfont}
-\fi
+%\fi
 
 % Define \chaphead to be used in section headings
 \let\oldchapter\chapter
@@ -112,13 +112,13 @@
 \cfoot[\rule{6mm}{0.8pt}\\\pagemark]{\rule{6mm}{0.8pt}\\\pagemark}
 \ofoot[]{}
 \lehead[]{}
-\ifpdf
+%\ifpdf
   \cehead[]{\textls[100]{\textsc{\titlehead}}}
   \cohead[]{\textls[100]{\textsc{\chaphead}}}
-\else
-  \cehead[]{}
-  \cohead[]{}
-\fi
+%\else
+%  \cehead[]{}
+%  \cohead[]{}
+%\fi
 \ohead[]{}
 
 \renewcommand*{\chapterpagestyle}{scrplain}
@@ -128,9 +128,9 @@
   % Restore normal chapters
   \let\chapter\oldchapter
   % Appendix
-  \ifpdf
+  %\ifpdf
     \cohead[]{\textls[100]{\textsc{\indextitle}}}
-  \fi
+  %\fi
   \renewcommand{\chapstyle}{\centering}
   \renewcommand{\chapheadstyle}{\scshape\Huge}
   \renewcommand*{\BRbooktitlestyle}[1]{\textbf{\emph{##1}}}
@@ -154,11 +154,11 @@
 % lettrines
 \renewcommand{\LettrineFontHook}{\color[gray]{0.7}}
 \newcommand{\chlettrine}[3][]{
-  \ifpdf
+%  \ifpdf
     \lettrine[lines=3,lhang=0.33,loversize=0.25,#1]{#2}{#3}
-  \else
-    #2#3
-  \fi
+%  \else
+%    #2#3
+%  \fi
 }
 
 % cadratin
