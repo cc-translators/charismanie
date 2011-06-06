@@ -50,25 +50,25 @@
 
 % Set fonts
 \usepackage{fontspec}
-\setmainfont[Mapping=tex-text,Ligatures={Common}]{Linux Libertine O}
+\setmainfont[Ligatures={Common}]{Linux Libertine O}
 
 \newfontfamily\normalfont[Ligatures={Common}]{Linux Libertine O}
-\newfontfamily\chapfont[Ligatures={Common}]{Latino Elongated LET}
-\newfontfamily\chapheadfont[Ligatures={Common}]{Latino Elongated LET}
-\newfontfamily\secfont[Ligatures={Common},Contextuals={Swash}]{Linux Libertine O Italic}
+\newfontfamily\chapfont[Ligatures={Common},Contextuals={Swash}]{Garamond LT}
+\newfontfamily\chapheadfont[Scale=1.5,Ligatures={Common}]{Latino Elongated LET}
+\newfontfamily\secfont[Ligatures={Common},Contextuals={Swash}]{Garamond LT}
 
 % Make nice chapter headings
 \usepackage{titlesec}
-\newcommand{\chapstyle}{\chapfont\Large\raggedleft}
+\newcommand{\chapstyle}{\chapfont\raggedleft\large\itshape}
 \newcommand{\chapheadstyle}{\chapheadfont\Huge}
 \titleformat{\chapter}[display]
   {\chapstyle}
   {\chaptertitlename\ \thechapter}{10pt}
   {\chapheadstyle}
 \titlespacing*{\chapter}
-  {0pt}{10pt}{20pt}
+  {0pt}{0pt}{0pt}
 
-\newcommand{\secstyle}{\secfont\Large}
+\newcommand{\secstyle}{\secfont\large\itshape}
 \titleformat{\section}%
   {\secstyle} % format
   {} % label
@@ -84,7 +84,9 @@
 % setting table of contents
 %\ifpdf
 \usepackage{tocloft}
-\renewcommand\cftchapfont{\chapfont\large\scshape }
+\renewcommand\cfttoctitlefont{\hfill\chapheadfont\Huge}
+\renewcommand\cftaftertoctitle{\hfill}
+\renewcommand\cftchapfont{\chapheadfont\scshape }
 \renewcommand\cftchappresnum{\chaptertitlename\ }
 \renewcommand\cftchapaftersnumb{\newline\normalfont}
 \renewcommand\cftchapleader{\cftdotfill{1}}
