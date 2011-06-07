@@ -25,10 +25,10 @@ for c in $CHAPDIR/fr/*.tex; do
    sfile="$SPLITDIR/${chnum}.tex"
 
    # Make chapter title
-   enchap=$(sed -e 's@\\chapter.*{\(.*\)}@\1@' $SPLITDIR/en/${chnum}_000.tex)
-   entempchap=$(sed -n 's@\\chapter\[\(.*\)\].*@\1@p' $SPLITDIR/en/${chnum}_000.tex)
-   frchap=$(sed -e 's@\\chapter.*{\(.*\)}@\1@' $SPLITDIR/fr/${chnum}_000.tex)
-   frtempchap=$(sed -n 's@\\chapter\[\(.*\)\].*@\1@p' $SPLITDIR/fr/${chnum}_000.tex)
+   enchap=$(sed -e 's@\\chapter\(\[.*\]\)\?{\(.*\)}$@\2@' $SPLITDIR/en/${chnum}_000.tex)
+   entempchap=$(sed -n 's@\\chapter\[\(.*\)\].*}$@\1@p' $SPLITDIR/en/${chnum}_000.tex)
+   frchap=$(sed -e 's@\\chapter\(\[.*\]\)\?{\(.*\)}$@\2@' $SPLITDIR/fr/${chnum}_000.tex)
+   frtempchap=$(sed -n 's@\\chapter\[\(.*\)\].*}$@\1@p' $SPLITDIR/fr/${chnum}_000.tex)
    if [[ -z $entempchap ]] && [[ -z $frtempchap ]]; then
       echo "\\chapter{$enchap \\\\$frchap}" > $sfile
    else
