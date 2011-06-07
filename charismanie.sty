@@ -169,6 +169,30 @@
 %  \fi
 }
 
+\newcommand{\lettrineA}[2][]{%
+  \chlettrine[slope=5pt,findent=-0.5em,#1]{A}{#2}
+}
+
+\newcommand{\lettrineJap}[2][]{%
+  \chlettrine[lraise=0.1,loversize=0.15,nindent=-0.7em,#1]{J'}{#2}
+}
+
+\newcommand{\lettrineLap}[2][]{%
+  \chlettrine[lraise=0,loversize=0.15,#1]{L\kern-12pt{'}}{#2}
+}
+
+\newcommand{\lettrineP}[2][]{%
+  \chlettrine[findent=0.1em,nindent=0.1em,#1]{P}{#2}
+}
+
+\newcommand{\lettrineQ}[2][]{%
+  \chlettrine[lraise=0.30,loversize=0.15,#1]{Q}{#2}
+}
+
+\newcommand{\lettrineS}[2][]{%
+  \chlettrine[#1]{S}{#2}
+}
+
 % cadratin
 \newcommand*{\ocadr}{\mbox{---}\nobreak\,\nobreak}
 \newcommand*{\fcadr}{\unskip\nobreak\,\nobreak{}---}
