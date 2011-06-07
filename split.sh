@@ -54,7 +54,7 @@ for c in $CHAPDIR/fr/*.tex; do
         sed -i 's@\\section\*@\\secstyle@' $pfr
 
         # Remove lettrines
-        sed -i 's@\\chlettrine.*{\(.*\)}{\(.*\)}@\1\2@' $pfr
+        sed -i 's@\\[A-Za-z]*lettrine.*{\(.*\)}{\(.*\)}@\1\2@' $pfr
 
         if [ ! -f "$pen" ]; then
            echo "E: Missing file $pen"
