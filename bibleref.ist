@@ -1,11 +1,11 @@
 % Dotfill style
-%delim_0 "\\dotfill "
-%delim_1 "\\dotfill "
-%delim_2 "\\dotfill "
+delim_0 " \\dotfill "
+delim_1 " \\dotfill "
+delim_2 " \\dotfill "
 % M-dash style
-delim_0 "\\ocadr"
-delim_1 "\\ocadr "
-delim_2 "\\ocadr "
+%delim_0 "\\ocadr"
+%delim_1 "\\ocadr "
+%delim_2 "\\ocadr "
 
 % When using Old/New Testament parts in index
 % Make them scshape

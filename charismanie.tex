@@ -41,7 +41,7 @@
 
 
 % Make sure to define title before calling charismanie package
-\title{Charismatique ou Charismaniaque?}
+\title{Charismatique ou Charismaniaque ?}
 \author{Chuck Smith}
 
 
@@ -60,18 +60,18 @@
            linkcolor=black,
            urlcolor=black,
            bookmarksopen=true,
-           hyperindex=true,
            pdfpagelayout=TwoPageRight,
            pdfauthor={Chuck Smith},
            pdftitle={Charismatique ou Charismaniaque ?},
            pdftex}
 \usepackage{url}
-\usepackage[activate={true,nocompatibility}]{microtype}
+%\usepackage[activate={true,nocompatibility}]{microtype}
 
 \usepackage{charismanie}
 
 % prerender for chapter titles
-\PrerenderUnicode{À}
+%\PrerenderUnicode{À}
+
 
 % Include cover as PDF
 \usepackage{pdfpages}
@@ -89,10 +89,10 @@
 \include{copyright}
 \include{dedication}
 
-\ifpdf
+%\ifpdf
   \cleardoublepage
   \tableofcontents
-\fi
+%\fi
 
 % Begin numbering from here
 \mainmatter
@@ -110,11 +110,11 @@
 \input{chapters/fr/06_la_parole_de_dieu_devient_reelle}
 \input{chapters/fr/07_l_oeuvre_de_l_esprit_saint_dans_le_monde}
 
-\ifpdf
+%\ifpdf
   \vspace{2cm}
   \filcenter\aldine
   \vfill
-\fi
+%\fi
 
 \backmatter
 \chindex
