@@ -55,13 +55,13 @@
 
 \newfontfamily\normalfont[Mapping=tex-text]{Linux Libertine O}
 \newfontfamily\chapfont{Garamond LT}
-\newfontfamily\chapheadfont[Scale=1.5]{Latino Elongated LET}
+\newfontfamily\chapheadfont[Scale=1.2]{Latino Elongated LET}
 \newfontfamily\secfont{Garamond LT}
 \newfontfamily\headerfont[LetterSpace=12,WordSpace=2]{Linux Libertine O}
 
 % Make nice chapter headings
 \usepackage{titlesec}
-\newcommand{\chapstyle}{\chapfont\raggedleft\large\itshape}
+\newcommand{\chapstyle}{\chapfont\raggedleft\Large\itshape}
 \newcommand{\chapheadstyle}{\chapheadfont\Huge}
 \titleformat{\chapter}[display]
   {\chapstyle}
@@ -88,11 +88,11 @@
 % setting table of contents
 %\ifpdf
 \usepackage{tocloft}
-\renewcommand\cfttoctitlefont{\hfill\chapheadfont\Huge}
-\renewcommand\cftaftertoctitle{\hfill}
-\renewcommand\cftchapfont{\chapheadfont\scshape }
+\renewcommand\cfttoctitlefont{\vspace{-6em}\hfill\chapheadfont\Huge\scshape}
+\renewcommand\cftaftertoctitle{\hfill\vspace{-2em}}
+\renewcommand\cftchapfont{\chapheadfont }
 \renewcommand\cftchappresnum{\chaptertitlename\ }
-\renewcommand\cftchapaftersnumb{\newline\normalfont}
+\renewcommand\cftchapaftersnumb{\newline\vspace{-8pt}\normalfont}
 \renewcommand\cftchapleader{\cftdotfill{1}}
 \renewcommand\cftchappagefont{\normalfont}
 %\fi
