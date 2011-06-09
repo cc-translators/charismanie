@@ -1,5 +1,29 @@
 \ProvidesPackage{charismanie}
 
+% Nicer centering + ragged
+\usepackage[newcommands]{ragged2e}
+
+% Number lines
+\usepackage{lineno}
+
+% PDF settings
+\usepackage[breaklinks=true,unicode=true]{hyperref}
+\hypersetup{colorlinks, 
+           citecolor=black,
+           filecolor=black,
+           linkcolor=black,
+           urlcolor=black,
+           bookmarksopen=true,
+           pdfpagelayout=TwoPageRight,
+           pdfauthor={Chuck Smith},
+           pdftitle={Charismatique ou Charismaniaque ?}}
+
+\usepackage{url}
+%\usepackage[activate={true,nocompatibility}]{microtype}
+
+% Include cover as PDF
+\usepackage{pdfpages}
+
 \usepackage[english,french]{babel} %language selection
 \selectlanguage{french}
 
