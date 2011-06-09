@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -74,18 +74,6 @@
          offset="1"
          style="stop-color:#138225;stop-opacity:1;" />
     </linearGradient>
-    <filter
-       inkscape:collect="always"
-       id="filter4230"
-       x="-0.12361377"
-       width="1.2472275"
-       y="-0.10776157"
-       height="1.2155231">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="3.2682494"
-         id="feGaussianBlur4232" />
-    </filter>
     <filter
        id="filter3829"
        inkscape:label="Drop shadow"
@@ -1073,7 +1061,7 @@
      units="in"
      inkscape:zoom="0.54"
      inkscape:cx="64.475117"
-     inkscape:cy="399.22449"
+     inkscape:cy="197.58209"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -1095,7 +1083,7 @@
      sodipodi:nodetypes="cssscscscsssc" />
   <text
      xml:space="preserve"
-     style="font-size:48px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:10px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Italic'"
+     style="font-size:48px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:10px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Italic';"
      x="252.58429"
      y="300.93619"
      id="text3911"
@@ -1107,7 +1095,7 @@
   <flowRoot
      xml:space="preserve"
      id="flowRoot3036"
-     style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#070500;fill-opacity:1;stroke:none;filter:url(#filter3812);font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium"
+     style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#070500;fill-opacity:1;stroke:none;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium"
      transform="matrix(0.9961947,-0.08715574,0.08715574,0.9961947,511.35191,-135.50255)"><flowRegion
        id="flowRegion3038"><rect
          id="rect3040"
@@ -1115,10 +1103,10 @@
          height="177.86879"
          x="-499.40082"
          y="410.93542"
-         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#070500;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium" /></flowRegion><flowPara
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#070500;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;" /></flowRegion><flowPara
        id="flowPara3042">C</flowPara></flowRoot>  <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="85.182152"
      y="483.51968"
      id="text3826"
@@ -1127,10 +1115,10 @@
        id="tspan3828"
        x="85.182152"
        y="483.51968"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">h</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">h</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="-440.0712"
      y="494.46286"
      id="text3826-8"
@@ -1140,10 +1128,10 @@
        id="tspan3828-3"
        x="-440.0712"
        y="494.46286"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">a</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">a</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2-8);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="146.38647"
      y="481.72653"
      id="text3826-8-1"
@@ -1152,10 +1140,10 @@
        id="tspan3828-3-0"
        x="146.38647"
        y="481.72653"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">r</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">r</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2-6);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="258.38647"
      y="479.72653"
      id="text3826-8-3"
@@ -1164,10 +1152,10 @@
        id="tspan3828-3-3"
        x="258.38647"
        y="479.72653"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">a</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">a</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2-82);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="190.38647"
      y="471.72653"
      id="text3826-8-9"
@@ -1176,10 +1164,10 @@
        id="tspan3828-3-33"
        x="190.38647"
        y="471.72653"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">s</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">s</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2-7);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="-399.14987"
      y="489.66559"
      id="text3826-8-2"
@@ -1189,10 +1177,10 @@
        id="tspan3828-3-02"
        x="-399.14987"
        y="489.66559"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">i</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">i</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2-82-0);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="213.18823"
      y="464.93088"
      id="text3826-8-9-7"
@@ -1201,10 +1189,10 @@
        id="tspan3828-3-33-3"
        x="213.18823"
        y="464.93088"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">m</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">m</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2-82-0-1);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="-282.34811"
      y="488.86993"
      id="text3826-8-9-7-7"
@@ -1214,10 +1202,10 @@
        id="tspan3828-3-33-3-5"
        x="-282.34811"
        y="488.86993"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">n</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">n</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2-6-3);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="-211.36847"
      y="463.92673"
      id="text3826-8-3-0"
@@ -1227,10 +1215,10 @@
        id="tspan3828-3-3-0"
        x="-211.36847"
        y="463.92673"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">a</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">a</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2-7-4);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="-239.30759"
      y="484.59482"
      id="text3826-8-2-5"
@@ -1240,10 +1228,10 @@
        id="tspan3828-3-02-8"
        x="-239.30759"
        y="484.59482"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">i</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">i</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2-82-0-6);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="378.15472"
      y="472.595"
      id="text3826-8-9-7-79"
@@ -1252,10 +1240,10 @@
        id="tspan3828-3-33-3-7"
        x="378.15472"
        y="472.595"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">q</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">q</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2-82-0-6-0);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="406.36603"
      y="462.82162"
      id="text3826-8-9-7-79-3"
@@ -1264,10 +1252,10 @@
        id="tspan3828-3-33-3-7-6"
        x="406.36603"
        y="462.82162"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">u</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">u</tspan></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2-82-0-6-0-4);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="-122.82939"
      y="466.56808"
      id="text3826-8-9-7-79-3-5"
@@ -1277,7 +1265,7 @@
        id="tspan3828-3-33-3-7-6-1"
        x="-122.82939"
        y="466.56808"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">e</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">e</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f9e9a7;fill-opacity:1;stroke:none;filter:url(#filter3830-2-82-0-6-0-4-1);font-family:Serif;-inkscape-font-specification:Serif"
@@ -1293,7 +1281,7 @@
        style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#f9e9a7;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium" /></text>
   <text
      xml:space="preserve"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter3830-2-82-0-4);font-family:Serif;-inkscape-font-specification:Serif"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif;"
      x="472.87106"
      y="473.87207"
      id="text3826-8-9-7-70"
@@ -1302,7 +1290,7 @@
        id="tspan3828-3-33-3-2"
        x="472.87106"
        y="473.87207"
-       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium">?</tspan></text>
+       style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium;">?</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f9e9a7;fill-opacity:1;stroke:none;filter:url(#filter3830-2-82-0-4-0);font-family:Serif;-inkscape-font-specification:Serif"
@@ -1356,13 +1344,13 @@
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="csccsccsccsssscccc" />
   <path
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1;"
      d="m 200.39278,336.43747 c 0,0 -1.81299,5.43901 -3.26339,13.41619 -1.45039,7.97718 -1.08779,12.69096 -1.08779,12.69096 l 8.33977,-5.80158 c 0,0 0.7252,-1.45039 2.90074,-2.1756 2.17561,-0.72519 3.98862,-1.08779 3.98862,-1.08779 l -6.52676,11.24057 c 0,0 0,0 -2.53819,6.88937 -2.53821,6.88937 -5.43899,12.32836 -5.43899,12.32836 -5.33284,8.30548 -9.53909,9.01528 -13.41615,9.79017 -5.07638,1.08779 -5.43899,1.45039 -10.51537,-3.2634 -1.85997,-1.72711 -2.53818,-7.61456 -2.17559,-12.32836 0.23924,-3.10999 2.34393,-9.87562 2.90078,-10.87796 1.813,-3.26338 3.85288,-5.54288 4.7138,-6.52678 2.53819,-2.90078 6.16417,-5.07637 6.16417,-5.07637 l -2.90079,14.50395 5.43899,-9.06498 z"
      id="path4873-4"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="csccsccsccsssscccc" />
   <path
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1;"
      d="m 330.52182,391.64151 c 0,0 -1.43826,-1.72593 -0.57529,-9.49271 0.86297,-7.76677 4.77339,-9.93988 6.787,-13.10407 2.01362,-3.16426 4.14396,-6.16901 6.44525,-11.05921 2.30122,-4.89012 3.49457,-7.63852 3.49457,-7.63852 0.9267,4.56389 1.51443,6.57707 1.1877,11.586 0.0544,8.46501 -0.78329,6.61612 -0.78329,6.61612 l 4.92724,-3.862 c 0,0 2.36674,-1.88257 5.3117,-5.06679 6.40684,-6.92726 9.45,-11.12744 9.45,-11.12744 l -11.79399,22.43728 c 0,0 -2.5889,7.19141 -3.16426,9.4927 -0.57529,2.30122 6.78128,-7.93765 6.78128,-7.93765 0,0 -0.33768,7.05451 -2.26417,11.47499 -1.93379,4.43729 -3.65407,6.77556 -6.24305,9.36453 -2.5889,2.5889 -7.26544,4.799 -10.31289,5.38001 -2.71715,0.25063 -5.66204,-1.18198 -7.10601,-2.49778 -0.8767,-0.79881 -2.14179,-4.56546 -2.14179,-4.56546 z"
      id="path5282"
      inkscape:connector-curvature="0"
@@ -1370,7 +1358,7 @@
   <flowRoot
      xml:space="preserve"
      id="flowRoot5292"
-     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-2px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold"
+     style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-2px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold;"
      transform="translate(-10,-6)"><flowRegion
        id="flowRegion5294"><rect
          id="rect5296"
@@ -1378,13 +1366,13 @@
          height="146"
          x="190"
          y="552"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:-2px;fill:#000000;fill-opacity:1;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold" /></flowRegion><flowPara
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:-2px;fill:#000000;fill-opacity:1;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold;" /></flowRegion><flowPara
        id="flowPara5298"
-       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold;fill:#000000;fill-opacity:1">C<flowSpan
-   style="font-size:48px;fill:#000000;fill-opacity:1"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold;fill:#000000;fill-opacity:1;">C<flowSpan
+   style="font-size:48px;fill:#000000;fill-opacity:1;"
    id="flowSpan3609">HUCK</flowSpan></flowPara></flowRoot>  <text
      xml:space="preserve"
-     style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;filter:url(#filter4036);font-family:Latino Elongated LET;-inkscape-font-specification:Latino Elongated LET Bold"
+     style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Latino Elongated LET;-inkscape-font-specification:Latino Elongated LET Bold;"
      x="46"
      y="244"
      id="text3264"
@@ -1394,13 +1382,13 @@
        x="46"
        y="244">Charismatique</tspan></text>
   <path
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1;"
      d="m 178.94565,166.24241 c 0,0 -9.73643,-5.12444 -10.76132,-19.47285 -1.02489,-14.34842 -0.83407,-18.0105 1e-5,-25.62219 0.86653,-7.90793 4.61199,-17.42308 9.22398,-28.184406 0.90275,-2.10641 4.61199,8.711556 4.61199,8.711556 0,0 1.02489,6.14932 1.53733,9.22398 0.51245,3.07467 0.51245,15.37332 0.51245,15.37332 0,0 1.53733,-6.66178 3.5871,-10.24888 2.04977,-3.58711 4.61199,-6.66177 4.61199,-6.66177 0,0 2.48802,6.59999 3.07467,17.93553 0.75413,14.57181 0,12.94341 -0.51245,16.91064 -0.52926,4.09741 -1.23149,6.86786 -6.14932,13.83598 -5.33881,7.56462 -9.73643,8.19909 -9.73643,8.19909 z"
      id="path3847-7-0"
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cssscscscsssc" />
   <path
-     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1"
+     style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-opacity:1;"
      d="m 326.70224,168.66978 c 0,0 7.65641,-4.07596 8.46236,-15.48863 0.80594,-11.41268 0.65588,-14.32548 -1e-5,-20.37979 -0.68141,-6.28993 -3.62672,-13.85825 -7.25344,-22.41776 -0.7099,-1.67543 -3.62672,6.92913 -3.62672,6.92913 0,0 -0.80594,4.89115 -1.20891,7.33672 -0.40297,2.44558 -0.40297,12.22788 -0.40297,12.22788 0,0 -1.20891,-5.29875 -2.82078,-8.15192 -1.61187,-2.85317 -3.62672,-5.29875 -3.62672,-5.29875 0,0 -1.9565,5.24961 -2.41782,14.26585 -0.59303,11.59037 0,10.29514 0.40297,13.45066 0.4162,3.25907 0.96841,5.46267 4.83563,11.00509 4.19827,6.01687 7.65641,6.52152 7.65641,6.52152 z"
      id="path3847-7-0-7"
      inkscape:connector-curvature="0"
@@ -1409,15 +1397,15 @@
      transform="translate(28.05136,60.833)"
      xml:space="preserve"
      id="flowRoot5292-1"
-     style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-2px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold"><flowRegion
+     style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-2px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold;"><flowRegion
        id="flowRegion5294-5"><rect
          id="rect5296-8"
          width="300"
          height="146"
          x="190"
          y="552"
-         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:-2px;fill:#000000;fill-opacity:1;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold" /></flowRegion><flowPara
+         style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:-2px;fill:#000000;fill-opacity:1;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold;" /></flowRegion><flowPara
        id="flowPara5298-8"
-       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold;fill:#000000;fill-opacity:1">S<flowSpan
-   style="font-size:48px;fill:#000000;fill-opacity:1"
+       style="font-size:72px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold;fill:#000000;fill-opacity:1;">S<flowSpan
+   style="font-size:48px;fill:#000000;fill-opacity:1;"
    id="flowSpan3612">MITH</flowSpan></flowPara></flowRoot></svg>
