@@ -78,6 +78,7 @@
 \setmainfont[Mapping=tex-text]{Linux Libertine O}
 
 \newfontfamily\normalfont[Mapping=tex-text]{Linux Libertine O}
+\newfontface\pagemarkfont[Numbers={OldStyle}]{Linux Libertine O}
 \newfontfamily\chapfont{Garamond LT}
 \newfontfamily\chapheadfont[Scale=1.2,LetterSpace=5,WordSpace=5]{Latino Elongated LET}
 \newfontfamily\chaptocfont[Scale=1.4,LetterSpace=10,WordSpace=5]{Latino Elongated LET}
@@ -145,6 +146,7 @@
 % Set headers and footers
 %\automark[chapter]{section}
 %\setheadsepline{.4pt}
+\renewcommand{\pnumfont}{\pagemarkfont}
 \cfoot[\rule{6mm}{0.8pt}\\\pagemark]{\rule{6mm}{0.8pt}\\\pagemark}
 \ofoot[]{}
 \lehead[]{}
