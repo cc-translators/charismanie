@@ -146,20 +146,37 @@
 % Set headers and footers
 %\automark[chapter]{section}
 %\setheadsepline{.4pt}
+
+% 
+% chapter headings => scrheadings
+% plain => scrplain
+% chapter endings => chapterend
+%
 \renewcommand{\pnumfont}{\pagemarkfont}
 \cfoot[\rule{6mm}{0.8pt}\\\pagemark]{\rule{6mm}{0.8pt}\\\pagemark}
 \ofoot[]{}
 \lehead[]{}
 %\ifpdf
-  \cehead[]{\headerfont\textsc{\titlehead}}
-  \cohead[]{\headerfont\textsc{\chaphead}}
+  \cehead[\headerfont\textsc{\titlehead}]{}
+  \cohead[\headerfont\textsc{\chaphead}]{}
 %\else
 %  \cehead[]{}
 %  \cohead[]{}
 %\fi
 \ohead[]{}
 
-\renewcommand*{\chapterpagestyle}{scrplain}
+\defpagestyle{chapterend}%
+  {%
+    {\hfill\headerfont\textsc{\titlehead}\hfill}
+    {\hfill\headerfont\textsc{\chaphead}\hfill}
+    {}
+  }%
+  {{}{}{}} % Nothing in footer
+
+\renewcommand*{\chapterpagestyle}{scrheadings}
+
+\newcommand{\closechapter}{\thispagestyle{chapterend}}
+
 
 % Set index
 \newcommand{\chindex}{%
