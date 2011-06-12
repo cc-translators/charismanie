@@ -1,7 +1,7 @@
 Requirements
 ============
 
-  - pdf(la)tex
+  - xe(la)tex >= 0.997
   - fourier-GUT, from http://www.ctan.org/tex-archive/fonts/fourier-GUT
   - texlive-fonts-extra for fourier-orns
 

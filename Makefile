@@ -1,7 +1,7 @@
 BOOK_NAME=charismanie
 PDFX_NAME=$(BOOK_NAME)_pdfx_1a
 LINENO_PATT=\\pagewiselinenumbers
-TEXINPUTS=bibleref:
+TEXINPUTS=bibleref:microtype:
 TODAY=$(shell date --iso)
 TARGETS=$(BOOK_NAME) $(BOOK_NAME)_numbered 
 FTP_TOPDIR=calvary
