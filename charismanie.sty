@@ -224,44 +224,37 @@
 
 % lettrines
 \renewcommand{\LettrineFontHook}{\color[gray]{0.7}}
-\newcommand{\chlettrine}[3][]{
-%  \ifpdf
-    \lettrine[lines=3,lhang=0.33,loversize=0.25,#1]{#2}{#3}
-%  \else
-%    #2#3
-%  \fi
-}
 
 \newcommand{\lettrineA}[2][]{%
-  \chlettrine[slope=5pt,findent=-0.5em,#1]{A}{#2}
+  \lettrine[slope=5pt,findent=-0.5em,#1]{A}{#2}%
 }
 
 \newcommand{\lettrineJap}[2][]{%
   % Apostrophe in lettrine
-  %\chlettrine[lraise=0.1,loversize=0.15,nindent=-0.7em,#1]{J'}{#2}
+  %\lettrine[lraise=0.1,loversize=0.15,nindent=-0.7em,#1]{J'}{#2}
   % Apostrophe in small caps
-  \chlettrine[lraise=0.20,nindent=0em,#1]{J}{'#2}
+  \lettrine[lraise=0.20,nindent=0em,#1]{J}{'#2}
 }
 
 \newcommand{\lettrineLap}[2][]{%
   % Apostrophe in lettrine
-  %\chlettrine[lraise=0,loversize=0.15,#1]{L\kern-12pt{'}}{#2}
+  %\lettrine[lraise=0,loversize=0.15,#1]{L\kern-12pt{'}}{#2}
   % Apostrophe in small caps
-  \chlettrine[lraise=0,loversize=0.08,findent=-0.9em,nindent=1em,#1]{L}{'#2}
+  \lettrine[lraise=0,loversize=0.08,findent=-0.9em,nindent=1em,#1]{L}{'#2}
   % Apostrophe in small caps with slope
-  %\chlettrine[lraise=0,loversize=0.08,findent=-0.9em,slope=0.5em,#1]{L}{'#2}
+  %\lettrine[lraise=0,loversize=0.08,findent=-0.9em,slope=0.5em,#1]{L}{'#2}
 }
 
 \newcommand{\lettrineP}[2][]{%
-  \chlettrine[findent=0.1em,nindent=0.1em,#1]{P}{#2}
+  \lettrine[findent=0.1em,nindent=0.1em,#1]{P}{#2}
 }
 
 \newcommand{\lettrineQ}[2][]{%
-  \chlettrine[lraise=0.30,loversize=0.15,#1]{Q}{#2}
+  \lettrine[lraise=0.30,loversize=0.15,#1]{Q}{#2}
 }
 
 \newcommand{\lettrineS}[2][]{%
-  \chlettrine[#1]{S}{#2}
+  \lettrine[#1]{S}{#2}
 }
 
 % cadratin
