@@ -15,7 +15,7 @@
    inkscape:version="0.48.1 r9760"
    width="540"
    height="810"
-   sodipodi:docname="title_fr.svg">
+   sodipodi:docname="title_fr_logo.svg">
   <metadata
      id="metadata3234">
     <rdf:RDF>
@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1060,8 +1060,8 @@
      showgrid="false"
      units="in"
      inkscape:zoom="0.54"
-     inkscape:cx="-67.615739"
-     inkscape:cy="419.36248"
+     inkscape:cx="-249.70579"
+     inkscape:cy="352.21072"
      inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
@@ -1359,7 +1359,7 @@
      xml:space="preserve"
      id="flowRoot5292"
      style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-2px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold"
-     transform="translate(54,-64)"><flowRegion
+     transform="translate(54,-76)"><flowRegion
        id="flowRegion5294"><rect
          id="rect5296"
          width="300"
@@ -1394,7 +1394,7 @@
      inkscape:connector-curvature="0"
      sodipodi:nodetypes="cssscscscsssc" />
   <flowRoot
-     transform="translate(92.05136,2.833)"
+     transform="translate(92.05136,-9.167)"
      xml:space="preserve"
      id="flowRoot5292-1"
      style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:-2px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman Bold"><flowRegion
@@ -1411,7 +1411,7 @@
    id="flowSpan3612">MITH</flowSpan></flowPara></flowRoot>  <g
      id="layer1"
      inkscape:label="Layer 1"
-     transform="matrix(0.12234458,0,0,0.12234458,223.50671,636.99635)">
+     transform="matrix(0.09700231,0,0,0.09700231,233.13726,626.29028)">
     <g
        transform="matrix(6.4229245,0,0,6.4229245,-1713.6248,-2607.176)"
        id="g3324">
@@ -1461,22 +1461,22 @@
      xml:space="preserve"
      style="font-size:24px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:ChopinScript;-inkscape-font-specification:ChopinScript Medium"
      x="171.76387"
-     y="747.77777"
+     y="719.77777"
      id="text3653"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        x="171.76387"
-       y="747.77777"
+       y="719.77777"
        id="tspan3657">La Colombe Calvary</tspan></text>
   <text
      xml:space="preserve"
      style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman"
      x="152.78084"
-     y="773.25928"
+     y="745.25928"
      id="text3661"
      sodipodi:linespacing="125%"><tspan
        sodipodi:role="line"
        id="tspan3663"
        x="152.78084"
-       y="773.25928">10 avenue Aimé Martin 06200 Nice</tspan></text>
+       y="745.25928">10 avenue Aimé Martin 06200 Nice</tspan></text>
 </svg>
