@@ -1,7 +1,7 @@
 % options per letter
 \LettrineOptionsFor{A}{slope=5pt,findent=-0.5em}
 \LettrineOptionsFor{J}{lraise=0.20,nindent=0em}
-\LettrineOptionsFor{L}{lraise=0,loversize=0.08,findent=-0.9em,nindent=1em}
+\LettrineOptionsFor{L}{findent=-0.9em,nindent=1em}
 \LettrineOptionsFor{P}{findent=0.1em,nindent=0.1em}
 \LettrineOptionsFor{Q}{lraise=0.30,loversize=0.15}
 
