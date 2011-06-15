@@ -66,6 +66,7 @@
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt plus 2pt minus 1pt}
+
 \setcounter{secnumdepth}{0}
 
 % set split mode for debug
@@ -223,11 +224,16 @@
 % Useful macros
 %%%%%%%%%%%%%%%%%
 
+\usepackage{xspace}
+
+% Bullet
+\newcommand{\mybullet}{{\color[gray]{0.7}$\bullet$}\xspace}
+
 % NdT macro
 \newcommand{\NdT}[1]{\footnote{NdT~: #1}}
 
 % Seigneur macro
-\newcommand{\Seigneur}{\textsc{Seigneur}}
+\newcommand{\Seigneur}{\textsc{Seigneur}\xspace}
 
 % Rule for titles
 \newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
