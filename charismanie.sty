@@ -208,7 +208,14 @@
 %\emergencystretch=1.5em
 %\emergencystretch=1.7em
 %\tolerance=270
-\tolerance=300
+%\tolerance=300
+
+% Define specialpar environment to fix hyphenation issues
+% Sample usage:
+%   \begin{specialpar}{\tolerance=274 \BRallowhypbch}
+% or
+%   \begin{specialpar}{\emergencystretch=1.5em}
+\newenvironment{specialpar}[1]{\par#1}{\par}
 
 
 
