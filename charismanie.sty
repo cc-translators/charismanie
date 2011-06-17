@@ -56,6 +56,13 @@
 % Only reference Bible chapters in index
 %\usepackage[verses]{bibleref-xidx}
 
+% Patch bibleref to sort Bible books properly
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd{\@bible@verse}{\@bv@idxsort{\csname br@#1\endcsname}}{\@bv@idxsort{#1}}
+\makeatother
+
+
 % setting lettrines
 \usepackage{type1cm} % scalable fonts
 \usepackage{lettrine}
