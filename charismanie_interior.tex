@@ -1,0 +1,125 @@
+%
+% Requirements:
+%  - pdflatex
+%  - koma-sript
+%
+
+% Adjust book size
+% as per http://www.lulu.com/fr/publish/books/?cid=nav_bks
+% Crown Quarto => 189mm:246mm = 7.44x9.68
+%  this is 7.44X9.69 on createspace
+%\documentclass[paper=7.44in:9.68in,pagesize=pdftex,11pt,DIV=11]{scrbook}
+% See about setting margins with DIV and putting code as \footnotesize
+%\documentclass[paper=189mm:246mm,pagesize=pdftex,12pt,DIV=10]{scrbook}
+% Royal        => 156mm:234mm = 6.13x9.21
+%  this is 6.14x9.21 on createspace
+%\documentclass[paper=6.13in:9.21in,pagesize=pdftex,12pt,DIV=calc]{scrbook}
+% Roman        => 152mm:229mm
+%\documentclass[paper=152mm:229mm,pagesize=pdftex,12pt]{scrbook}
+% Digest => 5.5x8.5
+%\documentclass[paper=5.5in:8.5in,pagesize=pdftex,12pt,DIV=calc]{scrbook}
+%\documentclass{scrbook}
+
+% WITHOUT BLEED
+% US Trade => 6x9
+\documentclass[paper=6in:9in,pagesize=pdftex,
+               headinclude=on,footinclude=on,fontsize=12pt]{scrbook}
+%
+% Paper width
+% W = 6in
+% Paper height
+% H = 9in
+% Paper gutter
+% BCOR = 0.5in
+% Margin (0.5in imposed on lulu, recommended on createspace)
+% m = 0.5in
+% Text height
+% h = H - 2m = 8in
+% Text width
+% w = W - 2m - BCOR = 4.5in
+\areaset[0.50in]{4.5in}{8in}
+
+
+% Show margins
+%\usepackage{showframe}
+
+% Make sure to define title before calling charismanie package
+\title{Charismatique ou Charismaniaque ?}
+\author{Chuck Smith}
+
+
+\usepackage{charismanie}
+
+
+\begin{document}
+
+%\includepdf{cover_fr.pdf}
+
+%\selectlanguage{french}
+
+\frontmatter
+\pagestyle{empty}
+\includepdf{title_fr_logo.pdf}
+%\include{title}
+\include{copyright}
+\include{dedication}
+
+\setlength{\parindent}{1em}
+
+% ToC in the beginning (original version)
+%\ifpdf
+  \cleardoublepage
+  \tableofcontents
+  \thispagestyle{empty}
+%\fi
+
+% Debug overfull boxes
+\overfullrule=1mm
+
+% Begin numbering from here
+\mainmatter
+\cleardoublepage
+\pagestyle{scrplain}
+\pagenumbering{arabic}
+
+% All chapters
+%\pagewiselinenumbers
+\input{chapters/fr/01_a_la_recherche}
+\input{chapters/fr/02_le_saint_esprit_est_dieu}
+\input{chapters/fr/03_la_personne_de_l_esprit_saint}
+\input{chapters/fr/04_l_oeuvre_de_l_esprit-saint_dans_la_vie_du_croyant}
+\input{chapters/fr/05_l_amour_agape_de_dieu}
+\input{chapters/fr/06_la_parole_de_dieu_devient_reelle}
+\input{chapters/fr/07_l_oeuvre_de_l_esprit_saint_dans_le_monde}
+\input{chapters/fr/08_quelque_chose_de_plus}
+\input{chapters/fr/09_le_parler_en_langues}
+\input{chapters/fr/10_quand_les_langues_doivent_elle_cesser}
+\input{chapters/fr/11_pourquoi_le_charisme_se_change_souvent_en_charismanie}
+\input{chapters/fr/12_recevoir_la_puissance}
+\input{chapters/fr/13_une_meilleure_facon}
+\input{chapters/fr/14_un_mot_de_conclusion}
+
+
+%\ifpdf
+  \vspace{2cm}
+  \filcenter\aldine
+  \vfill
+%\fi
+
+\backmatter
+\chindex
+\closechapter
+
+% ToC in the end (Imprimerie Nationale)
+%\cleardoublepage
+%\tableofcontents
+
+% finish with a double empty page
+\pagestyle{empty}
+\cleardoublepage
+\mbox{}
+
+\end{document}
+
+
+
