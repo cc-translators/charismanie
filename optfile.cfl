@@ -4,4 +4,5 @@
 \LettrineOptionsFor{L}{findent=-0.9em,nindent=1em}
 \LettrineOptionsFor{P}{findent=0.1em,nindent=0.1em}
 \LettrineOptionsFor{Q}{lraise=0.30,loversize=0.15}
+\LettrineOptionsFor{U}{nindent=0em}
 
