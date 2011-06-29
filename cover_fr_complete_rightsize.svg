@@ -974,7 +974,7 @@
    xlink:href="#linearGradient3871-7-3-0-1"
    id="linearGradient5994"
    gradientUnits="userSpaceOnUse"
-   gradientTransform="matrix(0,0.48637989,0.48637989,0,3547.9115,682.89961)"
+   gradientTransform="matrix(0,0.48637989,0.48637989,0,1032.1615,6.4035517)"
    x1="1151.7932"
    y1="306.61554"
    x2="1207.5603"
@@ -983,7 +983,7 @@
    xlink:href="#linearGradient3871-7-3-0-1"
    id="linearGradient5997"
    gradientUnits="userSpaceOnUse"
-   gradientTransform="matrix(0,0.53381361,0.53381361,0,3426.2134,743.30938)"
+   gradientTransform="matrix(0,0.53381361,0.53381361,0,910.46341,66.813322)"
    x1="943.61926"
    y1="307.8949"
    x2="983.7594"
@@ -1271,9 +1271,9 @@
      inkscape:window-height="975"
      id="namedview3589"
      showgrid="false"
-     inkscape:zoom="0.5675"
-     inkscape:cx="1482.5634"
-     inkscape:cy="377.09554"
+     inkscape:zoom="0.8025662"
+     inkscape:cx="1009.9152"
+     inkscape:cy="454.80079"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
      inkscape:window-maximized="1"
@@ -1283,14 +1283,14 @@
      inkscape:groupmode="layer"
      inkscape:label="Charisma cover [Converted]"
      transform="matrix(1.25,0,0,-1.25,0,832.5)"><rect
-   style="opacity:0.89743593;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:3.52456164;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+   style="opacity:0.89743593;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.22272575;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
    id="rect7114"
-   width="389.90454"
-   height="266.23755"
-   x="3574.4521"
-   y="-1201.7637"
+   width="153.97058"
+   height="81.140518"
+   x="1074.4969"
+   y="-439.69672"
    transform="scale(1,-1)"
-   ry="30.60718" />
+   ry="9.3280687" />
 
 
 
@@ -1304,16 +1304,16 @@
 
 <path
    style="fill:url(#linearGradient5997);fill-opacity:1;stroke:none"
-   d="m 3596.5215,1285.7132 c 0,0 -1.2329,-3.6986 -2.2191,-9.123 -0.9863,-5.4245 -0.7397,-8.6299 -0.7397,-8.6299 l 5.671,3.9451 c 0,0 0.4931,0.9863 1.9725,1.4794 1.4794,0.4931 2.7123,0.7397 2.7123,0.7397 l -4.4382,-7.6436 c 0,0 0,0 -1.726,-4.6848 -1.726,-4.6847 -3.6985,-8.3833 -3.6985,-8.3833 -3.6263,-5.6477 -6.4866,-6.1303 -9.123,-6.6573 -3.4519,-0.7397 -3.6985,-0.9862 -7.1504,2.2191 -1.2648,1.1745 -1.726,5.1779 -1.4794,8.3833 0.1626,2.1148 1.5938,6.7155 1.9725,7.397 1.2328,2.2191 2.62,3.7692 3.2054,4.4383 1.7259,1.9725 4.1916,3.4519 4.1916,3.4519 l -1.9725,-9.8627 3.6985,6.1642 z"
+   d="m 1080.7715,609.21714 c 0,0 -1.2329,-3.6986 -2.2191,-9.123 -0.9863,-5.4245 -0.7397,-8.6299 -0.7397,-8.6299 l 5.671,3.9451 c 0,0 0.4931,0.9863 1.9725,1.4794 1.4794,0.4931 2.7123,0.7397 2.7123,0.7397 l -4.4382,-7.6436 c 0,0 0,0 -1.726,-4.6848 -1.726,-4.6847 -3.6985,-8.3833 -3.6985,-8.3833 -3.6263,-5.6477 -6.4866,-6.1303 -9.123,-6.6573 -3.4519,-0.7397 -3.6985,-0.9862 -7.1504,2.2191 -1.2648,1.1745 -1.726,5.1779 -1.4794,8.3833 0.1626,2.1148 1.5938,6.7155 1.9725,7.397 1.2328,2.2191 2.62,3.7692 3.2054,4.4383 1.7259,1.9725 4.1916,3.4519 4.1916,3.4519 l -1.9725,-9.8627 3.6985,6.1642 z"
    id="path4873-4"
    inkscape:connector-curvature="0"
    sodipodi:nodetypes="csccsccsccsssscccc" /><path
    style="fill:url(#linearGradient5994);fill-opacity:1;stroke:none"
-   d="m 3685.0092,1248.1744 c 0,0 -0.978,1.1737 -0.3912,6.4551 0.5868,5.2814 3.2459,6.7591 4.6152,8.9107 1.3692,2.1517 2.8179,4.195 4.3828,7.5203 1.5648,3.3253 2.3763,5.1942 2.3763,5.1942 0.6301,-3.1035 1.0298,-4.4724 0.8076,-7.8785 0.037,-5.7562 -0.5326,-4.4989 -0.5326,-4.4989 l 3.3505,2.6261 c 0,0 1.6094,1.2802 3.6119,3.4454 4.3567,4.7106 6.426,7.5667 6.426,7.5667 l -8.0199,-15.2574 c 0,0 -1.7604,-4.8901 -2.1517,-6.455 -0.3912,-1.5648 4.6113,5.3976 4.6113,5.3976 0,0 -0.2296,-4.7971 -1.5396,-7.803 -1.315,-3.0173 -2.4848,-4.6074 -4.2453,-6.3679 -1.7605,-1.7604 -4.9405,-3.2633 -7.0128,-3.6584 -1.8476,-0.1704 -3.8502,0.8038 -4.8321,1.6985 -0.5961,0.5432 -1.4564,3.1045 -1.4564,3.1045 z"
+   d="m 1169.2592,571.67834 c 0,0 -0.978,1.1737 -0.3912,6.4551 0.5868,5.2814 3.2459,6.7591 4.6152,8.9107 1.3692,2.1517 2.8179,4.195 4.3828,7.5203 1.5648,3.3253 2.3763,5.1942 2.3763,5.1942 0.6301,-3.1035 1.0298,-4.4724 0.8076,-7.8785 0.037,-5.7562 -0.5326,-4.4989 -0.5326,-4.4989 l 3.3505,2.6261 c 0,0 1.6094,1.2802 3.6119,3.4454 4.3567,4.7106 6.426,7.5667 6.426,7.5667 l -8.0199,-15.2574 c 0,0 -1.7604,-4.8901 -2.1517,-6.455 -0.3912,-1.5648 4.6113,5.3976 4.6113,5.3976 0,0 -0.2296,-4.7971 -1.5396,-7.803 -1.315,-3.0173 -2.4848,-4.6074 -4.2453,-6.3679 -1.7605,-1.7604 -4.9405,-3.2633 -7.0128,-3.6584 -1.8476,-0.1704 -3.8502,0.8038 -4.8321,1.6985 -0.5961,0.5432 -1.4564,3.1045 -1.4564,3.1045 z"
    id="path5282"
    inkscape:connector-curvature="0"
    sodipodi:nodetypes="csscccccsccccsscsc" /><g
-   transform="translate(2997.7531,828.50605)"
+   transform="translate(482.00308,152.00999)"
    id="g3737"><g
      id="g3739"><g
        id="g3745"><g
@@ -1322,7 +1322,7 @@
            d="m 650.555,593.538 c 20.279,15.678 17.034,27.871 11.356,54.872 l 0,0 c 0,0 -5.265,-4.846 -7.828,-15.312 l 0,0 c 0.983,6.719 -1.439,29.741 -5.962,36.215 l 0,0 c -12.978,-26.129 -14.6,-58.355 2.434,-75.775"
            style="fill:url(#linearGradient3749-6);stroke:none"
            id="path3755" /></g></g></g></g><g
-   transform="translate(3016.1489,898.35861)"
+   transform="translate(500.39888,221.86255)"
    id="g3699-0"><g
      id="g3701-9"><g
        id="g3707-7"><g
@@ -1331,7 +1331,7 @@
            d="m 666.846,455.826 c -13.517,-9.071 -19.283,-35.806 1.104,-31.986 l 0,0 c 15.192,8.593 9.828,16.709 21.984,33.896 l 0,0 c -4.994,-0.478 -13.961,-9.071 -13.961,-9.071 l 0,0 c 0.449,6.206 0.177,9.071 4.671,25.78 l 0,0 c -27.642,-53.948 -13.798,-18.619 -13.798,-18.619"
            style="fill:url(#linearGradient3711-1);stroke:none"
            id="path3717-4" /></g></g></g></g><g
-   transform="translate(2967.8759,872.38893)"
+   transform="translate(452.12588,195.89287)"
    id="g3679-5"><g
      id="g3681-2"><g
        id="g3687-9"><g
@@ -1339,111 +1339,7 @@
            inkscape:connector-curvature="0"
            d="m 813.348,452.42 c 0,0 2.13,12.236 -0.259,16.646 l 0,0 c -7.485,-19.674 -17.213,-19.749 -15.871,-37.152 l 0,0 c 8.201,-19.051 27.175,0.647 27.164,16.925 l 0,0 c 0,0 -21.6,-31.196 7.758,21.838 l 0,0 c -11.363,-13.05 -13.892,-14.423 -18.792,-18.257"
            style="fill:url(#linearGradient3691-7);stroke:none"
-           id="path3697-3" /></g></g></g></g><g
-   id="g7348"
-   transform="translate(2527.0588,762.35294)"><text
-   transform="scale(0.84096635,-1.1891082)"
-   sodipodi:linespacing="125%"
-   id="text7122-0"
-   y="-183.07204"
-   x="1382.5969"
-   style="font-size:93.28102112px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman"
-   xml:space="preserve"><tspan
-     y="-183.07204"
-     x="1382.5969"
-     id="tspan7124-2"
-     sodipodi:role="line">C</tspan></text>
-
-
-
-
-<g
-   id="g7297"><text
-   xml:space="preserve"
-   style="font-size:51.10744858px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman"
-   x="1211.1853"
-   y="-266.29376"
-   id="text7126"
-   sodipodi:linespacing="125%"
-   transform="scale(1,-1)"><tspan
-     sodipodi:role="line"
-     id="tspan7128"
-     x="1211.1853"
-     y="-266.29376">olombe</tspan></text>
-
-
-
-
-<text
-   xml:space="preserve"
-   style="font-size:51.10744858px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman"
-   x="1210.7765"
-   y="-221.90007"
-   id="text7126-8"
-   sodipodi:linespacing="125%"
-   transform="scale(1,-1)"><tspan
-     sodipodi:role="line"
-     id="tspan7128-0"
-     x="1210.7765"
-     y="-221.90007">alvary</tspan></text>
-
-
-
-
-</g></g><g
-   transform="translate(2485.1483,589.38304)"
-   id="g7348-8"
-   style="fill:#000000;fill-opacity:1"><text
-   transform="scale(0.84096635,-1.1891082)"
-   sodipodi:linespacing="125%"
-   id="text7122-0-7"
-   y="-183.07204"
-   x="1382.5969"
-   style="font-size:93.28102112px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman"
-   xml:space="preserve"><tspan
-     y="-183.07204"
-     x="1382.5969"
-     id="tspan7124-2-0"
-     sodipodi:role="line">C</tspan></text>
-
-
-
-
-<g
-   id="g7297-1"
-   style="fill:#000000;fill-opacity:1"><text
-   xml:space="preserve"
-   style="font-size:51.10744858px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman"
-   x="1211.1853"
-   y="-266.29376"
-   id="text7126-9"
-   sodipodi:linespacing="125%"
-   transform="scale(1,-1)"><tspan
-     sodipodi:role="line"
-     id="tspan7128-3"
-     x="1211.1853"
-     y="-266.29376">olombe</tspan></text>
-
-
-
-
-<text
-   xml:space="preserve"
-   style="font-size:51.10744858px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Centennial-Roman;-inkscape-font-specification:Centennial-Roman"
-   x="1210.7765"
-   y="-221.90007"
-   id="text7126-8-3"
-   sodipodi:linespacing="125%"
-   transform="scale(1,-1)"><tspan
-     sodipodi:role="line"
-     id="tspan7128-0-6"
-     x="1210.7765"
-     y="-221.90007">alvary</tspan></text>
-
-
-
-
-</g></g>
+           id="path3697-3" /></g></g></g></g>
 
 <flowRoot
    xml:space="preserve"
@@ -1528,6 +1424,7 @@
 
 
 
+
 <g
    id="g3719"
    transform="matrix(1.1502647,0,0,1.1502647,-102.17335,-142.30965)"><g
@@ -1584,6 +1481,7 @@
 
 
 
+
 <g
    id="g3923"
    transform="matrix(1.1502647,0,0,1.1502647,-102.17335,-142.30965)"><g
@@ -1623,6 +1521,7 @@
      y="-130.89441"
      sodipodi:role="line"
      id="tspan4135">ISBN  En attente</tspan></text>
+
 
 <g
    id="g4153"
@@ -1751,6 +1650,7 @@
      x="46"
      y="244">Charismatique</tspan></text>
 
+
 <g
    id="g6969"
    transform="matrix(1.1502647,0,0,1.1502647,-586.23677,-223.85124)"><flowRoot
@@ -1782,6 +1682,7 @@
 
 
 
+
 <text
    transform="matrix(0.6774124,0.0592659,0.0592659,-0.6774124,1282.7344,792.46406)"
    sodipodi:linespacing="125%"
@@ -1795,6 +1696,7 @@
      x="-440.0712"
      id="tspan3828-3"
      sodipodi:role="line">a</tspan></text>
+
 
 
 
@@ -1816,6 +1718,7 @@
 
 
 
+
 <text
    transform="matrix(0.68,0,0,-0.68,933.19556,752.13771)"
    sodipodi:linespacing="125%"
@@ -1829,6 +1732,7 @@
      x="258.38647"
      id="tspan3828-3-3"
      sodipodi:role="line">a</tspan></text>
+
 
 
 
@@ -1850,6 +1754,7 @@
 
 
 
+
 <text
    transform="matrix(0.67906809,-0.03558845,-0.03558845,-0.67906809,1335.8407,748.64123)"
    sodipodi:linespacing="125%"
@@ -1863,6 +1768,7 @@
      x="-399.14987"
      id="tspan3828-3-02"
      sodipodi:role="line">i</tspan></text>
+
 
 
 
@@ -1884,6 +1790,7 @@
 
 
 
+
 <text
    transform="matrix(0.6774124,0.0592659,0.0592659,-0.6774124,1295.7373,772.20492)"
    sodipodi:linespacing="125%"
@@ -1897,6 +1804,7 @@
      x="-282.34811"
      id="tspan3828-3-33-3-5"
      sodipodi:role="line">n</tspan></text>
+
 
 
 
@@ -1918,6 +1826,7 @@
 
 
 
+
 <text
    transform="matrix(0.67906809,-0.03558845,-0.03558845,-0.67906809,1334.4492,748.8945)"
    sodipodi:linespacing="125%"
@@ -1931,6 +1840,7 @@
      x="-239.30759"
      id="tspan3828-3-02-8"
      sodipodi:role="line">i</tspan></text>
+
 
 
 
@@ -1952,6 +1862,7 @@
 
 
 
+
 <text
    transform="matrix(0.68,0,0,-0.68,933.19556,752.13771)"
    sodipodi:linespacing="125%"
@@ -1965,6 +1876,7 @@
      x="406.36603"
      id="tspan3828-3-33-3-7-6"
      sodipodi:role="line">u</tspan></text>
+
 
 
 
@@ -1986,6 +1898,7 @@
 
 
 
+
 <text
    transform="matrix(0.68,0,0,-0.68,933.19556,752.13771)"
    sodipodi:linespacing="125%"
@@ -1999,6 +1912,7 @@
      x="472.87106"
      id="tspan3828-3-33-3-2"
      sodipodi:role="line">?</tspan></text>
+
 
 
 
@@ -2053,6 +1967,7 @@
      y="-622.84106"
      style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Latino Elongated LET;-inkscape-font-specification:Latino Elongated LET Bold">S</tspan></text>
 
+
 <text
    xml:space="preserve"
    style="font-size:9.20211792px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:-0.64414823px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
@@ -2065,6 +1980,7 @@
      id="tspan7553"
      x="-219.25374"
      y="-566.00629" /></text>
+
 
 <flowRoot
    xml:space="preserve"
@@ -2126,6 +2042,7 @@
      x="-639.29858"
      y="-447.40506">Charismatique</tspan></text>
 
+
 <text
    xml:space="preserve"
    style="font-size:29.44677734px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:4.60105896px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Latino Elongated LET;-inkscape-font-specification:Latino Elongated LET Bold"
@@ -2140,224 +2057,292 @@
      y="-447.40506">Charismaniaque</tspan></text>
 
 
+
 <g
    id="g4408"><text
-     transform="scale(0.88011185,-1.1362192)"
-     sodipodi:linespacing="124%"
-     id="text3552"
+   transform="scale(0.88011185,-1.1362192)"
+   sodipodi:linespacing="124%"
+   id="text3552"
+   y="-146.91328"
+   x="736.80322"
+   style="font-size:33.79629517px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
+   xml:space="preserve"><tspan
+     dx="0"
+     style="letter-spacing:-0.70408946px"
      y="-146.91328"
      x="736.80322"
-     style="font-size:33.79629517px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
-     xml:space="preserve"><tspan
-       dx="0"
-       style="letter-spacing:-0.70408946px"
-       y="-146.91328"
-       x="736.80322"
-       id="tspan3554"
-       sodipodi:role="line">HUCK</tspan></text>
+     id="tspan3554"
+     sodipodi:role="line">HUCK</tspan></text>
+
 <text
-     transform="scale(0.71084114,-1.4067841)"
-     sodipodi:linespacing="124%"
-     id="text3556"
+   transform="scale(0.71084114,-1.4067841)"
+   sodipodi:linespacing="124%"
+   id="text3556"
+   y="-119.07889"
+   x="880.5144"
+   style="font-size:48.33719635px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
+   xml:space="preserve"><tspan
      y="-119.07889"
      x="880.5144"
-     style="font-size:48.33719635px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
-     xml:space="preserve"><tspan
-       y="-119.07889"
-       x="880.5144"
-       id="tspan3558"
-       sodipodi:role="line"
-       style="font-size:46.52186966px">C</tspan></text>
+     id="tspan3558"
+     sodipodi:role="line"
+     style="font-size:46.52186966px">C</tspan></text>
+
 </g><g
    id="g4414"><text
-     transform="scale(0.88011184,-1.1362192)"
-     sodipodi:linespacing="124%"
-     id="text3552-6"
+   transform="scale(0.88011184,-1.1362192)"
+   sodipodi:linespacing="124%"
+   id="text3552-6"
+   y="-98.735489"
+   x="763.94006"
+   style="font-size:33.79629517px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
+   xml:space="preserve"><tspan
+     style="letter-spacing:-0.70408946px"
      y="-98.735489"
      x="763.94006"
-     style="font-size:33.79629517px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
-     xml:space="preserve"><tspan
-       style="letter-spacing:-0.70408946px"
-       y="-98.735489"
-       x="763.94006"
-       id="tspan3554-8"
-       sodipodi:role="line">MITH</tspan></text>
+     id="tspan3554-8"
+     sodipodi:role="line">MITH</tspan></text>
+
 <text
-     transform="scale(0.76045753,-1.3149978)"
-     sodipodi:linespacing="124%"
-     id="text3556-1"
+   transform="scale(0.76045753,-1.3149978)"
+   sodipodi:linespacing="124%"
+   id="text3556-1"
+   y="-85.762672"
+   x="857.21985"
+   style="font-size:51.71111298px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
+   xml:space="preserve"><tspan
      y="-85.762672"
      x="857.21985"
-     style="font-size:51.71111298px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
-     xml:space="preserve"><tspan
-       y="-85.762672"
-       x="857.21985"
-       id="tspan3558-1"
-       sodipodi:role="line"
-       style="font-size:49.76907349px">S</tspan></text>
+     id="tspan3558-1"
+     sodipodi:role="line"
+     style="font-size:49.76907349px">S</tspan></text>
+
 </g><g
    id="g4516"
    transform="translate(1.1936619,0)"><text
-     transform="matrix(0,-0.88011186,-1.1362192,0,0,0)"
-     sodipodi:linespacing="124%"
-     id="text3552-3"
+   transform="matrix(0,-0.88011186,-1.1362192,0,0,0)"
+   sodipodi:linespacing="124%"
+   id="text3552-3"
+   y="-390.78751"
+   x="-280.14862"
+   style="font-size:16.94296646px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
+   xml:space="preserve"><tspan
+     dx="0"
+     style="letter-spacing:-0.35297847px"
      y="-390.78751"
      x="-280.14862"
-     style="font-size:16.94296646px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
-     xml:space="preserve"><tspan
-       dx="0"
-       style="letter-spacing:-0.35297847px"
-       y="-390.78751"
-       x="-280.14862"
-       id="tspan3554-5"
-       sodipodi:role="line">HUCK</tspan></text>
+     id="tspan3554-5"
+     sodipodi:role="line">HUCK</tspan></text>
+
 <text
-     transform="matrix(0,-0.76894708,-1.3004796,0,0,0)"
-     sodipodi:linespacing="124%"
-     id="text3556-6"
+   transform="matrix(0,-0.76894708,-1.3004796,0,0,0)"
+   sodipodi:linespacing="124%"
+   id="text3556-6"
+   y="-341.5831"
+   x="-335.35953"
+   style="font-size:22.40154266px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
+   xml:space="preserve"><tspan
      y="-341.5831"
      x="-335.35953"
-     style="font-size:22.40154266px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
-     xml:space="preserve"><tspan
-       y="-341.5831"
-       x="-335.35953"
-       id="tspan3558-9"
-       sodipodi:role="line"
-       style="font-size:21.56024361px">C</tspan></text>
+     id="tspan3558-9"
+     sodipodi:role="line"
+     style="font-size:21.56024361px">C</tspan></text>
+
 </g><g
    id="g4510"
    transform="translate(1.7912239,-1.6)"><text
-     transform="matrix(0,-0.88011186,-1.1362192,0,0,0)"
-     sodipodi:linespacing="124%"
-     id="text3552-6-8"
+   transform="matrix(0,-0.88011186,-1.1362192,0,0,0)"
+   sodipodi:linespacing="124%"
+   id="text3552-6-8"
+   y="-390.05899"
+   x="-213.61108"
+   style="font-size:16.94296646px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
+   xml:space="preserve"><tspan
+     style="letter-spacing:-0.35297847px"
      y="-390.05899"
      x="-213.61108"
-     style="font-size:16.94296646px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
-     xml:space="preserve"><tspan
-       style="letter-spacing:-0.35297847px"
-       y="-390.05899"
-       x="-213.61108"
-       id="tspan3554-8-4"
-       sodipodi:role="line">MITH</tspan></text>
+     id="tspan3554-8-4"
+     sodipodi:role="line">MITH</tspan></text>
+
 <text
-     transform="matrix(0,-0.81400751,-1.2284899,0,0,0)"
-     sodipodi:linespacing="124%"
-     id="text3556-1-8"
+   transform="matrix(0,-0.81400751,-1.2284899,0,0,0)"
+   sodipodi:linespacing="124%"
+   id="text3556-1-8"
+   y="-360.93582"
+   x="-243.56718"
+   style="font-size:24.21870041px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
+   xml:space="preserve"><tspan
      y="-360.93582"
      x="-243.56718"
-     style="font-size:24.21870041px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#fff540;fill-opacity:1;stroke:none;font-family:URWPalladioL;-inkscape-font-specification:URWPalladioL"
-     xml:space="preserve"><tspan
-       y="-360.93582"
-       x="-243.56718"
-       id="tspan3558-1-3"
-       sodipodi:role="line"
-       style="font-size:23.3091526px">S</tspan></text>
+     id="tspan3558-1-3"
+     sodipodi:role="line"
+     style="font-size:23.3091526px">S</tspan></text>
+
 </g><g
    id="g4616"
-   transform="translate(779.64685,218.39649)"><text
-     transform="scale(0.74836638,-1.3362439)"
-     sodipodi:linespacing="124%"
-     id="text4569"
+   transform="translate(818.52215,390.84332)"><text
+   transform="scale(0.74836638,-1.3362439)"
+   sodipodi:linespacing="124%"
+   id="text4569"
+   y="-66.919617"
+   x="371.64569"
+   style="font-size:32.67155075px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
+   xml:space="preserve"><tspan
+     dy="0"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
      y="-66.919617"
      x="371.64569"
-     style="font-size:32.67155075px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
-     xml:space="preserve"><tspan
-       dy="0"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
-       y="-66.919617"
-       x="371.64569"
-       id="tspan4571"
-       sodipodi:role="line"><tspan
-         dy="11.496303"
-         id="tspan4575"
-         style="font-size:52.27447891px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O">C</tspan></tspan><tspan
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
-       id="tspan4573"
-       y="-2.0992622"
-       x="371.64569"
-       sodipodi:role="line" /></text>
+     id="tspan4571"
+     sodipodi:role="line"><tspan
+       dy="11.496303"
+       id="tspan4575"
+       style="font-size:52.27447891px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O">C</tspan></tspan><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+     id="tspan4573"
+     y="-2.0992622"
+     x="371.64569"
+     sodipodi:role="line" /></text>
+
 <text
-     transform="scale(1,-1)"
-     sodipodi:linespacing="124%"
-     id="text4589"
+   transform="scale(1,-1)"
+   sodipodi:linespacing="124%"
+   id="text4589"
+   y="-97.377029"
+   x="300.82858"
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
+   xml:space="preserve"><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:-1.03999996px;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
      y="-97.377029"
      x="300.82858"
-     style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
-     xml:space="preserve"><tspan
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:-1.03999996px;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
-       y="-97.377029"
-       x="300.82858"
-       id="tspan4591"
-       sodipodi:role="line">olombe</tspan></text>
+     id="tspan4591"
+     sodipodi:role="line">olombe</tspan></text>
+
 <text
-     transform="scale(1,-1)"
-     sodipodi:linespacing="124%"
-     id="text4589-8"
+   transform="scale(1,-1)"
+   sodipodi:linespacing="124%"
+   id="text4589-8"
+   y="-73.551956"
+   x="300.60458"
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
+   xml:space="preserve"><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:-1.03999996px;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
      y="-73.551956"
      x="300.60458"
-     style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
-     xml:space="preserve"><tspan
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:-1.03999996px;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
-       y="-73.551956"
-       x="300.60458"
-       id="tspan4591-1"
-       sodipodi:role="line">alvary</tspan></text>
+     id="tspan4591-1"
+     sodipodi:role="line">alvary</tspan></text>
+
 </g><g
    id="g4616-9"
    transform="matrix(0.44022916,0,0,0.44022916,63.937229,69.03216)"><text
-     transform="scale(0.74836638,-1.3362439)"
-     sodipodi:linespacing="124%"
-     id="text4569-3"
+   transform="scale(0.74836638,-1.3362439)"
+   sodipodi:linespacing="124%"
+   id="text4569-3"
+   y="-66.919617"
+   x="371.64569"
+   style="font-size:32.67155075px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
+   xml:space="preserve"><tspan
+     dy="0"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
      y="-66.919617"
      x="371.64569"
-     style="font-size:32.67155075px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
-     xml:space="preserve"><tspan
-       dy="0"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
-       y="-66.919617"
-       x="371.64569"
-       id="tspan4571-1"
-       sodipodi:role="line"><tspan
-         dy="11.496303"
-         id="tspan4575-8"
-         style="font-size:52.27447891px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O">C</tspan></tspan><tspan
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
-       id="tspan4573-2"
-       y="-2.0992622"
-       x="371.64569"
-       sodipodi:role="line" /></text>
+     id="tspan4571-1"
+     sodipodi:role="line"><tspan
+       dy="11.496303"
+       id="tspan4575-8"
+       style="font-size:52.27447891px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O">C</tspan></tspan><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+     id="tspan4573-2"
+     y="-2.0992622"
+     x="371.64569"
+     sodipodi:role="line" /></text>
+
 <text
-     transform="scale(1,-1)"
-     sodipodi:linespacing="124%"
-     id="text4589-7"
+   transform="scale(1,-1)"
+   sodipodi:linespacing="124%"
+   id="text4589-7"
+   y="-97.377029"
+   x="300.82858"
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
+   xml:space="preserve"><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:-1.03999996px;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
      y="-97.377029"
      x="300.82858"
-     style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
-     xml:space="preserve"><tspan
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:-1.03999996px;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
-       y="-97.377029"
-       x="300.82858"
-       id="tspan4591-0"
-       sodipodi:role="line">olombe</tspan></text>
+     id="tspan4591-0"
+     sodipodi:role="line">olombe</tspan></text>
+
 <text
-     transform="scale(1,-1)"
-     sodipodi:linespacing="124%"
-     id="text4589-8-5"
+   transform="scale(1,-1)"
+   sodipodi:linespacing="124%"
+   id="text4589-8-5"
+   y="-73.551956"
+   x="300.60458"
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
+   xml:space="preserve"><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:-1.03999996px;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
      y="-73.551956"
      x="300.60458"
-     style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
-     xml:space="preserve"><tspan
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:-1.03999996px;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
-       y="-73.551956"
-       x="300.60458"
-       id="tspan4591-1-4"
-       sodipodi:role="line">alvary</tspan></text>
+     id="tspan4591-1-4"
+     sodipodi:role="line">alvary</tspan></text>
+
 </g><g
    id="g4616-8"
    transform="matrix(0,-0.40766701,0.40766701,0,417.15076,213.11292)"><text
+   transform="scale(0.74836638,-1.3362439)"
+   sodipodi:linespacing="124%"
+   id="text4569-6"
+   y="-66.919617"
+   x="371.64569"
+   style="font-size:32.67155075px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
+   xml:space="preserve"><tspan
+     dy="0"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+     y="-66.919617"
+     x="371.64569"
+     id="tspan4571-2"
+     sodipodi:role="line"><tspan
+       dy="11.496303"
+       id="tspan4575-7"
+       style="font-size:52.27447891px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O">C</tspan></tspan><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+     id="tspan4573-8"
+     y="-2.0992622"
+     x="371.64569"
+     sodipodi:role="line" /></text>
+
+<text
+   transform="scale(1,-1)"
+   sodipodi:linespacing="124%"
+   id="text4589-79"
+   y="-97.377029"
+   x="300.82858"
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
+   xml:space="preserve"><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:-1.03999996px;fill:#ffffff;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+     y="-97.377029"
+     x="300.82858"
+     id="tspan4591-6"
+     sodipodi:role="line">olombe</tspan></text>
+
+<text
+   transform="scale(1,-1)"
+   sodipodi:linespacing="124%"
+   id="text4589-8-1"
+   y="-73.551956"
+   x="300.60458"
+   style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
+   xml:space="preserve"><tspan
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:-1.03999996px;fill:#ffffff;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
+     y="-73.551956"
+     x="300.60458"
+     id="tspan4591-1-3"
+     sodipodi:role="line">alvary</tspan></text>
+
+</g><g
+   id="g4616-1"
+   transform="translate(818.78541,303.73301)"><text
      transform="scale(0.74836638,-1.3362439)"
      sodipodi:linespacing="124%"
-     id="text4569-6"
+     id="text4569-7"
      y="-66.919617"
      x="371.64569"
      style="font-size:32.67155075px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
@@ -2366,20 +2351,20 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
        y="-66.919617"
        x="371.64569"
-       id="tspan4571-2"
+       id="tspan4571-4"
        sodipodi:role="line"><tspan
          dy="11.496303"
-         id="tspan4575-7"
+         id="tspan4575-0"
          style="font-size:52.27447891px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Linux Biolinum Capitals O;-inkscape-font-specification:Linux Biolinum Capitals O">C</tspan></tspan><tspan
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ffffff;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
-       id="tspan4573-8"
+       id="tspan4573-9"
        y="-2.0992622"
        x="371.64569"
        sodipodi:role="line" /></text>
 <text
      transform="scale(1,-1)"
      sodipodi:linespacing="124%"
-     id="text4589-79"
+     id="text4589-4"
      y="-97.377029"
      x="300.82858"
      style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
@@ -2387,12 +2372,12 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:-1.03999996px;fill:#ffffff;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
        y="-97.377029"
        x="300.82858"
-       id="tspan4591-6"
+       id="tspan4591-8"
        sodipodi:role="line">olombe</tspan></text>
 <text
      transform="scale(1,-1)"
      sodipodi:linespacing="124%"
-     id="text4589-8-1"
+     id="text4589-8-8"
      y="-73.551956"
      x="300.60458"
      style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Witches;-inkscape-font-specification:Witches"
@@ -2400,6 +2385,6 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:-1.03999996px;fill:#ffffff;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O"
        y="-73.551956"
        x="300.60458"
-       id="tspan4591-1-3"
+       id="tspan4591-1-2"
        sodipodi:role="line">alvary</tspan></text>
 </g></g></svg>
