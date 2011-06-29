@@ -59,9 +59,10 @@ For the cover
 --------------
 
 "Charisma" -- Latino Elongated
-"versus" -- unknown font, similar to Times New Roman
-"Charismania" -- Goldwater
-"Chuck Smith" -- very similar to Centennial
+"versus" -- unknown font, similar to Times New Roman, Linux Biolinum used
+"Charismania" -- Goldwater"
+Chuck Smith" -- very similar to Centennial, Palladino used
+Back -- Adobe Sans MM, Linux Biolinum used
 
 
 For the inside
@@ -71,6 +72,9 @@ For the inside
 Chapter title -- Latino Elongated
 Text -- Palatino
 Section title -- Garamond Italic
+
+The Palladino and Garamond fonts used are URW fonts. The TTF files can be found at
+http://www.artifex.com/downloads/
 
 
 
