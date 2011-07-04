@@ -185,7 +185,10 @@
 
 \renewcommand*{\chapterpagestyle}{scrheadings}
 
-\newcommand{\closechapter}{\thispagestyle{chapterend}}
+\newcommand{\closechapter}{
+   \begingroup\widowpenalties 6 10000 10000 10000 10000 10000 0
+   \par\endgroup
+   \thispagestyle{chapterend}}
 
 
 % Set index
