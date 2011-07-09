@@ -78,6 +78,9 @@ Charismatique ou Charismaniaque ?}
 \pagestyle{scrheadings}
 \pagenumbering{arabic}
 
+\let\oldemph\emph
+\renewcommand{\emph}[1]{\oldemph{\color{red}#1}}
+
 % All chapters
 %\pagewiselinenumbers
 \include{splits/01}
