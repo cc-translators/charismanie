@@ -96,6 +96,16 @@
 \newfontfamily\lettrinefont{Linux Libertine Initials O}
 %\DeclareMicrotypeAlias{Linux Libertine O}{cmr}
 
+
+% Number chapters
+\renewcommand{\thechapter}{%                                                    
+  \ifnum\value{chapter}=1
+    premier%
+  \else
+    \Roman{chapter}%
+  \fi
+} 
+
 % Make nice chapter headings
 \usepackage{titlesec}
 \newcommand{\chapstyle}{\chapfont\raggedleft\Large\itshape}
@@ -128,12 +138,13 @@
 
 % No scshape...
 % horrible hack
-\newcommand{\mychaptertitlename}{{\normalsize{C}}{\footnotesize{\,HAPITRE}}\;\normalsize}
+%\newcommand\fakesc[1]{\scalebox{0.7}{\MakeUppercase{#1}}}
+%\newcommand{\mychaptertitlename}{{\normalsize{C}}{\footnotesize{\,HAPITRE}}\;\normalsize}
 
 \renewcommand\cfttoctitlefont{\vspace{-6em}\hfill\chapheadfont\Huge\scshape}
 \renewcommand\cftaftertoctitle{\hfill\vspace{-2.5em}}
 \renewcommand\cftchapfont{\chaptocfont }
-\renewcommand\cftchappresnum{\mychaptertitlename\ }
+\renewcommand\cftchappresnum{\MakeUppercase\chaptertitlename\;\MakeUppercase}
 \renewcommand\cftchapaftersnumb{\newline\vspace{-8pt}\normalfont}
 \renewcommand\cftchapleader{\cftdotfill{1}}
 \renewcommand\cftchappagefont{\normalfont}
