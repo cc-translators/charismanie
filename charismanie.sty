@@ -97,14 +97,6 @@
 %\DeclareMicrotypeAlias{Linux Libertine O}{cmr}
 
 
-% Number chapters
-\renewcommand{\thechapter}{%                                                    
-  \ifnum\value{chapter}=1
-    premier%
-  \else
-    \Roman{chapter}%
-  \fi
-} 
 
 % Make nice chapter headings
 \usepackage{titlesec}
@@ -223,11 +215,9 @@
 % Creative Commons
 %\usepackage{ccicons}
 
-% Hyphenation
-% No page finishes with an hyphenated word
-\brokenpenalty=10000
-% Discourage hyphenation on two lines in a row
-\doublehyphendemerits=1000000000
+
+\usepackage{impnattypo}
+
 % Allow emergency stretch
 %\emergencystretch=1.5em
 %\emergencystretch=1.7em

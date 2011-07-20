@@ -1,0 +1,22 @@
+\ProvidesPackage{impnattypo}
+
+% Hyphenation
+% No page finishes with an hyphenated word
+\brokenpenalty=10000
+% Discourage hyphenation on two lines in a row
+\doublehyphendemerits=1000000000
+
+
+% Number chapters
+\renewcommand{\thechapter}{%                                                    
+  \ifnum\value{chapter}=1
+    premier%
+  \else
+    \Roman{chapter}%
+  \fi
+} 
+
+
+% Implement closechapter
+
+
