@@ -140,7 +140,7 @@
 \renewcommand\cftchapfont{\chaptocfont }
 \renewcommand\cftchappresnum{\chaptertitlename\;}
 %\renewcommand\cftchapaftersnumb{\newline\vspace{-8pt}\normalfont}
-\renewcommand\cftchapaftersnumb{\newline\normalfont}
+\renewcommand\cftchapaftersnumb{\linebreak\normalfont}
 \renewcommand\cftchapleader{\cftdotfill{1}}
 \renewcommand\cftsecleader{\cftdotfill{1}}
 \renewcommand\cftchappagefont{\normalfont}
@@ -152,8 +152,8 @@
   \renewcommand{\chapstyle}{\centering}
   \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
   \titlespacing*{\chapter}
-    {0pt}{-3em}{-0.5em}
-  \renewcommand\cftchapaftersnumb{\newline\vspace{-0.85em}\normalfont}
+    {0pt}{-4em}{-1em}
+  \renewcommand\cftchapaftersnumb{\linebreak\vspace{-0.9em}\normalfont}
   \shorttableofcontents{Sommaire}{0}
   \endgroup
 }
@@ -202,14 +202,12 @@
 \cfoot[\rule{6mm}{0.8pt}\\\pagemark]{\rule{6mm}{0.8pt}\\\pagemark}
 \ofoot[]{}
 \lehead[]{}
-%\ifpdf
-  \cehead[\headerfont\textsc{\titlehead}]{}
-  \cohead[\headerfont\textsc{\chaphead}]{}
-%\else
-%  \cehead[]{}
-%  \cohead[]{}
-%\fi
+\cehead[\headerfont\textsc{\titlehead}]{}
 \ohead[]{}
+
+\newcommand{\setbookheadings}{%
+  \cohead[\headerfont\textsc{\chaphead}]{}
+}
 
 \defpagestyle{chapterend}%
   {%
