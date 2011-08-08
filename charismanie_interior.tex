@@ -68,10 +68,12 @@
 
 % ToC in the beginning (original version)
 %\ifpdf
-  \cleardoublepage
-  \tableofcontents
-  \thispagestyle{empty}
+\cleardoublepage
+\myshorttoc
+\thispagestyle{empty}
 %\fi
+
+\setchaphead
 
 % Debug overfull boxes
 \overfullrule=1mm
@@ -111,8 +113,8 @@
 \closechapter
 
 % ToC in the end (Imprimerie Nationale)
-%\cleardoublepage
-%\tableofcontents
+\cleardoublepage
+\tableofcontents
 
 % finish with a double empty page
 \pagestyle{empty}
