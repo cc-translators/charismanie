@@ -137,8 +137,6 @@
 
 \renewcommand{\thesection}{}
 
-\renewcommand\cfttoctitlefont{\vspace{-6em}\hfill\chapheadfont\Huge\scshape}
-\renewcommand\cftaftertoctitle{\hfill\vspace{-2.5em}}
 \renewcommand\cftchapfont{\chaptocfont }
 \renewcommand\cftchappresnum{\chaptertitlename\;}
 %\renewcommand\cftchapaftersnumb{\newline\vspace{-8pt}\normalfont}
@@ -155,6 +153,8 @@
   \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
   \titlespacing*{\chapter}
     {0pt}{-3em}{-0em}
+  \renewcommand\cfttoctitlefont{\vspace{-6em}\hfill\chapheadfont\Huge\scshape}
+  \renewcommand\cftaftertoctitle{\hfill\vspace{-2.5em}}
   \renewcommand\cftchapaftersnumb{\newline\vspace{-0.75em}\normalfont}
   \shorttableofcontents{Sommaire}{0}
   \endgroup
@@ -163,6 +163,8 @@
 
 \newcommand{\mylongtoc}{%
   \cohead[\headerfont\textsc{\contentsname}]{}
+  \renewcommand\cfttoctitlefont{\vspace{-1em}\hfill\chapheadfont\Huge\scshape}
+  \renewcommand\cftaftertoctitle{\hfill}
   \tocloftpagestyle{scrheadings}
   \tableofcontents
 }
