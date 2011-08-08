@@ -52,6 +52,7 @@
 % Make indexes
 \newcommand{\indextitle}{Index des r\'ef\'erences bibliques}
 \usepackage{imakeidx}
+\indexsetup{firstpagestyle=scrheadings}
 \makeindex[title=\indextitle,intoc,options=-s bibleref.ist,columns=2]
 % Only reference Bible chapters in index
 %\usepackage[verses]{bibleref-xidx}
@@ -160,6 +161,13 @@
 }
 
 
+\newcommand{\mylongtoc}{%
+  \cohead[\headerfont\textsc{\contentsname}]{}
+  \tocloftpagestyle{scrheadings}
+  \tableofcontents
+}
+
+
 % Define \chaphead to be used in section headings
 \newcommand{\setchaphead}{%
   \let\oldchapter\chapter
@@ -210,13 +218,29 @@
   }%
   {{}{}{}} % Nothing in footer
 
+\defpagestyle{indexend}%
+  {%
+    {\hfill\headerfont\textsc{\titlehead}\hfill}
+    {\hfill\headerfont\textsc{\indextitle}\hfill}
+    {}
+  }%
+  {{}{}{}} % Nothing in footer
+
+\defpagestyle{tocend}%
+  {%
+    {\hfill\headerfont\textsc{\titlehead}\hfill}
+    {\hfill\headerfont\textsc{\contentsname}\hfill}
+    {}
+  }%
+  {{}{}{}} % Nothing in footer
+
 \renewcommand*{\chapterpagestyle}{scrheadings}
 
-\newcommand{\closechapter}{
+\newcommand{\closechapter}[1][chapterend]{
    \begingroup\widowpenalties 6 10000 10000 10000 10000 10000 0
    \par\endgroup
    \mbox{}\hfill
-   \thispagestyle{chapterend}}
+   \thispagestyle{#1}}
 
 % Set index
 \newcommand{\chindex}{%
@@ -224,14 +248,14 @@
   \restorechaphead
   % Appendix
   %\ifpdf
-    \cohead[]{\headerfont\textsc{\indextitle}}
+    \cohead[\headerfont\textsc{\indextitle}]{}
   %\fi
   \renewcommand{\chapstyle}{\centering}
   \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
   \titlespacing*{\chapter}
     {0pt}{1em}{5em}
   \renewcommand*{\BRbooktitlestyle}[1]{\textbf{\emph{##1}}\vadjust{\nobreak}}
-  \def\imki@firstpagestyle{empty}
+  %\def\imki@firstpagestyle{scrheadings}
   \printindex
 }
 
