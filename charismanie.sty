@@ -152,10 +152,8 @@
   \renewcommand{\chapstyle}{\centering}
   \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
   \titlespacing*{\chapter}
-    {0pt}{-3em}{-0em}
-  \renewcommand\cfttoctitlefont{\vspace{-6em}\hfill\chapheadfont\Huge\scshape}
-  \renewcommand\cftaftertoctitle{\hfill\vspace{-2.5em}}
-  \renewcommand\cftchapaftersnumb{\newline\vspace{-0.75em}\normalfont}
+    {0pt}{-3em}{-0.5em}
+  \renewcommand\cftchapaftersnumb{\newline\vspace{-0.85em}\normalfont}
   \shorttableofcontents{Sommaire}{0}
   \endgroup
 }
@@ -166,6 +164,7 @@
   \renewcommand\cfttoctitlefont{\vspace{-1em}\hfill\chapheadfont\Huge\scshape}
   \renewcommand\cftaftertoctitle{\hfill}
   \tocloftpagestyle{scrheadings}
+  \addcontentsline{toc}{chapter}{\contentsname}
   \tableofcontents
 }
 
