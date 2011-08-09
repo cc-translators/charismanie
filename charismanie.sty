@@ -152,8 +152,11 @@
   \renewcommand{\chapstyle}{\centering}
   \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
   \titlespacing*{\chapter}
-    {0pt}{-4em}{-1em}
-  \renewcommand\cftchapaftersnumb{\linebreak\vspace{-0.9em}\normalfont}
+    {0pt}{-4em}{0.5em}
+  \renewcommand\cftchapfont{\hspace{0.3em}\chaptocfont }
+  \setlength{\cftbeforechapskip}{-0.2em}
+  \setlength{\cftchapindent}{-1em}
+  \renewcommand\cftchapaftersnumb{\linebreak\normalfont}
   \shorttableofcontents{Sommaire}{0}
   \endgroup
 }
