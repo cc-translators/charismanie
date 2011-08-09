@@ -139,8 +139,12 @@
 
 \renewcommand\cftchapfont{\chaptocfont }
 \renewcommand\cftchappresnum{\chaptertitlename\;}
-%\renewcommand\cftchapaftersnumb{\newline\vspace{-8pt}\normalfont}
 \renewcommand\cftchapaftersnumb{\linebreak\normalfont}
+% Make long chapter names fit (chap 11)
+\renewcommand\cftchapfont{\hspace{0.3em}\chaptocfont }
+\setlength{\cftchapindent}{-1em}
+
+% Homogenous dotfill for chapters and sections alike
 \renewcommand\cftchapleader{\cftdotfill{1}}
 \renewcommand\cftsecleader{\cftdotfill{1}}
 \renewcommand\cftchappagefont{\normalfont}
@@ -148,15 +152,15 @@
 
 
 \newcommand{\myshorttoc}{%
+  % Sommaire
   \begingroup
   \renewcommand{\chapstyle}{\centering}
   \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
   \titlespacing*{\chapter}
     {0pt}{-4em}{0.5em}
-  \renewcommand\cftchapfont{\hspace{0.3em}\chaptocfont }
-  \setlength{\cftbeforechapskip}{-0.2em}
   \setlength{\cftchapindent}{-1em}
-  \renewcommand\cftchapaftersnumb{\linebreak\normalfont}
+  % Reduce skip between chapter entries
+  \setlength{\cftbeforechapskip}{-0.2em}
   \shorttableofcontents{Sommaire}{0}
   \endgroup
 }
@@ -166,6 +170,7 @@
   \cohead[\headerfont\textsc{\contentsname}]{}
   \renewcommand\cfttoctitlefont{\vspace{-1em}\hfill\chapheadfont\Huge\scshape}
   \renewcommand\cftaftertoctitle{\hfill}
+  \setlength{\cftchapindent}{-1em}
   \tocloftpagestyle{scrheadings}
   \addcontentsline{toc}{chapter}{\contentsname}
   \tableofcontents
