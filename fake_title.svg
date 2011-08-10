@@ -15,7 +15,7 @@
    inkscape:version="0.48.1 "
    width="540"
    height="810"
-   sodipodi:docname="fake_title.svg">
+   sodipodi:docname="fake_title.pdf">
   <metadata
      id="metadata3234">
     <rdf:RDF>
@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -4775,7 +4775,7 @@
      showgrid="false"
      units="in"
      inkscape:zoom="0.62225396"
-     inkscape:cx="276.66324"
+     inkscape:cx="400.60194"
      inkscape:cy="347.75568"
      inkscape:window-x="-4"
      inkscape:window-y="-4"
@@ -4810,7 +4810,7 @@
        style="font-size:144px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;fill:#f9e9a7;fill-opacity:1;font-family:Goldwater Plain;-inkscape-font-specification:Goldwater Plain Medium" /></text>
   <g
      id="g12349"
-     transform="translate(739.24801,6.9682693e-6)">
+     transform="translate(642.82435,3.2141287)">
     <g
        transform="translate(127.27273,-854.68351)"
        id="g4647">
