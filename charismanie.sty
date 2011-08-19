@@ -95,7 +95,7 @@
 \newfontfamily\chapheadfont[Scale=1.2,LetterSpace=5,WordSpace=5]{Latino Elongated LET}
 \newfontfamily\chaptocfont[Scale=1.4,Letters=SmallCaps,LetterSpace=10,WordSpace=5]{LatinoElongatedLetPlainSC.otf}
 \newfontfamily\secfont{EB Garamond}
-\newfontfamily\headerfont[LetterSpace=12,WordSpace=2,Ligatures=NoCommon]{Linux Libertine O}
+\newfontfamily\headerfont{LinLibertineCapitalsO}
 %\newfontfamily\lettrinefont{Linux Libertine Initials O}
 \newfontfamily\lettrinefont{LinLibertineIO}
 %\DeclareMicrotypeAlias{Linux Libertine O}{cmr}
@@ -169,7 +169,7 @@
 
 
 \newcommand{\mylongtoc}{%
-  \cohead[\headerfont\textsc{\contentsname}]{}
+  \cohead[\headerfont\textls{\contentsname}]{}
   \renewcommand\cfttoctitlefont{\vspace{-1em}\hfill\chapheadfont\Huge\scshape}
   \renewcommand\cftaftertoctitle{\hfill}
   \setlength{\cftchapindent}{-1em}
@@ -209,47 +209,48 @@
 % chapter endings => chapterend
 %
 
-%\SetTracking{encoding={*},family={Linux Libertine O}}{300}
+%\SetTracking{encoding={*},family={LinuxLibertineCapitalsO}}{300}
+
 
 \renewcommand{\pnumfont}{\pagemarkfont}
 \cfoot[\rule{6mm}{0.8pt}\\\pagemark]{\rule{6mm}{0.8pt}\\\pagemark}
 \ofoot[]{}
 \lehead[]{}
-\cehead[\headerfont\textsc{\titlehead}]{}
+\cehead[\headerfont\textls{\titlehead}]{}
 \ohead[]{}
 
 \newcommand{\setbookheadings}{%
-  \cohead[\headerfont\textsc{\chaphead}]{}
+  \cohead[\headerfont\textls{\chaphead}]{}
 }
 
 \defpagestyle{chapterend}%
   {%
-    {\hfill\headerfont\textsc{\titlehead}\hfill}
-    {\hfill\headerfont\textsc{\chaphead}\hfill}
+    {\hfill\headerfont\textls{\titlehead}\hfill}
+    {\hfill\headerfont\textls{\chaphead}\hfill}
     {}
   }%
   {{}{}{}} % Nothing in footer
 
 \defpagestyle{indexend}%
   {%
-    {\hfill\headerfont\textsc{\titlehead}\hfill}
-    {\hfill\headerfont\textsc{\indextitle}\hfill}
+    {\hfill\headerfont\textls{\titlehead}\hfill}
+    {\hfill\headerfont\textls{\indextitle}\hfill}
     {}
   }%
   {{}{}{}} % Nothing in footer
 
 \defpagestyle{tocend}%
   {%
-    {\hfill\headerfont\textsc{\titlehead}\hfill}
-    {\hfill\headerfont\textsc{\contentsname}\hfill}
+    {\hfill\headerfont\textls{\titlehead}\hfill}
+    {\hfill\headerfont\textls{\contentsname}\hfill}
     {}
   }%
   {{}{}{}} % Nothing in footer
 
 \defpagestyle{prefaceend}%
   {%
-    {\hfill\headerfont\textsc{\titlehead}\hfill}
-    {\hfill\headerfont\textsc{Préface}\hfill}
+    {\hfill\headerfont\textls{\titlehead}\hfill}
+    {\hfill\headerfont\textls{Préface}\hfill}
     {}
   }%
   {{}{}{}} % Nothing in footer
@@ -268,7 +269,7 @@
   \restorechaphead
   % Appendix
   %\ifpdf
-    \cohead[\headerfont\textsc{\indextitle}]{}
+    \cohead[\headerfont\textls{\indextitle}]{}
   %\fi
   \renewcommand{\chapstyle}{\centering}
   \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
