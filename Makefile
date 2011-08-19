@@ -28,8 +28,8 @@ json: pdf $(addsuffix .json,$(TARGETS))
 	sed -e 's@%$(LINENO_PATT)@$(LINENO_PATT)@' $< > $@
 
 %.pdf: %.tex
-	TEXINPUTS=$(TEXINPUTS) xelatex -shell-escape -interaction=batchmode $*
-	TEXINPUTS=$(TEXINPUTS) xelatex -shell-escape -interaction=batchmode $*
+	TEXINPUTS=$(TEXINPUTS) lualatex -shell-escape -interaction=batchmode $*
+	TEXINPUTS=$(TEXINPUTS) lualatex -shell-escape -interaction=batchmode $*
 
 %.dvi: %.tex
 	-TEXINPUTS=$(TEXINPUTS) latex -interaction=batchmode $<
