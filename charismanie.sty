@@ -105,7 +105,7 @@
 % Make nice chapter headings
 \usepackage{titlesec}
 \newcommand{\chapstyle}{\chapfont\raggedleft\Large\itshape}
-\newcommand{\chapheadstyle}{\chapheadfont\Huge}
+\newcommand{\chapheadstyle}{\chapheadfont\lsstyle\Huge}
 \titleformat{\chapter}[display]
   {\chapstyle}
   {\chaptertitlename\ \thechapter}{10pt}
@@ -139,11 +139,11 @@
 
 \renewcommand{\thesection}{}
 
-\renewcommand\cftchapfont{\chaptocfont }
+\renewcommand\cftchapfont{\chaptocfont\lsstyle }
 \renewcommand\cftchappresnum{\chaptertitlename\;}
 \renewcommand\cftchapaftersnumb{\linebreak\normalfont}
 % Make long chapter names fit (chap 11)
-\renewcommand\cftchapfont{\hspace{0.3em}\chaptocfont }
+\renewcommand\cftchapfont{\hspace{0.3em}\chaptocfont\lsstyle }
 \setlength{\cftchapindent}{-1em}
 
 % Homogenous dotfill for chapters and sections alike
@@ -157,7 +157,7 @@
   % Sommaire
   \begingroup
   \renewcommand{\chapstyle}{\centering}
-  \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
+  \renewcommand{\chapheadstyle}{\chapheadfont\lsstyle\Huge}
   \titlespacing*{\chapter}
     {0pt}{-4em}{0.5em}
   \setlength{\cftchapindent}{-1em}
@@ -170,7 +170,7 @@
 
 \newcommand{\mylongtoc}{%
   \cohead[\headerfont\textls{\contentsname}]{}
-  \renewcommand\cfttoctitlefont{\vspace{-1em}\hfill\chapheadfont\Huge\scshape}
+  \renewcommand\cfttoctitlefont{\vspace{-1em}\hfill\chaptocfont\lsstyle\Huge\scshape}
   \renewcommand\cftaftertoctitle{\hfill}
   \setlength{\cftchapindent}{-1em}
   \tocloftpagestyle{scrheadings}
@@ -272,7 +272,7 @@
     \cohead[\headerfont\textls{\indextitle}]{}
   %\fi
   \renewcommand{\chapstyle}{\centering}
-  \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
+  \renewcommand{\chapheadstyle}{\chapheadfont\textls\Huge}
   \titlespacing*{\chapter}
     {0pt}{1em}{5em}
   \renewcommand*{\BRbooktitlestyle}[1]{\textbf{\emph{##1}}\vadjust{\nobreak}}
