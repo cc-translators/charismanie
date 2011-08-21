@@ -88,12 +88,22 @@
 %\defaultfontfeatures{Mapping=tex-text}
 \defaultfontfeatures{Ligatures=TeX}
 \setmainfont{Linux Libertine O}
+%\setmainfont{Linden Hill}
+%\setmainfont{Fanwood Text}
 
-\newfontfamily\normalfont{Linux Libertine O}
+%\newfontfamily\normalfont{Linux Libertine O}
 \newfontface\pagemarkfont[Numbers={OldStyle}]{Linux Libertine O}
 \newfontfamily\chapfont{EB Garamond}
-\newfontfamily\chapheadfont[Scale=1.2,LetterSpace=5,WordSpace=5]{Latino Elongated LET}
-\newfontfamily\chaptocfont[Scale=1.4,Letters=SmallCaps,LetterSpace=10,WordSpace=5]{LatinoElongatedLetPlainSC.otf}
+%\newfontfamily\chapheadfont[Scale=1.2]{Latino Elongated LET}
+\newfontfamily\chapheadfont{League Gothic}
+%\newfontfamily\chapheadfont{TulpenOne-Regular}
+%\newfontfamily\chapheadfont{WireOne}
+%\newfontfamily\chapheadfont{NimbusSanL-ReguCond}
+%\newfontfamily\chapheadfont{NimbusSanL-BoldCond}
+%\newfontfamily\chaptocfont[Scale=1.4,
+%                           SmallCapsFont={LatinoElongatedLetPlainSC.otf},
+%                           SmallCapsFeatures={Letters=SmallCaps}]{LatinoElongatedLetPlainSC.otf}
+\newfontfamily\chaptocfont[Scale=1.4]{League Gothic}
 \newfontfamily\secfont{EB Garamond}
 \newfontfamily\headerfont{LinLibertineCapitalsO}
 %\newfontfamily\lettrinefont{Linux Libertine Initials O}
@@ -105,7 +115,7 @@
 % Make nice chapter headings
 \usepackage{titlesec}
 \newcommand{\chapstyle}{\chapfont\raggedleft\Large\itshape}
-\newcommand{\chapheadstyle}{\chapheadfont\lsstyle\Huge}
+\newcommand{\chapheadstyle}{\chapheadfont\Huge}
 \titleformat{\chapter}[display]
   {\chapstyle}
   {\chaptertitlename\ \thechapter}{10pt}
@@ -139,12 +149,12 @@
 
 \renewcommand{\thesection}{}
 
-\renewcommand\cftchapfont{\chaptocfont\lsstyle }
-\renewcommand\cftchappresnum{\chaptertitlename\;}
+%\renewcommand\cftchapfont{\chaptocfont }
+\renewcommand\cftchappresnum{\lsstyle\chaptertitlename\;}
 \renewcommand\cftchapaftersnumb{\linebreak\normalfont}
 % Make long chapter names fit (chap 11)
-\renewcommand\cftchapfont{\hspace{0.3em}\chaptocfont\lsstyle }
-\setlength{\cftchapindent}{-1em}
+\renewcommand\cftchapfont{\hspace{0.3em}\chaptocfont }
+%\setlength{\cftchapindent}{-1em}
 
 % Homogenous dotfill for chapters and sections alike
 \renewcommand\cftchapleader{\cftdotfill{1}}
@@ -157,10 +167,10 @@
   % Sommaire
   \begingroup
   \renewcommand{\chapstyle}{\centering}
-  \renewcommand{\chapheadstyle}{\chapheadfont\lsstyle\Huge}
+  \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
   \titlespacing*{\chapter}
     {0pt}{-4em}{0.5em}
-  \setlength{\cftchapindent}{-1em}
+  \setlength{\cftchapindent}{-1.5em}
   % Reduce skip between chapter entries
   \setlength{\cftbeforechapskip}{-0.2em}
   \shorttableofcontents{Sommaire}{0}
@@ -172,7 +182,7 @@
   \cohead[\headerfont\textls{\contentsname}]{}
   \renewcommand\cfttoctitlefont{\vspace{-1em}\hfill\chaptocfont\lsstyle\Huge\scshape}
   \renewcommand\cftaftertoctitle{\hfill}
-  \setlength{\cftchapindent}{-1em}
+  \setlength{\cftchapindent}{-1.5em}
   \tocloftpagestyle{scrheadings}
   \addcontentsline{toc}{chapter}{\contentsname}
   \tableofcontents
@@ -272,7 +282,7 @@
     \cohead[\headerfont\textls{\indextitle}]{}
   %\fi
   \renewcommand{\chapstyle}{\centering}
-  \renewcommand{\chapheadstyle}{\chapheadfont\textls\Huge}
+  \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
   \titlespacing*{\chapter}
     {0pt}{1em}{5em}
   \renewcommand*{\BRbooktitlestyle}[1]{\textbf{\emph{##1}}\vadjust{\nobreak}}
