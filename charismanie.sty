@@ -96,15 +96,19 @@
 \newfontfamily\chapfont{EB Garamond}
 %\newfontfamily\chapheadfont[Scale=1.2]{Latino Elongated LET}
 %\newfontfamily\chapheadfont{League Gothic}
-\newfontfamily\chapheadfont{Fontin-Bold}
-%\newfontfamily\chapheadfont{TulpenOne-Regular}
+%\newfontfamily\chapheadfont{Fontin-Bold}
+%\newfontfamily\chapheadfont[Scale=2]{TulpenOne-Regular}
+\newfontfamily\chapheadfont[Scale=1.2]{SteelfishRg-Regular}
 %\newfontfamily\chapheadfont{WireOne}
 %\newfontfamily\chapheadfont{NimbusSanL-ReguCond}
 %\newfontfamily\chapheadfont{NimbusSanL-BoldCond}
 %\newfontfamily\chaptocfont[Scale=1.4,
 %                           SmallCapsFont={LatinoElongatedLetPlainSC.otf},
 %                           SmallCapsFeatures={Letters=SmallCaps}]{LatinoElongatedLetPlainSC.otf}
-\newfontfamily\chaptocfont[Scale=1.4]{League Gothic}
+%\newfontfamily\chaptocfont[Scale=1.4]{League Gothic}
+%\newfontfamily\chaptocfont{Fontin-Bold}
+%\newfontfamily\chaptocfont{Fontin-SmallCaps}
+\newfontfamily\chaptocfont{SteelfishRg-Regular}
 \newfontfamily\secfont{EB Garamond}
 \newfontfamily\headerfont{LinLibertineCapitalsO}
 %\newfontfamily\lettrinefont{Linux Libertine Initials O}
@@ -116,10 +120,10 @@
 % Make nice chapter headings
 \usepackage{titlesec}
 \newcommand{\chapstyle}{\chapfont\raggedleft\Large\itshape}
-\newcommand{\chapheadstyle}{\chapheadfont\Huge}
+\newcommand{\chapheadstyle}{\chapheadfont\LARGE}
 \titleformat{\chapter}[display]
   {\chapstyle}
-  {\chaptertitlename\ \thechapter}{10pt}
+  {\chaptertitlename\ \thechapter}{0pt}
   {\chapheadstyle}
 \titlespacing*{\chapter}
   {0pt}{0pt}{0pt}
@@ -168,7 +172,7 @@
   % Sommaire
   \begingroup
   \renewcommand{\chapstyle}{\centering}
-  \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
+  \renewcommand{\chapheadstyle}{\chapheadfont\LARGE}
   \titlespacing*{\chapter}
     {0pt}{-4em}{0.5em}
   \setlength{\cftchapindent}{-1.5em}
@@ -283,7 +287,7 @@
     \cohead[\headerfont\textls{\indextitle}]{}
   %\fi
   \renewcommand{\chapstyle}{\centering}
-  \renewcommand{\chapheadstyle}{\chapheadfont\Huge}
+  \renewcommand{\chapheadstyle}{\chapheadfont\LARGE}
   \titlespacing*{\chapter}
     {0pt}{1em}{5em}
   \renewcommand*{\BRbooktitlestyle}[1]{\textbf{\emph{##1}}\vadjust{\nobreak}}
@@ -309,6 +313,22 @@
 % or
 %   \begin{specialpar}{\emergencystretch=1.5em}
 \newenvironment{specialpar}[1]{\par#1}{\par}
+
+
+% Control widows
+\def\nowidowX#1{%
+    \ifnum#1<\nowidowmax
+        10000
+        \expandafter\nowidowX\expandafter{\the\numexpr(#1)+1\expandafter\relax\expandafter}%
+    \fi
+}
+
+\newcommand{\nowidow}[1][2]{%
+    \begingroup
+    \mathchardef\nowidowmax#1\relax
+    \widowpenalties #1 \nowidowX{1} 0\par
+    \endgroup
+}
 
 
 % Make shorttocs
