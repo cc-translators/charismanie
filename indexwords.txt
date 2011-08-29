@@ -110,7 +110,7 @@
      22 grâce
      22 joie
      23 connaissance
-     23 satan
+     23 satan      > OK
      25 disciples
      26 image
      27 dons
@@ -129,10 +129,10 @@
      44 bible
      45 église
      45 père
-     46 agapé
-     48 expérience
+     46 agapé === amour!agapé
+     48 expérience              > OK
      55 parole
      63 corps
      95 puissance
-    100 langues
+    100 langues === langues!parler en ~
     152 amour
