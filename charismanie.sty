@@ -50,13 +50,17 @@
 \usepackage{ifpdf}
 
 % Make indexes
-\newcommand{\indextitle}{Index des r\'ef\'erences bibliques}
 \usepackage{imakeidx}
+% Bibleref index
+\newcommand{\biblerefindextitle}{Index des r\'ef\'erences bibliques}
 \indexsetup{firstpagestyle=scrheadings}
-\makeindex[name=bibleref,title=\indextitle,intoc,options=-s bibleref.ist,columns=2]
+\makeindex[name=bibleref,title=\biblerefindextitle,intoc,options=-s bibleref.ist,columns=2]
 \renewcommand{\biblerefindex}{\index[bibleref]}
 % Only reference Bible chapters in index
 %\usepackage[verses]{bibleref-xidx}
+% Thematic index
+\newcommand{\themeindextitle}{Index thématique}
+\makeindex[title=\themeindextitle,intoc,options=-s thematic.ist,columns=2]
 
 % Patch bibleref to sort Bible books properly
 \usepackage{etoolbox}
@@ -247,10 +251,10 @@
   }%
   {{}{}{}} % Nothing in footer
 
-\defpagestyle{indexend}%
+\defpagestyle{biblerefindexend}%
   {%
     {\hfill\headerfont\textls{\titlehead}\hfill}
-    {\hfill\headerfont\textls{\indextitle}\hfill}
+    {\hfill\headerfont\textls{\biblerefindextitle}\hfill}
     {}
   }%
   {{}{}{}} % Nothing in footer
@@ -285,7 +289,7 @@
   \restorechaphead
   % Appendix
   %\ifpdf
-    \cohead[\headerfont\textls{\indextitle}]{}
+    \cohead[\headerfont\textls{\biblerefindextitle}]{}
   %\fi
   \renewcommand{\chapstyle}{\centering}
   \renewcommand{\chapheadstyle}{\chapheadfont\LARGE}
