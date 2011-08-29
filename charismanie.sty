@@ -53,7 +53,8 @@
 \newcommand{\indextitle}{Index des r\'ef\'erences bibliques}
 \usepackage{imakeidx}
 \indexsetup{firstpagestyle=scrheadings}
-\makeindex[title=\indextitle,intoc,options=-s bibleref.ist,columns=2]
+\makeindex[name=bibleref,title=\indextitle,intoc,options=-s bibleref.ist,columns=2]
+\renewcommand{\biblerefindex}{\index[bibleref]}
 % Only reference Bible chapters in index
 %\usepackage[verses]{bibleref-xidx}
 
@@ -292,7 +293,7 @@
     {0pt}{1em}{5em}
   \renewcommand*{\BRbooktitlestyle}[1]{\textbf{\emph{##1}}\vadjust{\nobreak}}
   %\def\imki@firstpagestyle{scrheadings}
-  \printindex
+  \printindex[bibleref]
 }
 
 % Creative Commons
