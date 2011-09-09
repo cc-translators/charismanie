@@ -41,7 +41,8 @@ json: pdf $(addsuffix .json,$(TARGETS))
 #	pdftohtml -noframes -enc UTF-8 -s -c $*.pdf
 
 %.html: %.tex
-	TEXINPUTS=$(TEXINPUTS) mk4ht htxelatex $< \
+	#TEXINPUTS=$(TEXINPUTS) mk4ht htxelatex $< \
+	TEXINPUTS=$(TEXINPUTS) htxelatex $< \
 	   'xhtml,charset=utf-8' ' -cunihtf -utf8 -cvalidate'
 	./cleanuphtml.sh $@
 
