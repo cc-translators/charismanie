@@ -1,22 +1,30 @@
 \ProvidesPackage{impnattypo}
+\newif\if@impnattypo@frenchchapters
+\DeclareOption{frenchchapters}{\@impnattypo@frenchchapterstrue}
+\newif\if@impnattypo@hyphenation
+\DeclareOption{hyphenation}{\@impnattypo@hyphenationtrue}
+\ProcessOptions
 
-% Hyphenation
-% No page finishes with an hyphenated word
-\brokenpenalty=10000
-% Discourage hyphenation on two lines in a row
-\doublehyphendemerits=1000000000
-
+\if@impnattypo@hyphenation
+   % Hyphenation
+   % No page finishes with an hyphenated word
+   \brokenpenalty=10000
+   % Discourage hyphenation on two lines in a row
+   \doublehyphendemerits=1000000000
+\fi
 
 % Number chapters
-\renewcommand{\thechapter}{%                                                    
-  \ifnum\value{chapter}=1
-    premier%
-  \else
-    \Roman{chapter}%
-  \fi
-} 
+\if@impnattypo@frenchchapters
+   \let\frenchchapter\Roman
+   \renewcommand{\thechapter}{%                                                    
+     \ifnum\value{chapter}=1
+       premier%
+     \else
+       \frenchchapter{chapter}%
+     \fi
+   } 
+\fi
 
 
 % Implement closechapter
-
 
