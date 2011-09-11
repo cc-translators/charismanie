@@ -278,8 +278,7 @@
 \renewcommand*{\chapterpagestyle}{scrheadings}
 
 \newcommand{\closechapter}[1][chapterend]{
-   \begingroup\widowpenalties 6 10000 10000 10000 10000 10000 0
-   \par\endgroup
+   \nowidow[6]
    \mbox{}\hfill
    \thispagestyle{#1}
 }
