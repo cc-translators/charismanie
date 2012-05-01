@@ -103,7 +103,7 @@
 %\newfontfamily\chapheadfont{League Gothic}
 %\newfontfamily\chapheadfont{Fontin-Bold}
 %\newfontfamily\chapheadfont[Scale=2]{TulpenOne-Regular}
-\newfontfamily\chapheadfont[Scale=1.2]{SteelfishRg-Regular}
+\newfontfamily\chapheadfont[Scale=1.4]{SteelfishRg-Regular}
 %\newfontfamily\chapheadfont{WireOne}
 %\newfontfamily\chapheadfont{NimbusSanL-ReguCond}
 %\newfontfamily\chapheadfont{NimbusSanL-BoldCond}
@@ -113,7 +113,7 @@
 %\newfontfamily\chaptocfont[Scale=1.4]{League Gothic}
 %\newfontfamily\chaptocfont{Fontin-Bold}
 %\newfontfamily\chaptocfont{Fontin-SmallCaps}
-\newfontfamily\chaptocfont{SteelfishRg-Regular}
+\newfontfamily\chaptocfont[Scale=1.1]{SteelfishRg-Regular}
 \newfontfamily\secfont{EB Garamond}
 \newfontfamily\headerfont{LinLibertineCapitalsO}
 %\newfontfamily\lettrinefont{Linux Libertine Initials O}
@@ -160,7 +160,7 @@
 \renewcommand{\thesection}{}
 
 %\renewcommand\cftchapfont{\chaptocfont }
-\renewcommand\cftchappresnum{\lsstyle\chaptertitlename\;}
+\renewcommand\cftchappresnum{\chaptertitlename\;}
 \renewcommand\cftchapaftersnumb{\linebreak\normalfont}
 % Make long chapter names fit (chap 11)
 \renewcommand\cftchapfont{\hspace{0.3em}\chaptocfont }
@@ -338,6 +338,7 @@
 
 % Make shorttocs
 \usepackage{shorttoc}
+\overfullrule=0mm% really
 
 % Dumb text
 \usepackage{lipsum}
