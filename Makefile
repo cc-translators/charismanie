@@ -9,6 +9,9 @@ FTP_PDFDIR=$(FTP_TOPDIR)/pdf
 FTP_JSONDIR=$(FTP_TOPDIR)/json
 FTP_EBOOKDIR=$(FTP_TOPDIR)/ebooks
 
+CHAPTERS_FR=$(shell find $(CURDIR)/chapters/fr -type f -name '*.tex')
+CHAPTERS_EN=$(shell find $(CURDIR)/chapters/en -type f -name '*.tex')
+
 # Include crocodoc conf
 include ~/.crocodoc.conf
 
@@ -27,7 +30,7 @@ json: pdf $(addsuffix .json,$(TARGETS))
 %_numbered.tex: %.tex
 	sed -e 's@%$(LINENO_PATT)@$(LINENO_PATT)@' $< > $@
 
-%.pdf: %.tex
+%.pdf: %.tex $(CHAPTERS_FR) $(CHAPTERS_EN)
 	TEXINPUTS=$(TEXINPUTS) lualatex -shell-escape -interaction=batchmode $*
 	TEXINPUTS=$(TEXINPUTS) lualatex -shell-escape -interaction=batchmode $*
 
