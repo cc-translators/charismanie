@@ -190,7 +190,7 @@
 
 \newcommand{\mylongtoc}{%
   \cohead[\headerfont\textls{\contentsname}]{}
-  \renewcommand\cfttoctitlefont{\vspace{-1em}\hfill\chaptocfont\lsstyle\Huge\scshape}
+  \renewcommand\cfttoctitlefont{\vspace{-1em}\hfill\chaptocfont\Huge}
   \renewcommand\cftaftertoctitle{\hfill}
   \setlength{\cftchapindent}{-1.5em}
   \tocloftpagestyle{scrheadings}
@@ -295,7 +295,7 @@
   \renewcommand{\chapheadstyle}{\chapheadfont\LARGE}
   \titlespacing*{\chapter}
     {0pt}{1em}{5em}
-  \renewcommand*{\BRbooktitlestyle}[1]{\textbf{\emph{##1}}\vadjust{\nobreak}}
+  \renewcommand*{\BRbooktitlestyle}[1]{{\chaptocfont\vspace{0.5em} ##1}\vadjust{\nobreak}}
   %\def\imki@firstpagestyle{scrheadings}
   \printindex[bibleref]
 }
