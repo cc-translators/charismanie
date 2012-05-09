@@ -159,12 +159,10 @@
 
 \renewcommand{\thesection}{}
 
-%\renewcommand\cftchapfont{\chaptocfont }
-\renewcommand\cftchappresnum{\chaptertitlename\;}
-\renewcommand\cftchapaftersnumb{\linebreak\normalfont}
-% Make long chapter names fit (chap 11)
-\renewcommand\cftchapfont{\hspace{0.3em}\chaptocfont }
-%\setlength{\cftchapindent}{-1em}
+\setlength{\cftchapnumwidth}{6em}
+\renewcommand\cftchappresnum{\chaptertitlename~}
+\renewcommand\cftchapaftersnumb{\chaptocfont}
+\renewcommand\cftchapfont{\chaptocfont }
 
 % Homogenous dotfill for chapters and sections alike
 \renewcommand\cftchapleader{\cftdotfill{1}}
@@ -192,7 +190,7 @@
   \cohead[\headerfont\textls{\contentsname}]{}
   \renewcommand\cfttoctitlefont{\vspace{-1em}\hfill\chaptocfont\Huge}
   \renewcommand\cftaftertoctitle{\hfill}
-  \setlength{\cftchapindent}{-1.5em}
+  %\setlength{\cftchapindent}{-1.5em}
   \tocloftpagestyle{scrheadings}
   \addcontentsline{toc}{chapter}{\contentsname}
   \tableofcontents
