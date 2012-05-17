@@ -55,17 +55,17 @@
 
 \begin{document}
 
-\includepdf{cover_fr.pdf}
+\includepdf{charismanie_cover_sans_lulu_firstpage.pdf}
 
 %\selectlanguage{french}
 
 \frontmatter
 \cleardoublepage
-\includepdf{fake_title.pdf}
+\includepdf{charismanie_fake_title_sans.pdf}
 \clearpage
 \include{dumemeauteur}
 \pagestyle{empty}
-\includepdf{title_fr_logo.pdf}
+\includepdf{charismanie_title_sans.pdf}
 %\include{title}
 \include{copyright}
 \include{dedication}
@@ -122,10 +122,11 @@
 
 \backmatter
 \printbiblerefindex
-\closechapter[biblerefindexend]
+%\closechapter[biblerefindexend]
+\thispagestyle{biblerefindexend}
 
-\cleardoublepage
-\printindex
+%\cleardoublepage
+%\printindex
 
 % ToC in the end (Imprimerie Nationale)
 \cleardoublepage
@@ -136,8 +137,11 @@
 \pagestyle{empty}
 \include{depotlegal}
 
-\clearpage
-\mbox{}
+%\clearpage
+%\mbox{}
+
+
+\includepdf{charismanie_cover_sans_lulu_lastpage.pdf}
 
 \end{document}
 
