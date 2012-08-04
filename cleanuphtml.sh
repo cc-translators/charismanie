@@ -20,7 +20,7 @@ echo "h2 {page-break-before: always}" >> $CSS
 
 
 ## Accents
-for class in "fxlrc-t1-" "fxlrc-t1-x-x-120" "fxlbc-t1-x-x-248" "fxlbc-t1-x-x-144"; do
+for class in "fxlrc-t1-" "fxlrc-t1-x-x-120" "fxlbc-t1-x-x-248" "fxlbc-t1-x-x-144" "cmcsc-10x-x-120"; do
    while read c r; do
       sed -i "s@\(\"$class\">\)$c\([^<]*\)<@\1<span class=\"small-caps\">$r\2</span><@" $HTML
    done <<<"é É
