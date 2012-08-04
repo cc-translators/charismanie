@@ -18,15 +18,6 @@
            pdfauthor={Chuck Smith},
            pdftitle={Charismatique ou Charismaniaque ?}}
 
-\ifluatex
-  \newcommand{\HCode}{}
-\else
-  \usepackage[utf8]{inputenc}
-  % Global footnotes in ebooks
-  \usepackage{chngcntr}
-  \counterwithout{footnote}{chapter}
-\fi
-
 \usepackage{url}
 %\usepackage[activate={true,nocompatibility}]{microtype}
 \usepackage[protrusion=true,final]{microtype}
@@ -36,6 +27,19 @@
 
 \usepackage[english,french]{babel} %language selection
 \selectlanguage{french}
+
+\ifluatex
+  \newcommand{\HCode}{}
+  \newcommand{\Og}{\og}
+  \newcommand{\Fg}{\fg{}}
+\else
+  \usepackage[utf8]{inputenc}
+  % Global footnotes in ebooks
+  \usepackage{chngcntr}
+  \counterwithout{footnote}{chapter}
+  \newcommand{\Og}{\HCode{&laquo;&nbsp;}}
+  \newcommand{\Fg}{\HCode{&nbsp;&raquo;}}
+\fi
 
 \usepackage{amsmath}
 \usepackage[mathletters]{ucs}

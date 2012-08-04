@@ -3,6 +3,9 @@
 HTML="$1"
 CSS="$(basename $HTML .html).css"
 
+# Remove space before nbsp
+sed -i "s@ *&nbsp; *@\&nbsp;@g" $HTML
+
 ## Accents
 for class in "fxlrc-t1-" "fxlrc-t1-x-x-120" "fxlbc-t1-x-x-248" "fxlbc-t1-x-x-144" "cmcsc-10x-x-120"; do
    while read c r; do
