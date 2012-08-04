@@ -12,6 +12,15 @@ FTP_EBOOKDIR=$(FTP_TOPDIR)/ebooks
 CHAPTERS_FR=$(shell find $(CURDIR)/chapters/fr -type f -name '*.tex')
 CHAPTERS_EN=$(shell find $(CURDIR)/chapters/en -type f -name '*.tex')
 
+# Ebook settings
+KINDLE_PATH=/documents/raphael
+AUTHOR=Chuck Smith
+LANGUAGE=fr
+PUBDATE=$(shell date)
+TITLE=Charismatique ou charismaniaque ?
+
+EBOOK_CONVERT_OPTS=--authors "$(AUTHOR)" --title="$(TITLE)" --language "$(LANGUAGE)" --pubdate "$(PUBDATE)" --keep-ligatures --page-breaks-before "//pb"
+
 # Include crocodoc conf
 include ~/.crocodoc.conf
 
@@ -44,17 +53,21 @@ json: pdf $(addsuffix .json,$(TARGETS))
 #	pdftohtml -noframes -enc UTF-8 -s -c $*.pdf
 
 %.html: %.tex
-	#TEXINPUTS=$(TEXINPUTS) mk4ht htxelatex $< \
-	TEXINPUTS=$(TEXINPUTS) htxelatex $< \
+	TEXINPUTS=$(TEXINPUTS) htlatex $< \
 	   'xhtml,charset=utf-8' ' -cunihtf -utf8 -cvalidate'
 	./cleanuphtml.sh $@
 
 %.epub: %.html
-	ebook-convert $< $@
+	ebook-convert $< $@ $(EBOOK_CONVERT_OPTS)
 
 %.mobi: %.html
-	ebook-convert $< $@
-	
+	ebook-convert $< $@ $(EBOOK_CONVERT_OPTS)
+
+%-to-kindle: %.mobi
+	# cp -f doesn't work, we need to remove
+	ebook-device rm "$(KINDLE_PATH)/$<"
+	-ebook-device mkdir "$(KINDLE_PATH)"
+	ebook-device cp $< "prs500:$(KINDLE_PATH)/$<"
 
 make-split: make-split-stamp
 make-split-stamp:

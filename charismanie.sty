@@ -18,6 +18,12 @@
            pdfauthor={Chuck Smith},
            pdftitle={Charismatique ou Charismaniaque ?}}
 
+\ifluatex
+  \newcommand{\HCode}{}
+\else
+  \usepackage[utf8]{inputenc}
+\fi
+
 \usepackage{url}
 %\usepackage[activate={true,nocompatibility}]{microtype}
 \usepackage[protrusion=true,final]{microtype}
@@ -88,37 +94,28 @@
 \makeatother
 
 % Set fonts
-\usepackage{fontspec}
-\usepackage{xunicode}
-%\defaultfontfeatures{Mapping=tex-text}
-\defaultfontfeatures{Ligatures=TeX}
-\setmainfont{Linux Libertine O}
-%\setmainfont{Linden Hill}
-%\setmainfont{Fanwood Text}
-
-%\newfontfamily\normalfont{Linux Libertine O}
-\newfontface\pagemarkfont[Numbers={OldStyle}]{Linux Libertine O}
-\newfontfamily\chapfont{EB Garamond}
-%\newfontfamily\chapheadfont[Scale=1.2]{Latino Elongated LET}
-%\newfontfamily\chapheadfont{League Gothic}
-%\newfontfamily\chapheadfont{Fontin-Bold}
-%\newfontfamily\chapheadfont[Scale=2]{TulpenOne-Regular}
-\newfontfamily\chapheadfont[Scale=1.4]{SteelfishRg-Regular}
-%\newfontfamily\chapheadfont{WireOne}
-%\newfontfamily\chapheadfont{NimbusSanL-ReguCond}
-%\newfontfamily\chapheadfont{NimbusSanL-BoldCond}
-%\newfontfamily\chaptocfont[Scale=1.4,
-%                           SmallCapsFont={LatinoElongatedLetPlainSC.otf},
-%                           SmallCapsFeatures={Letters=SmallCaps}]{LatinoElongatedLetPlainSC.otf}
-%\newfontfamily\chaptocfont[Scale=1.4]{League Gothic}
-%\newfontfamily\chaptocfont{Fontin-Bold}
-%\newfontfamily\chaptocfont{Fontin-SmallCaps}
-\newfontfamily\chaptocfont[Scale=1.1]{SteelfishRg-Regular}
-\newfontfamily\secfont{EB Garamond}
-\newfontfamily\headerfont{LinLibertineCapitalsO}
-%\newfontfamily\lettrinefont{Linux Libertine Initials O}
-\newfontfamily\lettrinefont{LinLibertineIO}
-%\DeclareMicrotypeAlias{Linux Libertine O}{cmr}
+\ifluatex
+  \usepackage{fontspec}
+  \usepackage{xunicode}
+  \defaultfontfeatures{Ligatures=TeX}
+  \setmainfont{Linux Libertine O}
+  
+  \newfontface\pagemarkfont[Numbers={OldStyle}]{Linux Libertine O}
+  \newfontfamily\chapfont{EB Garamond}
+  \newfontfamily\chapheadfont[Scale=1.4]{SteelfishRg-Regular}
+  \newfontfamily\chaptocfont[Scale=1.1]{SteelfishRg-Regular}
+  \newfontfamily\secfont{EB Garamond}
+  \newfontfamily\headerfont{LinLibertineCapitalsO}
+  \newfontfamily\lettrinefont{LinLibertineIO}
+\else
+  \newcommand\pagemarkfont{}
+  \newcommand\chapfont{}
+  \newcommand\chapheadfont{}
+  \newcommand\chaptocfont{}
+  \newcommand\secfont{}
+  \newcommand\headerfont{}
+  \newcommand\lettrinefont{}
+\fi
 
 
 
@@ -294,23 +291,20 @@
   \titlespacing*{\chapter}
     {0pt}{1em}{5em}
   \renewcommand*{\BRbooktitlestyle}[1]{{\chaptocfont\vspace{0.5em} ##1}\vadjust{\nobreak}}
-  %\def\imki@firstpagestyle{scrheadings}
   \printindex[bibleref]
 }
 
-% Creative Commons
-%\usepackage{ccicons}
-
-
-\usepackage[frenchchapters,
-            hyphenation,
-            nosingleletter,
-            lastparline,
-            homeoarchy,
-            rivers,
-            %draft
-            ]{impnattypo}
-%\let\frenchchapter\roman
+% Not for ebooks
+\ifluatex
+  \usepackage[frenchchapters,
+              hyphenation,
+              nosingleletter,
+              lastparline,
+              homeoarchy,
+              rivers,
+              %draft
+              ]{impnattypo}
+\fi
 
 \usepackage[all]{nowidow}
 
@@ -360,7 +354,11 @@
 
 % YHWH
 %\newcommand{\YHWH}{יְהֹוָה}
-\newcommand{\YHWH}{יהוה}
+\ifluatex
+  \newcommand{\YHWH}{יהוה}
+\else
+  \newcommand{\YHWH}{YHWH}
+\fi
 
 % Rule for titles
 \newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
