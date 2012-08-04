@@ -17,9 +17,10 @@ KINDLE_PATH=/documents/raphael
 AUTHOR=Chuck Smith
 LANGUAGE=fr
 PUBDATE=$(shell date)
+COVER=charismanie_cover_sans_lulu_firstpage.pdf
 TITLE=Charismatique ou charismaniaque ?
 
-EBOOK_CONVERT_OPTS=--authors "$(AUTHOR)" --title="$(TITLE)" --language "$(LANGUAGE)" --pubdate "$(PUBDATE)" --keep-ligatures --page-breaks-before "//pb"
+EBOOK_CONVERT_OPTS=--authors "$(AUTHOR)" --title="$(TITLE)" --language "$(LANGUAGE)" --pubdate "$(PUBDATE)" --keep-ligatures --page-breaks-before "//*[name()='h1' or name()='h2' or name()='pb']" --cover "$(COVER)"
 
 # Include crocodoc conf
 include ~/.crocodoc.conf
