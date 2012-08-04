@@ -3,49 +3,25 @@
 HTML="$1"
 CSS="$(basename $HTML .html).css"
 
-# Replace long lines with <hr />
-sed -i 's@___\+@<hr />@' $HTML
-
-# Wrap text in pure HTML
-echo "body { padding: 0 300px 0 300px }" >> $CSS
-
-# Center title page
-echo ".titlepage {text-align:center;}" >> $CSS
-
-# Fix missing italic
-echo ".fxlri-t-1x-x-120 {font-style:italic;}" >> $CSS
-
-# Manual page breaks
-echo "h2 {page-break-before: always}" >> $CSS
-
-
 ## Accents
 for class in "fxlrc-t1-" "fxlrc-t1-x-x-120" "fxlbc-t1-x-x-248" "fxlbc-t1-x-x-144" "cmcsc-10x-x-120"; do
    while read c r; do
       sed -i "s@\(\"$class\">\)$c\([^<]*\)<@\1<span class=\"small-caps\">$r\2</span><@" $HTML
-   done <<<"é É
-è È
-ê Ê
-ï Ï
-î Î
-ﬁ FI
-ﬀ  FF
-ﬂ FL
-ﬃ   FFI
-â Â
-à À
-ù Ù
-û Û
-ô Ô"
+   done <<<"é é
+è è
+ê ê
+ï ï
+î î
+ﬁ ﬁ
+ﬀ ﬀ
+ﬂ ﬂ
+ﬃ  ﬃ
+â â
+à à
+ù ù
+û û
+ô ô"
 done
-
-## Ligatures
-while read c r; do
-   sed -i "s@\"small-caps\">$c<@\"small-caps\">$r<@" $HTML
-done <<<"ﬁ FI
-ﬀ  FF
-ﬂ FL
-ﬃ   FFI"
 
 
 # Lettrines

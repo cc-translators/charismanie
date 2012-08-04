@@ -20,7 +20,7 @@ PUBDATE=$(shell date)
 COVER=charismanie_cover_sans_lulu_firstpage.pdf
 TITLE=Charismatique ou charismaniaque ?
 
-EBOOK_CONVERT_OPTS=--authors "$(AUTHOR)" --title "$(TITLE)" --language "$(LANGUAGE)" --pubdate "$(PUBDATE)" --keep-ligatures --page-breaks-before "//*[name()='h1' or name()='h2' or name()='pb']" --cover "$(COVER)" --use-auto-toc
+EBOOK_CONVERT_OPTS=--authors "$(AUTHOR)" --title "$(TITLE)" --language "$(LANGUAGE)" --pubdate "$(PUBDATE)" --keep-ligatures --page-breaks-before "//*[name()='h1' or name()='h2' or name()='pb']" --cover "$(COVER)" --use-auto-toc  --level1-toc "//*[name()='h2']" --level2-toc "//*[name()='h3']"
 
 # Include crocodoc conf
 include ~/.crocodoc.conf
@@ -55,7 +55,7 @@ json: pdf $(addsuffix .json,$(TARGETS))
 
 %.html: %.tex
 	TEXINPUTS=$(TEXINPUTS) htlatex $< \
-	   'xhtml,charset=utf-8' ' -cunihtf -utf8 -cvalidate'
+	   'ebook.cfg,xhtml,charset=utf-8' ' -cunihtf -utf8 -cvalidate'
 	./cleanuphtml.sh $@
 
 %.epub: %.html

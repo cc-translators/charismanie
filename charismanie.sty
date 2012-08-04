@@ -364,7 +364,11 @@
 \fi
 
 % Rule for titles
-\newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
+\ifluatex
+  \newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
+\else
+  \newcommand{\HRule}{\HCode{<hr />}}
+\fi
 
 % lettrines
 \renewcommand{\LettrineFontHook}{\lettrinefont\color[gray]{0.3}}
