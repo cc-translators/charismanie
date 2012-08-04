@@ -119,34 +119,30 @@
   \vspace{2cm}
   \filcenter\aldine
   \vfill
-\fi
 
-\backmatter
-\ifluatex
+  \backmatter
+
   \printbiblerefindex
   %\closechapter[biblerefindexend]
   \thispagestyle{biblerefindexend}
-\fi
 
-%\cleardoublepage
-%\printindex
+  %\cleardoublepage
+  %\printindex
 
-% ToC in the end (Imprimerie Nationale)
-\ifluatex
+  % ToC in the end (Imprimerie Nationale)
   \cleardoublepage
   \mylongtoc
   \closechapter[tocend]
+
+  % depot legal
+  \pagestyle{empty}
+  \include{depotlegal}
+
+  %\clearpage
+  %\mbox{}
+
+  \includepdf{charismanie_cover_sans_lulu_lastpage.pdf}
 \fi
-
-% depot legal
-\pagestyle{empty}
-\include{depotlegal}
-
-%\clearpage
-%\mbox{}
-
-
-\includepdf{charismanie_cover_sans_lulu_lastpage.pdf}
 
 \end{document}
 
