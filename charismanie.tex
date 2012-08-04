@@ -60,13 +60,14 @@
 %\selectlanguage{french}
 
 \frontmatter
-\cleardoublepage
-\includepdf{charismanie_fake_title_sans.pdf}
-\clearpage
-\include{dumemeauteur}
-\pagestyle{empty}
-\includepdf{charismanie_title_sans.pdf}
-%\include{title}
+\ifluatex
+  \cleardoublepage
+  \includepdf{charismanie_fake_title_sans.pdf}
+  \clearpage
+  \include{dumemeauteur}
+  \pagestyle{empty}
+  \includepdf{charismanie_title_sans.pdf}
+\fi
 \include{copyright}
 \include{dedication}
 
@@ -121,17 +122,21 @@
 \fi
 
 \backmatter
-\printbiblerefindex
-%\closechapter[biblerefindexend]
-\thispagestyle{biblerefindexend}
+\ifluatex
+  \printbiblerefindex
+  %\closechapter[biblerefindexend]
+  \thispagestyle{biblerefindexend}
+\fi
 
 %\cleardoublepage
 %\printindex
 
 % ToC in the end (Imprimerie Nationale)
-\cleardoublepage
-\mylongtoc
-\closechapter[tocend]
+\ifluatex
+  \cleardoublepage
+  \mylongtoc
+  \closechapter[tocend]
+\fi
 
 % depot legal
 \pagestyle{empty}
