@@ -1,4 +1,11 @@
 \usepackage[utf8]{inputenc}
+
+% All paragraphs are indented
+\Css{body > p.noindent{
+text-indent:1em;
+}}
+
+
 % Global footnotes in ebooks
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
