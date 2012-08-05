@@ -11,3 +11,5 @@
 \renewcommand{\Fg}{\HCode{&nbsp;&raquo;}}
 % HRule
 \renewcommand{\HRule}{\HCode{<hr />}}
+% YHWH
+\renewcommand{\YHWH}{YHWH}
