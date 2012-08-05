@@ -1,0 +1,3 @@
+% Global footnotes in ebooks
+\usepackage{chngcntr}
+\counterwithout{footnote}{chapter}

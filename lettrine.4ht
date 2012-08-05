@@ -1,0 +1,15 @@
+\NewConfigure{lettrine}{4}
+\renewcommand\lettrine[2]{%
+\leavevmode 
+\a:lettrine#1\b:lettrine\c:lettrine#2\d:lettrine
+}
+\Configure{lettrine}{\Tg<span class="lettrine-init">}{\Tg</span>}{\Tg<span class="lettrine-line">}{\Tg</span>}
+\Css{.lettrine-init{
+font-size:2em;
+color:gray;
+}}
+
+\Css{.lettrine-line{
+font-variant:small-caps;
+}}
+
