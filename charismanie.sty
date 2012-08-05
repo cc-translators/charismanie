@@ -28,13 +28,9 @@
 \usepackage[english,french]{babel} %language selection
 \selectlanguage{french}
 
-\ifluatex
-  \newcommand{\Og}{\og}
-  \newcommand{\Fg}{\fg{}}
-\else
-  \newcommand{\Og}{\HCode{&laquo;&nbsp;}}
-  \newcommand{\Fg}{\HCode{&nbsp;&raquo;}}
-\fi
+% Wrapper for TeX4HT
+\newcommand{\Og}{\og}
+\newcommand{\Fg}{\fg{}}
 
 \usepackage{amsmath}
 \usepackage[mathletters]{ucs}
@@ -356,18 +352,10 @@
 
 % YHWH
 %\newcommand{\YHWH}{יְהֹוָה}
-\ifluatex
-  \newcommand{\YHWH}{יהוה}
-\else
-  \newcommand{\YHWH}{YHWH}
-\fi
+\newcommand{\YHWH}{יהוה}
 
 % Rule for titles
-\ifluatex
-  \newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
-\else
-  \newcommand{\HRule}{\HCode{<hr />}}
-\fi
+\newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
 
 % lettrines
 \renewcommand{\LettrineFontHook}{\lettrinefont\color[gray]{0.3}}

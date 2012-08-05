@@ -6,3 +6,8 @@
 \renewcommand\pagebreak{%
 \HCode{<br class="pagebreak" />}
 }
+% Guillemets
+\renewcommand{\Og}{\HCode{&laquo;&nbsp;}}
+\renewcommand{\Fg}{\HCode{&nbsp;&raquo;}}
+% HRule
+\renewcommand{\HRule}{\HCode{<hr />}}
