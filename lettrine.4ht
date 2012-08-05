@@ -13,7 +13,11 @@
 \define@key{LH}{findent}{\renewcommand*{\LH@findent}{##1}}%
 \define@key{LH}{lhang}{\renewcommand*{\LH@lhang}{##1}}%
 \setkeys{LH}{#1}%
-\LH@ante\a:lettrine#2\b:lettrine\c:lettrine#3\d:lettrine
+\LH@ante\a:lettrine#2\b:lettrine\c:lettrine#3\d:lettrine%
+% Reset values
+\renewcommand*{\LH@ante}{}%
+\renewcommand*{\LH@findent}{}%
+\renewcommand*{\LH@lhang}{}%
 }
 
 % Set the tags
