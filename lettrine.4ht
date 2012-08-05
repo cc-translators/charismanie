@@ -1,9 +1,25 @@
+% Define options
+\newcommand*{\LH@ante}{}
+\newcommand*{\LH@findent}{}
+\newcommand*{\LH@lhang}{}
+
+% Lettrine will have 4 tags
 \NewConfigure{lettrine}{4}
-\renewcommand\lettrine[2]{%
+
+% Renew the command
+\renewcommand\lettrine[3][]{%
 \leavevmode 
-\a:lettrine#1\b:lettrine\c:lettrine#2\d:lettrine
+\define@key{LH}{ante}{\renewcommand*{\LH@ante}{##1}}%
+\define@key{LH}{findent}{\renewcommand*{\LH@findent}{##1}}%
+\define@key{LH}{lhang}{\renewcommand*{\LH@lhang}{##1}}%
+\setkeys{LH}{#1}%
+\LH@ante\a:lettrine#2\b:lettrine\c:lettrine#3\d:lettrine
 }
+
+% Set the tags
 \Configure{lettrine}{\Tg<span class="lettrine-init">}{\Tg</span>}{\Tg<span class="lettrine-line">}{\Tg</span>}
+
+% Define default Css
 \Css{.lettrine-init{
 font-size:2em;
 color:gray;
