@@ -1,3 +1,4 @@
+\usepackage[utf8]{inputenc}
 % Global footnotes in ebooks
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}

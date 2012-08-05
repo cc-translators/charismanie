@@ -29,11 +29,9 @@
 \selectlanguage{french}
 
 \ifluatex
-  \newcommand{\HCode}[1]{}
   \newcommand{\Og}{\og}
   \newcommand{\Fg}{\fg{}}
 \else
-  \usepackage[utf8]{inputenc}
   \newcommand{\Og}{\HCode{&laquo;&nbsp;}}
   \newcommand{\Fg}{\HCode{&nbsp;&raquo;}}
 \fi
