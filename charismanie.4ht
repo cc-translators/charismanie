@@ -33,9 +33,13 @@ text-indent:1em;
 \newcommand\includepdf[1]{}
 
 % Make links in Bible index
+\newcommand{\getversesec}[1]{%
+  \csname versesec#1\endcsname
+}
+
 \newcommand{\linkonepage}[1]{%
   \ifthenelse{\secondparam=1}{, }{}%
-  \hyperlink{verse.#1}{\textrm{#1}}%
+  \hyperlink{verse.#1}{\textrm{section~\getversesec{#1}}}%
   \def\secondparam{1}}
 \newcommand{\linkpages}[1]{%
   \def\secondparam{0}%
