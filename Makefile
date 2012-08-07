@@ -108,6 +108,6 @@ clean:
 	rm -f *.idv *.lg
 	rm -f *.json
 	# Remove only target pdf
-	rm -f $(addsuffix *.pdf,$(TARGETS))
+	rm -f $(addsuffix .pdf,$(TARGETS))
 
 
