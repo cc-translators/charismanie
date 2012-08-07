@@ -23,7 +23,9 @@
 \usepackage[protrusion=true,final]{microtype}
 
 % Include cover as PDF
+\ifluatex
 \usepackage{pdfpages}
+\fi
 
 \usepackage[english,french]{babel} %language selection
 \selectlanguage{french}

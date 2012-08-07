@@ -13,10 +13,18 @@ text-indent:1em;
 \renewcommand\pagebreak{%
 \HCode{<br class="pagebreak" />}
 }
+
 % Guillemets
 \renewcommand{\Og}{\HCode{&laquo;&nbsp;}}
 \renewcommand{\Fg}{\HCode{&nbsp;&raquo;}}
+
 % HRule
-\renewcommand{\HRule}{\HCode{<hr />}}
+\renewcommand{\HRule}{%
+\ifvmode\IgnorePar\fi\EndP\HCode{<hr />}\IgnoreIndent
+}
+
 % YHWH
 \renewcommand{\YHWH}{YHWH}
+
+% Fake pdfpages
+\newcommand\includepdf[1]{}
