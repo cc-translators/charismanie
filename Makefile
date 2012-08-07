@@ -56,7 +56,6 @@ json: pdf $(addsuffix .json,$(TARGETS))
 %.html: %.tex
 	TEXINPUTS=$(TEXINPUTS) htlatex $< \
 	   'ebook.cfg,xhtml,charset=utf-8' ' -cunihtf -utf8 -cvalidate'
-	./cleanuphtml.sh $@
 
 %.epub: %.html
 	ebook-convert $< $@ $(EBOOK_CONVERT_OPTS)
