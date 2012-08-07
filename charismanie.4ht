@@ -18,6 +18,9 @@ text-indent:1em;
 \renewcommand{\Og}{\HCode{&laquo;&nbsp;}}
 \renewcommand{\Fg}{\HCode{&nbsp;&raquo;}}
 
+% French colon
+\renewcommand{\frcolon}{\HCode{&nbsp;:}}
+
 % HRule
 \renewcommand{\HRule}{%
 \ifvmode\IgnorePar\fi\EndP\HCode{<hr />}\IgnoreIndent

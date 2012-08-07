@@ -34,6 +34,17 @@
 \newcommand{\Og}{\og}
 \newcommand{\Fg}{\fg{}}
 
+% colon, frenchb's definition
+\newcommand\frcolon{%
+      \ifhmode
+        \ifdim\lastskip>\z@
+          \unskip\penalty\@M\Fcolonspace
+        \else
+          \FDP@colonspace
+        \fi
+      \fi
+      \string:\space}
+
 \usepackage{amsmath}
 \usepackage[mathletters]{ucs}
 %\usepackage[utf8x]{inputenc}
@@ -347,7 +358,7 @@
 \newcommand{\mybullet}{{\color[gray]{0.7}$\bullet$}\xspace}
 
 % NdT macro
-\newcommand{\NdT}[1]{\footnote{NdT~: #1}}
+\newcommand{\NdT}[1]{\footnote{NdT\frcolon{} #1}}
 
 % Seigneur macro
 \newcommand{\Seigneur}{\textsc{Seigneur}\xspace}
