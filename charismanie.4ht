@@ -35,7 +35,7 @@ text-indent:1em;
 % Make links in Bible index
 \newcommand{\linkonepage}[1]{%
   \ifthenelse{\secondparam=1}{, }{}%
-  \hyperlink{page.#1}{\textrm{#1}}%
+  \hyperlink{verse.#1}{\textrm{#1}}%
   \def\secondparam{1}}
 \newcommand{\linkpages}[1]{%
   \def\secondparam{0}%
@@ -43,11 +43,22 @@ text-indent:1em;
 \renewcommand*{\bvidxpgformat}{linkpages}
 
 % Make anchors in text
+\newcounter{bibleverse}
 \NewConfigure{ibibleverse}{2}
 \renewcommand*{\ibibleverse}[1][\bvidxpgformat]{%
+\stepcounter{bibleverse}%
 \a:ibibleverse\b:ibibleverse%
+\expandafter\xdef\csname versesec\thebibleverse\endcsname{\thesection}%
 \def\@bv@idxpgformat{#1}%
 \@bv@idxtrue\def\@bv@idxentry{}\bibleverse}
-\Configure{ibibleverse}{\Tg<a name="page.\thepage">}{\Tg</a>}
 
+\Configure{ibibleverse}{\Tg<a name="verse.\thebibleverse">}{\Tg</a>}
+
+% Patch imakeidx to map verse num instead of page
+\patchcmd{\@index}{\@wrindex}{\@Wrindex}{}{}
+\let\@Wrindex\@wrindex
+\patchcmd{\@Wrindex}{\thepage}{\thebibleverse}{}{}
+\let\protected@iwrite\protected@write
+\patchcmd{\protected@iwrite}{\write}{\immediate\write}{}{}
+\patchcmd{\@Wrindex}{\protected@write}{\protected@iwrite}{}{}
 
