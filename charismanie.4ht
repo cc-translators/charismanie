@@ -31,3 +31,23 @@ text-indent:1em;
 
 % Fake pdfpages
 \newcommand\includepdf[1]{}
+
+% Make links in Bible index
+\newcommand{\linkonepage}[1]{%
+  \ifthenelse{\secondparam=1}{, }{}%
+  \hyperlink{page.#1}{\textrm{#1}}%
+  \def\secondparam{1}}
+\newcommand{\linkpages}[1]{%
+  \def\secondparam{0}%
+  \forcsvlist\linkonepage{#1}}
+\renewcommand*{\bvidxpgformat}{linkpages}
+
+% Make anchors in text
+\NewConfigure{ibibleverse}{2}
+\renewcommand*{\ibibleverse}[1][\bvidxpgformat]{%
+\a:ibibleverse\b:ibibleverse%
+\def\@bv@idxpgformat{#1}%
+\@bv@idxtrue\def\@bv@idxentry{}\bibleverse}
+\Configure{ibibleverse}{\Tg<a name="page.\thepage">}{\Tg</a>}
+
+
