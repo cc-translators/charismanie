@@ -21,3 +21,10 @@
 *.mtc1
 *.out
 *.synctex.gz
+*.4ct
+*.4tc
+*.lg
+*.idv
+*.xdv
+*.xref
+*.tmp
