@@ -17,7 +17,7 @@ KINDLE_PATH=/documents/raphael
 AUTHOR=Chuck Smith
 LANGUAGE=fr
 PUBDATE=$(shell date)
-COVER=charismanie_cover_sans_lulu_firstpage.pdf
+COVER=charismanie_cover_sans_lulu_firstpage.png
 TITLE=Charismatique ou charismaniaque ?
 
 EBOOK_CONVERT_OPTS=--authors "$(AUTHOR)" --title "$(TITLE)" --language "$(LANGUAGE)" --pubdate "$(PUBDATE)" --keep-ligatures --page-breaks-before "//*[name()='h1' or name()='h2']" --cover "$(COVER)" --use-auto-toc  --level1-toc "//*[name()='h2']" --level2-toc "//*[name()='h3']"
