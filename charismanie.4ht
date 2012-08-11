@@ -24,14 +24,16 @@ text-indent:1em;
 \Css{h2{
 text-align:right;
 font-size:xx-large;
-font-family: Sans-Serif; 
+font-family:"Steelfish Rg",Sans-Serif; 
+font-stretch:condensed;
 }}
 
 \Css{h2 > span.titlemark{
 font-style:italic;
 font-weight:normal;
 font-size:x-large;
-font-family: Serif; 
+font-family:"EB Garamond",Serif; 
+font-stretch:normal;
 }}
 
 % This is only for the ToC
@@ -47,6 +49,8 @@ font-weight:normal;
 \Css{h3.sectionHead span.titlemark{
 display:none;
 }}
+
+\ConfigureMark{section}{}
 
 % Global footnotes in ebooks
 \usepackage{chngcntr}
