@@ -24,12 +24,14 @@ text-indent:1em;
 \Css{h2{
 text-align:right;
 font-size:xx-large;
+font-family: Sans-Serif; 
 }}
 
 \Css{h2 > span.titlemark{
 font-style:italic;
 font-weight:normal;
 font-size:x-large;
+font-family: Serif; 
 }}
 
 % This is only for the ToC
