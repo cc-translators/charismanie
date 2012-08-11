@@ -128,8 +128,6 @@
   \newcommand\lettrinefont{}
 \fi
 
-
-
 % Make nice chapter headings
 \usepackage{titlesec}
 \newcommand{\chapstyle}{\chapfont\raggedleft\Large\itshape}
@@ -171,6 +169,15 @@
 \renewcommand\cftchappresnum{\chaptertitlename~}
 \renewcommand\cftchapaftersnumb{\chaptocfont}
 \renewcommand\cftchapfont{\chaptocfont }
+
+% Dedication
+\newcommand\dedicationtext[1]{%
+\begin{center}
+\HRule \\[0.4cm]
+\emph{#1}
+\HRule \\[1.5cm]
+\end{center}
+}
 
 % Homogenous dotfill for chapters and sections alike
 \renewcommand\cftchapleader{\cftdotfill{1}}

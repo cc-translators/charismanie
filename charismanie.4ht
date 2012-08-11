@@ -108,3 +108,14 @@ display:none;
 \patchcmd{\protected@iwrite}{\write}{\immediate\write}{}{}
 \patchcmd{\@Wrindex}{\protected@write}{\protected@iwrite}{}{}
 
+
+% Dedication
+\NewConfigure{dedicationtext}{2}
+\renewcommand\dedicationtext[1]{%
+\a:dedicationtext#1\b:dedicationtext
+}
+\Configure{dedicationtext}{\Tg<hr />\Tg<div class="dedication">}{\Tg</div>\Tg<hr />}
+\Css{div.dedication{
+text-align:center;
+text-style:italic;
+}}
