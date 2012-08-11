@@ -6,6 +6,46 @@ text-indent:1em;
 }}
 
 
+% Reoverride what impnattypo does
+\let\frenchchapter\Roman
+\renewcommand{\thechapter}{%
+  \ifnum\value{chapter}=1
+    premier%
+  \else
+    \frenchchapter{chapter}%
+  \fi
+}
+
+% And reconfigure chapter
+\ConfigureMark{chapter}
+   {\HCode{<span class="titlemark">}\chaptertitlename
+    \ \thechapter\HCode{</span><span class="chaptitlesep">&nbsp;&mdash;&nbsp;</span><br />}}
+
+\Css{h2{
+text-align:right;
+font-size:xx-large;
+}}
+
+\Css{h2 > span.titlemark{
+font-style:italic;
+font-weight:normal;
+font-size:x-large;
+}}
+
+% This is only for the ToC
+\Css{h2 > span.chaptitlesep{
+display:none;
+}}
+
+\Css{h3.sectionHead{
+font-style:italic;
+font-weight:normal;
+}}
+
+\Css{h3.sectionHead span.titlemark{
+display:none;
+}}
+
 % Global footnotes in ebooks
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
