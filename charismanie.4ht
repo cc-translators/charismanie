@@ -121,3 +121,9 @@ display:none;
 text-align:center;
 text-style:italic;
 }}
+
+% Index
+\Css{span.index-item{
+font-style: italic;
+font-weight: bold;
+}}
