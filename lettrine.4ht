@@ -25,11 +25,16 @@
 
 % Define default Css
 \Css{.lettrine-init{
-font-size:2em;
-color:gray;
+float: left;
+font-size: 500\%;
+margin-right: 0.2\%;
+line-height: 30\%;
+padding-bottom: 5\%;
+color: gray;
+font-family: "Linux Libertine Initials O",Serif;
 }}
 
 \Css{.lettrine-line{
-font-variant:small-caps;
+font-variant: small-caps;
 }}
 

@@ -5,7 +5,6 @@
 text-indent:1em;
 }}
 
-
 % Reoverride what impnattypo does
 \let\frenchchapter\Roman
 \renewcommand{\thechapter}{%
@@ -22,18 +21,16 @@ text-indent:1em;
     \ \thechapter\HCode{</span><span class="chaptitlesep">&nbsp;&mdash;&nbsp;</span><br />}}
 
 \Css{h2{
-text-align:right;
-font-size:xx-large;
-font-family:"Steelfish Rg",Sans-Serif; 
-font-stretch:condensed;
+text-align: right;
+font-size: xx-large;
+font-family: "Steelfish Rg",Sans-Serif; 
 }}
 
 \Css{h2 > span.titlemark{
-font-style:italic;
-font-weight:normal;
-font-size:x-large;
-font-family:"EB Garamond",Serif; 
-font-stretch:normal;
+font-style: italic;
+font-weight: normal;
+font-size: large;
+font-family: "EB Garamond",Serif; 
 }}
 
 % This is only for the ToC
@@ -43,6 +40,7 @@ display:none;
 
 \Css{h3.sectionHead{
 font-style:italic;
+font-family:"EB Garamond",Serif; 
 font-weight:normal;
 }}
 
