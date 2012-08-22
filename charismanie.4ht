@@ -100,7 +100,7 @@ display:none;
 \def\@bv@idxpgformat{#1}%
 \@bv@idxtrue\def\@bv@idxentry{}\bibleverse}
 
-\Configure{ibibleverse}{\Tg<a name="verse.\thebibleverse">}{\Tg</a>}
+\Configure{ibibleverse}{\Tg<a id="verse.\thebibleverse">}{\Tg</a>}
 
 % Patch imakeidx to map verse num instead of page
 \patchcmd{\@index}{\@wrindex}{\@Wrindex}{}{}
