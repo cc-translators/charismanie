@@ -29,7 +29,7 @@ float: left;
 font-size: 500\%;
 margin-right: 0.2\%;
 line-height: 30\%;
-padding-bottom: 5\%;
+padding-bottom: 4\%;
 color: gray;
 font-family: "Linux Libertine Initials O",Serif;
 }}
