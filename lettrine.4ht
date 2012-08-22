@@ -13,7 +13,7 @@
 \define@key{LH}{findent}{\renewcommand*{\LH@findent}{##1}}%
 \define@key{LH}{lhang}{\renewcommand*{\LH@lhang}{##1}}%
 \setkeys{LH}{#1}%
-\LH@ante\a:lettrine#2\b:lettrine\c:lettrine#3\d:lettrine%
+\LH@ante\HCode{<span class="lettrine-init lettrine-init-#2">}#2\b:lettrine\c:lettrine#3\d:lettrine
 % Reset values
 \renewcommand*{\LH@ante}{}%
 \renewcommand*{\LH@findent}{}%
@@ -29,9 +29,12 @@ float: left;
 font-size: 500\%;
 margin-right: 0.2\%;
 line-height: 30\%;
-padding-bottom: 4\%;
+padding-bottom: 1\%;
 color: gray;
 font-family: "Linux Libertine Initials O",Serif;
+}
+.lettrine-init-Q{
+padding-bottom: 4\%;
 }}
 
 \Css{.lettrine-line{
