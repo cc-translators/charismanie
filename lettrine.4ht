@@ -4,7 +4,7 @@
 \newcommand*{\LH@lhang}{}
 
 % Lettrine will have 4 tags
-\NewConfigure{lettrine}{4}
+\NewConfigure{lettrine}{6}
 
 % Renew the command
 \renewcommand\lettrine[3][]{%
@@ -13,7 +13,7 @@
 \define@key{LH}{findent}{\renewcommand*{\LH@findent}{##1}}%
 \define@key{LH}{lhang}{\renewcommand*{\LH@lhang}{##1}}%
 \setkeys{LH}{#1}%
-\LH@ante\HCode{<span class="lettrine-init lettrine-init-#2">}#2\b:lettrine\c:lettrine#3\d:lettrine
+\HCode{<span class="lettrine lettrine-#2">}\LH@ante\HCode{<span class="lettrine-letter lettrine-letter-#2">}#2\c:lettrine\d:lettrine\e:lettrine#3\f:lettrine
 % Reset values
 \renewcommand*{\LH@ante}{}%
 \renewcommand*{\LH@findent}{}%
@@ -21,20 +21,23 @@
 }
 
 % Set the tags
-\Configure{lettrine}{\Tg<span class="lettrine-init">}{\Tg</span>}{\Tg<span class="lettrine-line">}{\Tg</span>}
+\Configure{lettrine}{\Tg<span class="lettrine">}{\Tg<span class="lettrine-letter">}{\Tg</span>}{\Tg</span>}{\Tg<span class="lettrine-line">}{\Tg</span>}
 
 % Define default Css
-\Css{.lettrine-init{
+\Css{.lettrine{
 float: left;
-font-size: 5em;
-margin-right: 0.02em;
-line-height: 0.3;
-padding-bottom: 0.1em;
-color: gray;
-font-family: "Linux Libertine Initials O",Serif;
+line-height: 0.5;
+margin-left: -0.5em;
 }
-.lettrine-init-Q{
-padding-bottom: 4\%;
+.lettrine-letter{
+font-style: normal;
+font-size: 5em;
+color: gray;
+font-family: "Linux Libertine Initials O", Serif;
+}
+.lettrine-Q{
+padding-bottom: 1em;
+margin-top: -0.3em;
 }}
 
 \Css{.lettrine-line{
