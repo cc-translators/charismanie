@@ -63,6 +63,14 @@ json: pdf $(addsuffix .json,$(TARGETS))
 	   'ebook.cfg,xhtml,charset=utf-8' ' -cunihtf -utf8 -cvalidate'
 	bash cleanuphtml.sh $@
 
+%_embedded.epub: %.epub
+	rm -rf $*
+	unzip  -d $* $<
+	cp -r fonts $*/
+	cat fonts.css $*/stylesheet.css > new.css
+	mv new.css $*/stylesheet.css
+	zip -r $@ $*/*
+
 %.epub: %.html
 	ebook-convert $< $@ $(EBOOK_CONVERT_OPTS)
 
