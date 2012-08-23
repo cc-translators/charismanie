@@ -5,6 +5,14 @@
 text-indent:1em;
 }}
 
+% Preface
+\NewConfigure{preface}{2}
+\renewenvironment{preface}{\a:preface}{\b:preface}
+\Configure{preface}{\Tg<div class="preface">}{\Tg</div>}
+\Css{div.preface{
+font-style:italic;
+}}
+
 % Reoverride what impnattypo does
 \let\frenchchapter\Roman
 \renewcommand{\thechapter}{%
