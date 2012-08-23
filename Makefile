@@ -53,14 +53,14 @@ json: pdf $(addsuffix .json,$(TARGETS))
 #	dvipdf $<
 #	pdftohtml -noframes -enc UTF-8 -s -c $*.pdf
 
+%_split.html: %.tex
+	TEXINPUTS=$(TEXINPUTS) htlatex $< \
+	   'ebook.cfg,xhtml,2,charset=utf-8' ' -cunihtf -utf8 -cvalidate'
+	bash cleanuphtml.sh $*.html
+
 %.html: %.tex
 	TEXINPUTS=$(TEXINPUTS) htlatex $< \
 	   'ebook.cfg,xhtml,charset=utf-8' ' -cunihtf -utf8 -cvalidate'
-	bash cleanuphtml.sh $@
-
-%_split.html: %.tex
-	TEXINPUTS=$(TEXINPUTS) htlatex $< \
-	   'ebook.cfg,xhtml,2,next,charset=utf-8' ' -cunihtf -utf8 -cvalidate'
 	bash cleanuphtml.sh $@
 
 %.epub: %.html
