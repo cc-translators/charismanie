@@ -67,9 +67,12 @@ json: pdf $(addsuffix .json,$(TARGETS))
 	rm -rf $*
 	unzip  -d $* $<
 	cp -r fonts $*/
-	cat fonts.css $*/stylesheet.css > new.css
-	mv new.css $*/stylesheet.css
-	zip -r $@ $*/*
+	# Add fons to stylesheet.css
+	cat fonts.css >> $*/stylesheet.css
+	# Insert fonts into content.opf
+	sed -i '/<manifest>/ r fonts.content' $*/content.opf
+	# Regenerate zip
+	cd $* && zip -Xr9D $(CURDIR)/$@ mimetype *
 
 %.epub: %.html
 	ebook-convert $< $@ $(EBOOK_CONVERT_OPTS) --preserve-cover-aspect-ratio

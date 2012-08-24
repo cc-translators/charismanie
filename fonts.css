@@ -10,12 +10,6 @@ src: url(fonts/steelfish_rg.otf);
 }
 @font-face{
 font-style: normal;
-font-family: "Linux Libertine Initials O";
-font-weight: normal;
-src: url(fonts/LinLibertine_I.otf);
-}
-@font-face{
-font-style: normal;
 font-family: "Linux Libertine O";
 font-weight: normal;
 src: url(fonts/LinLibertine_R.otf);
