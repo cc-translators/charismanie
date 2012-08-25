@@ -30,7 +30,7 @@
 %%
 \ProvidesFile
   {microtype-luatex.def}
-  [2011/02/07 v2.5 <beta-06>
+  [2011/08/18 v2.5 <beta-07>
    Definitions specific to
    luatex
   (RS)]
@@ -132,7 +132,16 @@
 }
 \def\MT@protrusion{\MT@maybe@do{pr}}
 \def\MT@set@pr@codes{%
+  \MT@nofamilyfalse
   \MT@if@list@exists{%
+    \ifMT@nofamily
+      \MT@ifdefined@n@TF{\MT@family-settings}\relax{%
+        \MT@warning@nl{Loading generic settings for font family `\MT@family'.\MessageBreak
+                       For optimal results, create font-specific settings.\MessageBreak
+                       See the microtype manual for details}%
+        \MT@glet@nc{\MT@family-settings}\@empty
+      }%
+    \fi
     \MT@get@font@dimen@six{%
       \MT@get@opt
       \MT@reset@pr@codes
@@ -158,8 +167,8 @@
 }
 \def\MT@set@all@pr#1#2{%
   \let\MT@temp\@empty
-  \MT@ifempty{#1}\relax{\g@addto@macro\MT@temp{\lpcode\MT@font\@tempcnta=#1 }}%
-  \MT@ifempty{#2}\relax{\g@addto@macro\MT@temp{\rpcode\MT@font\@tempcnta=#2 }}%
+  \MT@ifempty{#1}\relax{\g@addto@macro\MT@temp{\lpcode\MT@font\@tempcnta=#1}}%
+  \MT@ifempty{#2}\relax{\g@addto@macro\MT@temp{\rpcode\MT@font\@tempcnta=#2}}%
   \MT@do@font\MT@temp
 }
 \def\MT@reset@pr@codes@{\MT@set@all@pr\z@\z@}
@@ -667,8 +676,10 @@
     \MT@warn@unknown
   \fi
 }
-\def\MT@max@char{1114111}
-\def\MT@max@slot{1114111}
+\def\MT@max@char
+  {1114111 }
+\def\MT@max@slot
+  {1114111 }
 \def\DisableLigatures{%
   \MT@begin@catcodes
   \MT@DisableLigatures

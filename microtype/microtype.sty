@@ -29,7 +29,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage
   {microtype}
-  [2011/02/07 v2.5 <beta-06>
+  [2011/08/18 v2.5 <beta-07>
    Micro-typographical refinements
   (RS)]
 \def\MT@MT
@@ -434,8 +434,9 @@
   \MT@with@package@T{csquotes}{%
     \@ifpackagelater{csquotes}{2005/05/11}\@disablequotes\relax}%
   \MT@if@false
-  \MT@with@package@T{hyperref}\MT@if@true
-  \MT@with@package@T{tex4ht}  \MT@if@true
+  \MT@with@package@T{hyperref}  \MT@if@true
+  \MT@with@package@T{tex4ht}    \MT@if@true
+  \MT@with@package@T{mathastext}\MT@if@true
   \ifMT@if@\MT@restore@p@h\fi
 }
 \MT@addto@setup{%
@@ -479,6 +480,7 @@ time will almost certainly lead to undesired results. Have your choice!}%
     \MT@if@true
   }%
   \MT@with@package@T{tex4ht}\MT@if@true
+  \MT@with@package@T{mathastext}\MT@if@true
   \ifMT@if@\g@addto@macro\MT@setupfont@hook\MT@restore@p@h\fi
   \MT@with@package@T{listings}{%
     \g@addto@macro\MT@cfg@catcodes{%
@@ -614,6 +616,7 @@ time will almost certainly lead to undesired results. Have your choice!}%
     \fi
   }%
 }
+\newif\ifMT@nofamily
 \def\MT@get@font@dimen#1{%
   \ifnum\fontdimen#1\MT@font=\z@
     \MT@warning@nl{Font `\MT@@font' does not specify its\MessageBreak
@@ -901,11 +904,12 @@ time will almost certainly lead to undesired results. Have your choice!}%
   {0111}{0110}{0101}{0100}{0011}{0010}{0001}{0000}%
 }
 \def\MT@next@listname#1#2#3#4{%
+  \ifnum#1=\z@\MT@nofamilytrue\fi
   \edef\@tempa{\MT@encoding
-              /\ifnum#1=\@ne \MT@family\fi
-              /\ifnum#2=\@ne \MT@series\fi
-              /\ifnum#3=\@ne \MT@shape\fi
-              /\ifnum#4=\@ne *\fi
+/\ifnum#1=\@ne \MT@family  \fi
+/\ifnum#2=\@ne \MT@series  \fi
+/\ifnum#3=\@ne \MT@shape   \fi
+/\ifnum#4=\@ne *\fi
                \MT@context}%
   \MT@ifdefined@n@TF{MT@\@tempb @\@tempa}{%
     \MT@next@listname@#4%
@@ -1697,10 +1701,17 @@ time will almost certainly lead to undesired results. Have your choice!}%
   \define@key{MT@#1@c}{#2}[]{\MT@ifempty{##1}\relax{%
     \MT@xdef@n{MT@#1@c@\MT@curr@set@name @#2}{##1}}}%
 }
+\newcount\MT@listname@count
 \MT@map@clist@c\MT@features{%
   \define@key{MT@#1@c}{name}[]{%
     \MT@ifempty{##1}{%
-      \MT@edef@n{MT@#1@c@name}{\MT@curr@file/\the\inputlineno}%
+      \MT@ifdefined@n@TF{MT@#1@c@\MT@curr@file/\the\inputlineno}{%
+        \global\advance\MT@listname@count\@ne
+        \MT@edef@n{MT@#1@c@name}{\MT@curr@file/\the\inputlineno
+                                 (\number\MT@listname@count)}%
+      }{%
+        \MT@edef@n{MT@#1@c@name}{\MT@curr@file/\the\inputlineno}%
+      }%
     }{%
       \MT@edef@n{MT@#1@c@name}{##1}%
       \MT@ifdefined@n@T{MT@#1@c@\csname MT@#1@c@name\endcsname}{%
@@ -2215,6 +2226,8 @@ time will almost certainly lead to undesired results. Have your choice!}%
   \selectfont}
 \edef\MT@curr@file{\jobname.tex}
 \AtBeginDocument{\MT@setup@ \MT@glet\MT@setup@\@empty}
+\MT@ifdefined@c@T\MT@setup@spacing@check
+  {\AtBeginDocument{\MT@setup@spacing@check}}
 \MT@restore@catcodes
 \endinput
 %%

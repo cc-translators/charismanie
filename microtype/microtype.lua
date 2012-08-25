@@ -41,7 +41,7 @@ microtype.module = {
   date         = "2010/01/10",
   description  = "microtype module.",
   author       = "Elie Roux & R Schlicht",
-  copyright    = "R Schlicht",
+  copyright    = "Elie Roux & R Schlicht",
   license      = "LPPL",
 }
 
