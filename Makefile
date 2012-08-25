@@ -120,7 +120,7 @@ clean:
 	rm -f make-split-stamp split-stamp
 	rm -rf splits split crocupload
 	rm -f *.xmpi
-	rm -f *.html *.png *.css *.4tc *.tmp *.xref *.4ct
+	rm -f *.html *.4tc *.tmp *.xref *.4ct
 	rm -f *.epub *.mobi
 	rm -f *.idv *.lg
 	rm -f *.json
