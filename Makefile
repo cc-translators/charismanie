@@ -16,7 +16,7 @@ CHAPTERS_EN=$(shell find $(CURDIR)/chapters/en -type f -name '*.tex')
 KINDLE_PATH=/documents/raphael
 AUTHOR=Chuck Smith
 LANGUAGE=fr
-PUBDATE=$(shell date)
+PUBDATE=$(shell date +'%Y-%m-%d')
 COVER=charismanie_cover_sans_lulu_firstpage.png
 TITLE=Charismatique ou charismaniaque ?
 
