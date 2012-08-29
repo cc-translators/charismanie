@@ -134,23 +134,29 @@ font-weight: bold;
 }}
 
 % Global footnotes in ebooks
-\usepackage{chngcntr}
-\counterwithin{footnote}{paragraph}
+%\usepackage{chngcntr}
+%\counterwithin{footnote}{paragraph}
 
 \long\def\thefootnote{\fnsymbol{footnote}}
 
 % Footnotes after paragraph
-%\newbox\footnotebox
-%\Configure{footnotemark}{}{}
+\newbox\footnotebox
+\Configure{footnotemark}{%
+\bgroup%
+\NoFonts%
+\Configure{textsuperscript}{}{}%
+\HCode{<sup><a epub:type=epub:type="noteref" href="\#fn\FNnum x\minipageNum" id="fn\FNnum x\minipageNum-bk">}}%
+{\HCode{</a></sup>}%
+\egroup}
 
 \Configure{footnotetext}{\global\setbox\footnotebox=\vtop\bgroup\NoFonts%
 \ifvoid\footnotebox\else\unvbox\footnotebox\fi
 \IgnorePar
-\HCode{<div class="footnote"><p>}}{}{\HCode{</p></div>\Hnewline}\egroup}
+\HCode{<div epub:type="footnote" class="footnote" id="fn\FNnum x\minipageNum"><p><a href="\#fn\FNnum x\minipageNum-bk">}}{\Tg</a>}{\HCode{</p></div>\Hnewline}\egroup}
 
 \def\printfn{%
 \ifvoid\footnotebox\else%
-\HCode{<div class="footnotes">\Hnewline}\box\footnotebox\HCode{</div>\Hnewline}%
+\HCode{<div epub:type="footnotes" class="footnotes">\Hnewline}\box\footnotebox\HCode{</div>\Hnewline}%
 \fi%
 }
 
