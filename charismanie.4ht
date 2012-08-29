@@ -139,8 +139,9 @@ text-style:italic;
 
 % Index
 \Css{span.index-item{
-font-style: italic;
-font-weight: bold;
+font-family:"Steelfish Rg",Sans-Serif; 
+font-size:large;
+margin-top:1em;
 }}
 
 % Global footnotes in ebooks

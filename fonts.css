@@ -15,8 +15,49 @@ font-weight: normal;
 src: url(fonts/LinLibertine_R.otf);
 }
 @font-face{
+font-style: italic;
+font-family: "Linux Libertine Italics O";
+font-weight: normal;
+src: url(fonts/LinLibertine_RI.otf);
+}
+@font-face{
+font-style: normal;
+font-family: "Linux Libertine Bold O";
+font-weight: bold;
+src: url(fonts/LinLibertine_RB.otf);
+}
+@font-face{
 font-style: normal;
 font-family: "Linux Libertine Initials O";
 font-weight: normal;
 src: url(fonts/LinLibertine_I.otf);
+}
+@font-face{
+font-style: normal;
+font-family: "Linux Libertine SC O";
+font-weight: normal;
+src: url(fonts/LinLibertine_aS.otf);
+}
+@font-face{
+font-style: italic;
+font-family: "Linux Libertine SC Italics O";
+font-weight: normal;
+src: url(fonts/LinLibertine_aSI.otf);
+}
+
+div.thanks, div.preface, div.dedication,
+.fxlri-t-1x-x-120{
+font-family: "Linux Libertine Italics O", serif;
+}
+
+.cmbx-8, .cmbx{
+font-family: "Linux Libertine Bold O", serif;
+}
+
+.lettrine-line{
+font-family: "Linux Libertine SC O", serif;
+}
+
+div.preface .lettrine-line{
+font-family: "Linux Libertine SC Italics O", serif;
 }
