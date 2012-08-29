@@ -164,12 +164,16 @@ font-weight: bold;
 \fi%
 }
 
+% Add \c@footnote0\relax after <p> to number footnotes by paragraph
 \Configure{HtmlPar}
-%{\EndP\Tg<p>\c@footnote0\relax} % reset footnote counter for every paragraph
-{\EndP\Tg<p>}
-{\EndP\Tg<p>}
-{\HCode{</p>\Hnewline}\printfn}
-{\HCode{</p>\Hnewline}\printfn}
+  {\EndP\HCode{<!--l. \the\inputlineno-->%
+<p \csname a:!P\endcsname
+         class="no\ifHCond par\else indent\fi" \a:LRdir>}}
+  {\EndP\HCode{<!--l. \the\inputlineno-->%
+<p \csname a:!P\endcsname
+        class="\ifdim \parindent=\z@ no\fi indent" \a:LRdir>}}
+  {\:xhtml{\Tg</p>}\printfn}
+  {\:xhtml{\Tg</p>}\printfn}%
 
 \Css{.footnote{font-size:x-small;}}
 \Css{.footnotes {margin:0 10\%;border-top:1px black solid;border-bottom:1px black solid;}}
