@@ -12,6 +12,16 @@ text-indent:1em;
 \Css{div.preface{
 font-style:italic;
 }}
+\Css{div.preface em{
+font-style:normal;
+}}
+
+% Emphasis
+\NewConfigure{emph}{2}
+\renewcommand{\emph}[1]{%
+\a:emph#1\b:emph
+}
+\Configure{emph}{\Tg<em>}{\Tg</em>}
 
 % Reoverride what impnattypo does
 \let\frenchchapter\Roman
