@@ -136,8 +136,12 @@ font-weight: bold;
 % Global footnotes in ebooks
 %\usepackage{chngcntr}
 %\counterwithin{footnote}{paragraph}
+\everypar{\setcounter{footnote}{0}}
 
 \long\def\thefootnote{\fnsymbol{footnote}}
+\frenchbsetup{
+  FrenchFootnotes=false
+}
 
 % Footnotes after paragraph
 \newbox\footnotebox
@@ -161,6 +165,7 @@ font-weight: bold;
 }
 
 \Configure{HtmlPar}
+%{\EndP\Tg<p>\c@footnote0\relax} % reset footnote counter for every paragraph
 {\EndP\Tg<p>}
 {\EndP\Tg<p>}
 {\HCode{</p>\Hnewline}\printfn}
