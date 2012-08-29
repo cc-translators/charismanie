@@ -140,7 +140,8 @@ font-weight: bold;
 
 \long\def\thefootnote{\fnsymbol{footnote}}
 \frenchbsetup{
-  FrenchFootnotes=false
+  FrenchFootnotes=false,
+  AutoSpaceFootnotes=false
 }
 
 % Footnotes after paragraph
