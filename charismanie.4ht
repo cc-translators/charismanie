@@ -82,8 +82,13 @@ display:none;
 
 % HRule
 \renewcommand{\HRule}{%
-\ifvmode\IgnorePar\fi\EndP\HCode{<hr />}\IgnoreIndent
+\ifvmode\IgnorePar\fi\EndP\HCode{<hr class="hrule" />}\IgnoreIndent
 }
+\Css{hr.hrule{
+background-color:black;
+height:1px;
+border:0;
+}}
 
 % YHWH
 \renewcommand{\YHWH}{YHWH}
@@ -131,10 +136,15 @@ display:none;
 \renewcommand\dedicationtext[1]{%
 \a:dedicationtext#1\b:dedicationtext
 }
-\Configure{dedicationtext}{\Tg<hr />\Tg<div class="dedication">}{\Tg</div>\Tg<hr />}
+\Configure{dedicationtext}{\Tg<hr class="dedicationrule" />\Tg<div class="dedication">}{\Tg</div>\Tg<hr class="dedicationrule" />}
 \Css{div.dedication{
 text-align:center;
 text-style:italic;
+}}
+\Css{hr.dedicationrule{
+background-color:black;
+height:1px;
+border:0;
 }}
 
 % Index
