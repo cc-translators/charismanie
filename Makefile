@@ -77,8 +77,9 @@ json: pdf $(addsuffix .json,$(TARGETS))
 %.epub: %.html
 	ebook-convert $< $@ $(EBOOK_CONVERT_OPTS) --preserve-cover-aspect-ratio
 
-%.mobi: %.html
-	ebook-convert $< $@ $(EBOOK_CONVERT_OPTS) --mobi-file-type "both"
+%.mobi: %.epub
+	#ebook-convert $< $@ $(EBOOK_CONVERT_OPTS) --mobi-file-type "both"
+	kindlegen $<
 
 %-to-kindle: %.mobi
 	# cp -f doesn't work, we need to remove
