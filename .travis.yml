@@ -8,5 +8,14 @@ install:
   - sudo apt-get install tex4ht calibre
 matrix:
   include:
-    - script: make charismanie.pdf LATEX_INTERACTION="nonstopmode -halt-on-error"
+    - env: DEPLOY=true
+      script: make charismanie.pdf LATEX_INTERACTION="nonstopmode -halt-on-error"
     - script: make charismanie.epub
+deploy:
+  provider: releases
+  api_key: "pFrDpJ9AEUu036bK62SfJe0bH51M3oGGLieCl5FTumXAaOJ0ozQ4fVzwLhYTGkihuOWFwzaoY2e145RiNa5Yv6bcQSv/pb9Xnwcl9bUevYJml7Vvz43Q2Afj0NZGqPbe33cquidkyMrTMTtmaEhOOhWcs8Lvulh4yP0MZpxQdT8="
+  file: charismanie.pdf
+  skip_cleanup: true
+  on:
+    tags: true
+    env: DEPLOY=true
