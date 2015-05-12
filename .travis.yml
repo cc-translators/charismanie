@@ -17,7 +17,8 @@ matrix:
     - script: make charismanie.epub
 deploy:
   provider: releases
-  api_key: "pFrDpJ9AEUu036bK62SfJe0bH51M3oGGLieCl5FTumXAaOJ0ozQ4fVzwLhYTGkihuOWFwzaoY2e145RiNa5Yv6bcQSv/pb9Xnwcl9bUevYJml7Vvz43Q2Afj0NZGqPbe33cquidkyMrTMTtmaEhOOhWcs8Lvulh4yP0MZpxQdT8="
+  api_key:
+    secure: FWC4Dt115sXLgyN/wEFdNOASIoCGZCxIzx/O1ESIZ4QCE2wxUUn1goOpLNMSFJ8MPlWgwPZLfGCRHG/LvvnQ/2n1rOAfG/ri7L9Qw2JCVBi2KhJ3K6QDGla0KsAuAaKQZv2TKRcGSx/EO3UcL+tn/DxcIa9GZ8n4lbuUuJFWcOA=
   file: charismanie.pdf
   skip_cleanup: true
   on:
