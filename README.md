@@ -1,4 +1,5 @@
 [![Build Status](https://img.shields.io/travis/cc-translators/charismanie/master.svg)](https://travis-ci.org/cc-translators/charismanie)
+[![Latest Release](https://img.shields.io/github/release/cc-translators/charismanie.svg)](https://github.com/cc-translators/charismanie/releases)
 
 # Requirements
 
