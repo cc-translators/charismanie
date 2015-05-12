@@ -1,11 +1,8 @@
 language: c
+sudo: false
 install:
-  - sudo apt-add-repository -y ppa:texlive-backports
-  - sudo apt-get update
-  - sudo apt-get install texlive-latex-extra texlive-publishers texlive-humanities texlive-lang-french texlive-xetex
-  - sudo apt-get install texlive-fonts-recommended texlive-fonts-extra
-  # epub
-  - sudo apt-get install tex4ht calibre
+  - curl -L https://raw.githubusercontent.com/krlmlr/texlive-squashfs/master/out/texlive.tar.xz | tar xJC ~
+  - PATH=$HOME/texlive/bin/x86_64-linux:$PATH
   # EB Garamond
   - wget https://bitbucket.org/georgd/eb-garamond/downloads/EBGaramond-0.016.zip
   - unzip EBGaramond-0.016.zip
