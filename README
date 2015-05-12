@@ -13,12 +13,7 @@ Building and uploading
 
 Type the following:
 
-   make && make crocupload && make upload
-
-You need two configuration files:
-
-   - ~/.crocodoc.conf with a TOKEN variable with your crocodoc token
-   - ~/.ncftp/cc.cfg with the FTP settings
+   make
 
 
 PDF/X-1a compliance

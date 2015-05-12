@@ -24,9 +24,6 @@ TITLE=Charismatique ou charismaniaque ?
 
 EBOOK_CONVERT_OPTS=--authors "$(AUTHOR)" --title "$(TITLE)" --language "$(LANGUAGE)" --pubdate "$(PUBDATE)" --page-breaks-before "//*[name()='h1' or name()='h2']" --cover "$(COVER)" --use-auto-toc  --level1-toc "//*[name()='h2']" --level2-toc "//*[name()='h3']" --minimum-line-height=0.4 --font-size-mapping "10,12,14,16,18,20,26,64"
 
-# Include crocodoc conf
-include ~/.crocodoc.conf
-
 all: pdf
 
 pdf: split split_numbered $(addsuffix .pdf,$(TARGETS))
@@ -103,12 +100,6 @@ upload:
 	-ncftpput -f ~/.ncftp/cc.cfg $(FTP_JSONDIR)/ *.json
 	-ncftpput -f ~/.ncftp/cc.cfg $(FTP_EBOOKDIR)/ *.mobi *.epub
 
-%.json: %.pdf
-ifeq ($(strip $(TOKEN)),)
-	$(error No crocodoc token found in ~/.crocodoc.conf)
-endif
-	curl -F "file=@$<" -F "token=$(TOKEN)" -F "title=$* $(TODAY)" \
-	   https://crocodoc.com/api/v1/document/upload > $@
 
 spellcheck:
 	find chapters/fr -name "*.tex" -exec aspell -l fr -c {} \;
@@ -121,7 +112,7 @@ clean:
 	rm -f chapters/fr/*.aux
 	rm -f chapters/en/*.aux
 	rm -f make-split-stamp split-stamp
-	rm -rf splits split crocupload
+	rm -rf splits split
 	rm -f *.xmpi
 	rm -f *.html *.4tc *.tmp *.xref *.4ct
 	rm -f *.epub *.mobi
