@@ -5,6 +5,7 @@ TEXINPUTS=microtype:
 FONTSDIR=fonts
 TODAY=$(shell date --iso)
 TARGETS=$(BOOK_NAME) $(BOOK_NAME)_numbered $(BOOK_NAME)_interior
+LATEX_INTERACTION=batchmode
 FTP_TOPDIR=calvary
 FTP_PDFDIR=$(FTP_TOPDIR)/pdf
 FTP_JSONDIR=$(FTP_TOPDIR)/json
@@ -42,12 +43,12 @@ json: pdf $(addsuffix .json,$(TARGETS))
 	sed -e 's@%$(LINENO_PATT)@$(LINENO_PATT)@' $< > $@
 
 %.pdf: %.tex $(CHAPTERS_FR) $(CHAPTERS_EN)
-	OSFONTDIR=$(FONTSDIR) TEXINPUTS=$(TEXINPUTS) lualatex -shell-escape -interaction=batchmode $*
-	OSFONTDIR=$(FONTSDIR) TEXINPUTS=$(TEXINPUTS) lualatex -shell-escape -interaction=batchmode $*
+	OSFONTDIR=$(FONTSDIR) TEXINPUTS=$(TEXINPUTS) lualatex -shell-escape -interaction=$(LATEX_INTERACTION) $*
+	OSFONTDIR=$(FONTSDIR) TEXINPUTS=$(TEXINPUTS) lualatex -shell-escape -interaction=$(LATEX_INTERACTION) $*
 
 %.dvi: %.tex
-	-OSFONTDIR=$(FONTSDIR) TEXINPUTS=$(TEXINPUTS) latex -interaction=batchmode $<
-	-OSFONTDIR=$(FONTSDIR) TEXINPUTS=$(TEXINPUTS) latex -interaction=batchmode $<
+	-OSFONTDIR=$(FONTSDIR) TEXINPUTS=$(TEXINPUTS) latex -interaction=$(LATEX_INTERACTION) $<
+	-OSFONTDIR=$(FONTSDIR) TEXINPUTS=$(TEXINPUTS) latex -interaction=$(LATEX_INTERACTION) $<
 
 #%.html: %.dvi
 #	# Generate PDF from DVI to make use of ifpdf

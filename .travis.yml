@@ -1,0 +1,12 @@
+language: c
+install:
+  - sudo apt-add-repository -y ppa:texlive-backports
+  - sudo apt-get update
+  - sudo apt-get install texlive-latex-extra texlive-publishers texlive-humanities texlive-lang-french texlive-xetex
+  - sudo apt-get install texlive-fonts-recommended texlive-fonts-extra
+  # epub
+  - sudo apt-get install tex4ht calibre
+matrix:
+  include:
+    - script: make charismanie.pdf LATEX_INTERACTION="nonstopmode -halt-on-error"
+    - script: make charismanie.epub
