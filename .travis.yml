@@ -6,6 +6,10 @@ install:
   - sudo apt-get install texlive-fonts-recommended texlive-fonts-extra
   # epub
   - sudo apt-get install tex4ht calibre
+  # EB Garamond
+  - wget https://bitbucket.org/georgd/eb-garamond/downloads/EBGaramond-0.016.zip
+  - unzip EBGaramond-0.016.zip
+  - cp EBGaramond-0.016/otf/* fonts/
 matrix:
   include:
     - env: DEPLOY=true
