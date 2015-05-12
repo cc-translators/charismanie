@@ -1,3 +1,5 @@
+[![Build Status](https://img.shields.io/travis/cc-translators/charismanie/master.svg)](https://travis-ci.org/cc-translators/charismanie)
+
 # Requirements
 
  - TeXLive 2011
