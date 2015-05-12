@@ -12,9 +12,12 @@ install:
   - cp EBGaramond-0.016/otf/* fonts/
 matrix:
   include:
-    - env: DEPLOY=true
+    - env: BUILD=pdf DEPLOY=true
       script: make charismanie.pdf LATEX_INTERACTION="nonstopmode -halt-on-error"
-    - script: make charismanie.epub
+    - env: BUILD=epub
+      script: make charismanie.epub
+  allow_failures:
+    - env: BUILD=epub
 deploy:
   provider: releases
   api_key:
