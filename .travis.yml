@@ -1,11 +1,11 @@
 language: c
 sudo: false
 install:
-- curl -L https://raw.githubusercontent.com/raphink/travis-texlive/master/texlive.tar.xz | tar xJC ~
-- PATH=$HOME/texlive/bin/x86_64-linux:$PATH
-- wget https://bitbucket.org/georgd/eb-garamond/downloads/EBGaramond-0.016.zip
-- unzip EBGaramond-0.016.zip
-- cp EBGaramond-0.016/otf/* fonts/
+  - curl -L https://github.com/raphink/travis-texlive/releases/download/2015-05-13_01/texlive.tar.xz | tar xJC ~
+  - PATH=$HOME/texlive/bin/x86_64-linux:$PATH
+  - wget https://bitbucket.org/georgd/eb-garamond/downloads/EBGaramond-0.016.zip
+  - unzip EBGaramond-0.016.zip
+  - cp EBGaramond-0.016/otf/* fonts/
 matrix:
   include:
     - env: BUILD=pdf DEPLOY=true
