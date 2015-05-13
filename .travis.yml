@@ -13,7 +13,7 @@ install:
 matrix:
   include:
     - env: BUILD=pdf DEPLOY=true
-      script: make charismanie.pdf LATEX_INTERACTION="nonstopmode -halt-on-error"
+      script: make charismanie.pdf charismanie_interior.pdf LATEX_INTERACTION="nonstopmode -halt-on-error"
     - env: BUILD=epub
       script: make charismanie.epub
   allow_failures:
@@ -22,7 +22,9 @@ deploy:
   provider: releases
   api_key:
     secure: FWC4Dt115sXLgyN/wEFdNOASIoCGZCxIzx/O1ESIZ4QCE2wxUUn1goOpLNMSFJ8MPlWgwPZLfGCRHG/LvvnQ/2n1rOAfG/ri7L9Qw2JCVBi2KhJ3K6QDGla0KsAuAaKQZv2TKRcGSx/EO3UcL+tn/DxcIa9GZ8n4lbuUuJFWcOA=
-  file: charismanie.pdf
+  file:
+    - charismanie.pdf
+    - charismanie_interior.pdf
   skip_cleanup: true
   on:
     tags: true
