@@ -202,7 +202,7 @@
 
 
 \newcommand{\mylongtoc}{%
-  \cohead[\headerfont\textls{\contentsname}]{}
+  \cohead[\headerfont{\contentsname}]{}
   \renewcommand\cfttoctitlefont{\vspace{-1em}\hfill\chaptocfont\Huge}
   \renewcommand\cftaftertoctitle{\hfill}
   %\setlength{\cftchapindent}{-1.5em}
@@ -249,41 +249,41 @@
 \cfoot[\rule{6mm}{0.8pt}\\\pagemark]{\rule{6mm}{0.8pt}\\\pagemark}
 \ofoot[]{}
 \lehead[]{}
-\cehead[\headerfont\textls{\titlehead}]{}
+\cehead[\headerfont{\titlehead}]{}
 \ohead[]{}
 
 \newcommand{\setbookheadings}{%
-  \cohead[\headerfont\textls{\chaphead}]{}
+  \cohead[\headerfont{\chaphead}]{}
 }
 
 \defpagestyle{chapterend}%
   {%
-    {\hfill\headerfont\textls{\titlehead}\hfill}
-    {\hfill\headerfont\textls{\chaphead}\hfill}
+    {\hfill\headerfont{\titlehead}\hfill}
+    {\hfill\headerfont{\chaphead}\hfill}
     {}
   }%
   {{}{}{}} % Nothing in footer
 
 \defpagestyle{biblerefindexend}%
   {%
-    {\hfill\headerfont\textls{\titlehead}\hfill}
-    {\hfill\headerfont\textls{\biblerefindextitle}\hfill}
+    {\hfill\headerfont{\titlehead}\hfill}
+    {\hfill\headerfont{\biblerefindextitle}\hfill}
     {}
   }%
   {{}{}{}} % Nothing in footer
 
 \defpagestyle{tocend}%
   {%
-    {\hfill\headerfont\textls{\titlehead}\hfill}
-    {\hfill\headerfont\textls{\contentsname}\hfill}
+    {\hfill\headerfont{\titlehead}\hfill}
+    {\hfill\headerfont{\contentsname}\hfill}
     {}
   }%
   {{}{}{}} % Nothing in footer
 
 \defpagestyle{prefaceend}%
   {%
-    {\hfill\headerfont\textls{\titlehead}\hfill}
-    {\hfill\headerfont\textls{Préface}\hfill}
+    {\hfill\headerfont{\titlehead}\hfill}
+    {\hfill\headerfont{Préface}\hfill}
     {}
   }%
   {{}{}{}} % Nothing in footer
@@ -302,7 +302,7 @@
   \restorechaphead
   % Appendix
   %\ifpdf
-    \cohead[\headerfont\textls{\biblerefindextitle}]{}
+    \cohead[\headerfont{\biblerefindextitle}]{}
   %\fi
   \renewcommand{\chapstyle}{\centering}
   \renewcommand{\chapheadstyle}{\chapheadfont\LARGE}
