@@ -23,4 +23,4 @@ deploy:
     - charismanie_interior.pdf
   skip_cleanup: true
   on:
-    repo: cc-translators/charismanie
+    tags: true
