@@ -1,4 +1,4 @@
-language: c
+language: ruby
 sudo: false
 install:
   - curl -L https://github.com/raphink/travis-texlive/releases/download/2015-05-13_01/texlive.tar.xz | tar xJC ~
