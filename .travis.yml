@@ -9,6 +9,7 @@ install:
 matrix:
   include:
     - env: BUILD=pdf DEPLOY=true
+      rvm: 2.1.3
       script: make charismanie.pdf charismanie_interior.pdf LATEX_INTERACTION="nonstopmode -halt-on-error"
     - env: BUILD=epub
       script: make charismanie.epub
