@@ -1,4 +1,4 @@
-language: ruby
+language: c
 sudo: false
 install:
   - curl -L https://github.com/raphink/travis-texlive/releases/download/2015-05-13_01/texlive.tar.xz | tar xJC ~
@@ -9,12 +9,14 @@ install:
 matrix:
   include:
     - env: BUILD=pdf DEPLOY=true
-      rvm: 2.1.3
       script: make charismanie.pdf charismanie_interior.pdf LATEX_INTERACTION="nonstopmode -halt-on-error"
     - env: BUILD=epub
       script: make charismanie.epub
   allow_failures:
     - env: BUILD=epub
+# https://github.com/travis-ci/travis-ci/issues/5145
+before_deploy:
+  - gem install mime-types -v 2.6.2
 deploy:
   provider: releases
   api_key:
