@@ -41,14 +41,14 @@ font-style:normal;
 \Css{h2{
 text-align: right;
 font-size: xx-large;
-font-family: "Steelfish Rg",Sans-Serif; 
+font-family: "Open Sans Condensed Light",Sans-Serif; 
 }}
 
 \Css{h2 > span.titlemark{
 font-style: italic;
 font-weight: normal;
 font-size: large;
-font-family: "EB Garamond",Serif; 
+font-family: "Linux Libertine O",Serif; 
 }}
 
 % This is only for the ToC
@@ -57,8 +57,8 @@ display:none;
 }}
 
 \Css{h3.sectionHead{
-font-style:italic;
-font-family:"EB Garamond",Serif; 
+font-style:normal;
+font-family:"Open Sans Condensed Light",Serif; 
 font-weight:normal;
 }}
 
@@ -149,7 +149,7 @@ border:0;
 
 % Index
 \Css{span.index-item{
-font-family:"Steelfish Rg",Sans-Serif; 
+font-family:"Open Sans Condensed Light",Sans-Serif; 
 font-size:large;
 margin-top:1em;
 }}

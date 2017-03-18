@@ -1,12 +1,8 @@
 @font-face{
-font-family: "EB Garamond";
-src: url(fonts/EBGaramond12-Italic.otf);
-}
-@font-face{
 font-style: normal;
-font-family: "Steelfish Rg";
+font-family: "Open Sans Condensed Light";
 font-weight: normal;
-src: url(fonts/steelfish_rg.otf);
+src: url(fonts/OpenSans-CondLight.ttf);
 }
 @font-face{
 font-style: normal;
