@@ -112,10 +112,10 @@
   \setmainfont{Linux Libertine O}
   
   \newfontface\pagemarkfont[Numbers={OldStyle}]{Linux Libertine O}
-  \newfontfamily\chapfont{EB Garamond}
-  \newfontfamily\chapheadfont[Scale=1.4]{SteelfishRg-Regular}
-  \newfontfamily\chaptocfont[Scale=1.1]{SteelfishRg-Regular}
-  \newfontfamily\secfont{EB Garamond}
+  \newfontfamily\chapfont{Linux Libertine O}
+  \newfontfamily\chapheadfont[Scale=1.2]{Open Sans Condensed Light}
+  \newfontfamily\chaptocfont{Open Sans Condensed Light}
+  \newfontfamily\secfont[Scale=1.2]{Open Sans Condensed Light}
   \newfontfamily\headerfont[LetterSpace=6,WordSpace=1,Ligatures=NoCommon]{LinLibertineCapitalsO}
   \newfontfamily\lettrinefont{LinLibertineIO}
 \else
@@ -137,9 +137,9 @@
   {\chaptertitlename\ \thechapter}{0pt}
   {\chapheadstyle}
 \titlespacing*{\chapter}
-  {0pt}{0pt}{0pt}
+  {0pt}{0pt}{10pt}
 
-\newcommand{\secstyle}{\secfont\large\itshape}
+\newcommand{\secstyle}{\secfont\large}
 \titleformat{\section}%
   {\secstyle} % format
   {} % label
@@ -147,7 +147,7 @@
   {} % before
   [\normalfont] % after
 \titlespacing*{\section}
-  {0pt}{10pt}{0pt}
+  {0pt}{15pt}{5pt}
 
 % Get title
 \makeatletter
