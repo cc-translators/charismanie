@@ -10575,9 +10575,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="131.25905"
-     inkscape:cy="361.87796"
+     inkscape:zoom="0.35"
+     inkscape:cx="-161.28868"
+     inkscape:cy="268.00894"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -10596,7 +10596,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -11675,17 +11675,17 @@
          x="714.93707"
          style="font-style:normal;font-weight:normal;font-size:10px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55px;font-family:'Tulpen One';-inkscape-font-specification:'Tulpen One';fill:#ff6600;fill-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:condensed;font-size:55px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Light Condensed';fill:#ff6600;fill-opacity:1"
            y="-330.20587"
            x="714.93707"
            id="tspan31064"
            sodipodi:role="line">CHARISMATIQUE</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55px;font-family:'Tulpen One';-inkscape-font-specification:'Tulpen One';fill:#ff6600;fill-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:condensed;font-size:55px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Light Condensed';fill:#ff6600;fill-opacity:1"
            id="tspan31070"
            y="-261.45587"
            x="714.93707"
            sodipodi:role="line">OU</tspan><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55px;font-family:'Tulpen One';-inkscape-font-specification:'Tulpen One';fill:#ff6600;fill-opacity:1"
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:condensed;font-size:55px;font-family:'Open Sans';-inkscape-font-specification:'Open Sans Light Condensed';fill:#ff6600;fill-opacity:1"
            id="tspan31072"
            y="-192.70587"
            x="714.93707"
