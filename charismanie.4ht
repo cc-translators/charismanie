@@ -41,14 +41,16 @@ font-style:normal;
 \Css{h2{
 text-align: right;
 font-size: xx-large;
+font-style:normal;
+font-weight: normal;
 font-family: "Open Sans Condensed Light",Sans-Serif; 
 }}
 
 \Css{h2 > span.titlemark{
-font-style: italic;
+font-style: normal;
 font-weight: normal;
 font-size: large;
-font-family: "Linux Libertine O",Serif; 
+font-family: "Nothing You Could Do",Serif; 
 }}
 
 % This is only for the ToC
@@ -58,7 +60,7 @@ display:none;
 
 \Css{h3.sectionHead{
 font-style:normal;
-font-family:"Open Sans Condensed Light",Serif; 
+font-family:"Open Sans Condensed Light",Sans-Serif; 
 font-weight:normal;
 }}
 

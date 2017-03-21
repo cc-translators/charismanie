@@ -40,6 +40,12 @@ font-family: "Linux Libertine SC Italics O";
 font-weight: normal;
 src: url(fonts/LinLibertine_aSI.otf);
 }
+@font-face{
+font-style: normal;
+font-family: "Nothing You Could Do";
+font-weight: normal;
+src: url(fonts/NothingYouCouldDo.ttf);
+}
 
 div.thanks, div.preface, div.dedication,
 .fxlri-t-1x-x-120{
