@@ -187,7 +187,12 @@
 % Homogenous dotfill for chapters and sections alike
 \renewcommand\cftchapleader{\cftdotfill{1}}
 \renewcommand\cftsecleader{\cftdotfill{1}}
-\renewcommand\cftchappagefont{\normalfont}
+\renewcommand\cftchappagefont{\chaptocfont}
+\renewcommand\cftsecfont{\chaptocfont }
+\makeatletter
+\let\oldl@section\l@section
+\def\l@section#1#2{\oldl@section{#1}{\chaptocfont{#2}}}
+\makeatother
 %\fi
 
 
