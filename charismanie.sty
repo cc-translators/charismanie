@@ -169,6 +169,11 @@
 \renewcommand\cftchappresnum{\chaptertitlename~}
 \renewcommand\cftchapaftersnumb{\chaptocfont}
 \renewcommand\cftchapfont{\chaptocfont }
+% page number
+\makeatletter
+\let\oldl@chapter\l@chapter
+\def\l@chapter#1#2{\oldl@chapter{#1}{\chaptocfont{#2}}}
+\makeatother
 
 % Dedication
 \newcommand\dedicationtext[1]{%
